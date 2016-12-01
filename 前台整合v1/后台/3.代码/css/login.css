@@ -1,0 +1,49 @@
+body{
+
+	background-image: url(../images/bg.jpg);
+}
+.body{
+	vertical-align: middle;
+	margin-top: 200px;
+	width: 600px;
+	height: 280px;
+	margin:	auto;
+	border:1px solid black;
+	background-image: url(../images/u0.png);
+	
+}
+.left{
+	float: left;
+	background-image: url(../images/u0.png);
+	width: 300px;
+	height: 100%;
+	margin-right: 15px;
+}
+.right{
+	padding-top: 5px;
+	height: 280px;
+}
+.title {
+	color: #4169E1;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+p{
+	font-size: 5px;
+}
+.用户名{
+	margin-bottom: 15px;
+}
+.denglu{
+	padding-top:15px;
+}
+.neirong{
+	padding-left: 15px;
+}
+
+.bottom{
+	margin-top: 15px;
+	line-height: 20px;
+	text-align: center;
+}
