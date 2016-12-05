@@ -1,0 +1,18 @@
+[ 2016-12-01T10:31:47+08:00 ] 127.0.0.1 /weiju/index.php/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001406s ]
+ERR: 无法加载模块:Login
+
+[ 2016-12-01T10:32:42+08:00 ] 127.0.0.1 /weiju/index.php/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Login
+
+[ 2016-12-01T10:40:01+08:00 ] 127.0.0.1 /weiju/index.php/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+ERR: 无法加载模块:Login
+

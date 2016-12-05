@@ -1,0 +1,59 @@
+<layout name="layoutadmin" />
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:U('Admin/index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">酒店管理</span></div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="{:U('Admin/hotel/create')}"><i class="icon-font"></i>新增酒店</a>
+                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
+                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th>排序</th>
+                            <th>ID</th>
+                            <th>酒店名称</th>
+                            <th>所属城市</th>
+                            <th>房间类型</th>
+                            <th>酒店电话</th>
+                            <th>酒店价格</th>
+                            <th>具体位置</th>
+                            <th>操作</th>
+                        </tr>
+                         
+                         <volist name="hotel" id="vo">
+                        <tr>
+                            <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="{$vo.id}" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="{$vo.id}" type="text">
+                            </td>
+                            <td>{$vo.id}</td>
+                            <td>{$vo.name}</td>
+                            <td>{$vo.city}</td>
+                            <td>{$vo.type}</td>
+                            <td>{$vo.number}</td>
+                            <td>{$vo.price}</td>
+                            <td>{$vo.address}</td>
+                            
+
+                            <td>
+                                <a class="link-update" href="{:U('Admin/hotel/edit')}/id/{$vo.id}">修改</a>
+                                <a class="link-del" href="{:U('Admin/hotel/destroy')}/id/{$vo.id}">删除</a>
+                            </td>
+                        </tr>
+                        </volist>
+
+                    </table>
+                    <div class="list-page"> 2 条 1/1 页</div>
+                </div>
+            </form>
+        </div>
+    </div>

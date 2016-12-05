@@ -1,0 +1,53 @@
+<layout name="layoutadmin" />
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:U('Admin/index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:U('Admin/sight/index')}">景点管理</a><span class="crumb-step">&gt;</span><span>新增景点</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Admin/sight/store')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th>景点名称</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="title" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>所属城市：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="title" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>适合旅行季节</th>
+                                <td><input class="common-text required" id="title" name="title" size="50" value="" type="text"></td>
+                            </tr>
+
+                            <tr>
+                                <th>景点简介：</th>
+                                <td><input class="common-text required" id="title" name="title" size="50" value="" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>景点具体地址：</th>
+                                <td><input class="common-text required" id="title" name="title" size="50" value="" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>景点图片</th>
+                                <td><input type="file" name="pic"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
