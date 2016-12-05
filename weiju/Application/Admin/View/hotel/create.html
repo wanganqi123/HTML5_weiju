@@ -1,0 +1,55 @@
+<layout name="layoutadmin" />
+    <div class="main-wrap">
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:U('Admin/index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:U('Admin/hotel/index')}">酒店管理</a><span class="crumb-step">&gt;</span><span>新增酒店</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Admin/hotel/store')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th>酒店名称：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="title" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>所属城市：</th>
+                                <td>
+                                     <input class="common-text required" id="title" name="title" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>房间类型</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>酒店电话</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>酒店价格</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>具体位置</th>
+                                <td>
+                                <input type="text">
+                                </td>
+                            </tr>
+
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
