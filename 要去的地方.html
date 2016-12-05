@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>要去的地方</title>
+
+		<link href="css/nav.css" rel="stylesheet" type="text/css">
+		<link type="image/x-icon" rel="icon" href="images/bitbug_favicon.ico" media="screen" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+		<link rel="stylesheet" href="css/qunawan.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/style.js"></script>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/juheweb.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function(){
+					$('#lanrenzhijia').stickyfloat({ duration: 360 });
+				});
+		</script>
+   
+	</head>
+	<body>
+		<div id="header">
+			<div class="banner" id="slide">
+    			<ul id="picList">
+					<li class="slide_li first">
+						<div class="imgBg_home"></div>
+						<img class="slide_img" src="images/first1.jpg" width="100%" height="480px"/> 
+					</li>
+					<li class="slide_li">
+						<div class="imgBg_air"></div>
+						<img class="slide_img" src="images/first2.jpg" width="100%" height="480px"/>
+					</li>
+					<li class="slide_li">
+						<div class="imgBg_work"></div>
+						<img class="slide_img" src="images/first3.jpg" width="100%" height="480px"/> 
+					</li>
+				</ul>
+    			<div id="slideThumb"></div>
+			</div>
+			<div class="lheader">
+				<div class="hl">
+					<div class="logo">
+		                <h1>
+							<a href="#" title="微距">
+								<img src="images/u146.gif" width="98px" height="85px">
+							</a>
+		                </h1>
+		            </div>
+	                <div class="menu">
+	                    <ul>
+	                        <li><a href="#" title="首页" class="index">首页</a></li>
+	                        <li><a href="#" title="要去的地方">要去的地方</a></li>
+	                        <li><a href="#" title="四季推荐" style="background-color:rgba(0,0,0,0.2)!important; filter:Alpha(opacity=30);">四季推荐</a></li>
+	                        <li><a href="#" title="行程推荐">行程推荐</a></li>
+	                        <li><a href="#" title="注意事项">注意事项</a></li>
+	                        <li><a href="#" title="住哪里">住哪里</a></li>
+	                        <li><a href="#" title="留学生导游">留学生导游</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+			</div>
+	        <div class="rheader">
+		        <div class="dlzc">
+			        <ul>	
+			            <li><a href="javascript:void(0)" title="登录" onclick="login()">登录</a></li>
+			            <li>|</li>
+			            <li><a href="javascript:void(0)" title="注册" onclick="register1()" title="注册">注册</a></li>
+			        </ul>
+			    </div>
+			    <div class="search">
+			        <a href="#"><img src="images/u127.jpg" width="20px" height="20px" /></a>
+			    </div>
+			</div>
+			<div class="hr1">
+				<hr color="#E4E4E4" width=91.5% size=1 align=center noshade>
+			</div>
+        </div>
+		<div id="light1" class="white_content1">
+			<a href="javascript:void(0)" onclick="close1()">
+				<img src="images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
+			</a>
+			<form method="post" id="signin1" action="index.html">
+				<h1>登录</h1>
+				<hr/>
+				<div>
+					<label>
+						<p>用户名</p>
+						<p>
+							<input id="username1" name="username" value="" title="username" tabindex="4" type="text" placeholder="您的用户名"> 
+						</p>
+					</label>
+				</div>
+				<div>
+					<label>
+						<p>密码</p>
+						<p>
+					       	<input id="password1" name="password" value="" title="password" tabindex="5" type="password" placeholder="您的密码">
+						</p>
+					</label>
+				</div>
+				<p class="remember">
+					<label><input type="checkbox" name="自动登录" > 保存密码</label>        
+					<a href=""></a>
+				</p>
+				<p class="logosub1">
+					<input type="button" name="" value="立即登录">
+				</p>
+				<div>
+					<p class="toregister">
+						还没有账号？<a href="javascript:void(0)" onclick="register1()">点击这里注册</a>
+					</p>
+				</div>
+			</form>
+		</div>
+		<div id="light2" class="white_content2">
+			<a href="javascript:void(0)" onclick="close2()">
+				<img src="images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
+			</a>
+			<form method="post" id="signin2" action="index.html">
+				<h1>注册</h1>
+				<hr/>
+				<div class="tregister">
+					<div>
+						<label>
+							<p>用户名<span> *</span></p>
+							<p>
+								<input id="username2" name="username" value="" title="username" tabindex="4" type="text" placeholder="请输入1~16位以内的英文、数字组合" class="inputpp"> 
+							</p>
+						</label>
+					</div>
+					<div style="clear: left;" class="margintop">
+						<label>
+							<p>登录密码<span> *</span></p>
+							<p>
+						       	<input id="password2" name="password" value="" title="password" tabindex="5" type="password" placeholder="请输入6~16位以内的英文、数字组合" class="inputpp">
+							</p>
+						</label>
+					</div>
+					<div class="margintop">
+						<label>
+							<p>确认密码<span> *</span></p>
+							<p>
+						       	<input id="password2" name="password" value="" title="password" tabindex="5" type="password" placeholder="请再次输入密码" class="inputpp">
+							</p>
+						</label>
+					</div>
+					<div class="margintop">
+						<label>
+							<p>姓名</p>
+							<p>
+						       	<input id="IDname" name="IDname" value="" title="IDname" tabindex="5" type="text" placeholder="请输入您的真实姓名(选填)" class="inputpp">
+							</p>
+						</label>
+					</div>
+					<div class="sex">
+						<p>性别</p>
+						<p>
+							<div class="nan"><input type="radio" name="sex" checked="checked"> 男</div>
+							<div class="nv"><input type="radio" name="sex"> 女</div>
+						</p>
+					</div>
+					<div class="margintop">
+						<label>
+							<p>国家/地区</p>
+							<p>
+								<div>
+						       		<input id="place" name="place" value="" title="place" tabindex="5" type="text" placeholder="请输入您所在的国家/地区(选填)" class="inputpp">
+								</div>
+							</p>
+						</label>
+					</div>
+					<div class="IDtype">
+							<p>用户类型<span> *</span></p>
+							<p>
+								<div class="tourist"><label><input type="checkbox" name="用户类型" checked="checked"> 游客</label></div>
+							    <div class="ciceroni"><label><input type="checkbox" name="用户类型" > 导游</label></div>
+						    </p>
+					</div>
+				</div>
+				<div class="bregister">
+					<div class="logosub2">
+						<input type="button" name="" value="完成注册" style="text-align: center;">
+					</div>
+					<div>
+						<p class="toregister">
+							已拥有账户？<a href="javascript:void(0)" onclick="login()">点击这里登录</a>
+						</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="fade" class="black_overlay">123</div>
+		<!--中间-->
+		<div class="content">
+
+			<div class="content-header">
+				<div id="mbx">
+					<ul id="breadcrumb">
+						<li><a href="首页.html"><span class="icon icon-home"> </span>首页</a></li>
+  						<li><a href="四季推荐.html"><span class="icon icon-beaker"> </span> 要去的地方</a></li>
+  						
+  					</ul>
+				</div>
+
+				<div>
+					<HR style="border:1 dashed #987cb9; margin-left:10%; margin-top:20px; margin-bottom:50px;" width="80%" color=#987cb9 SIZE=1>
+				</div>
+			</div>
+			
+			<div class="content-footer">
+
+				
+			
+				<div class="content-text">
+				<div id="zw">
+						<h1>新南威尔士州</h1>>
+						<p>新南威尔士州          位于澳大利亚东南部，东濒太平洋，北邻昆士兰州，南接维多利亚州，是英国在澳大利亚最早的殖民地，也是澳大利亚人口最多、工业化和城市化水平最高的州。从地理区域上可分成沿海低地、大分水岭与西部平原。矿产资源、森林资源、旅游资源丰富，拥有世界最大之一的天然良港悉尼港。农牧业发达，农畜产品在澳大利亚占有重要地位。工业部门多，钢铁工业最为突出，机械制造业、纺织业等都很发达。主要城市有悉尼、纽卡斯尔、卧龙岗等</p>
+						<img src="images/1.jpg" width="100%" height="100%">
+						<h2>主要城市</h2>
+						<br></br>
+						<img src="images/2.jpg" width="30%" height="30%">
+						
+						<img src="images/3.jpg" width="30%" height="30%">
+						
+						<img src="images/4.jpg" width="30%" height="30%">
+						</div>>
+					
+						<br></br>
+						<br></br>
+						
+					<div id="zw">
+						<h1>昆士兰州</h1>
+						<p>昆士兰州（Queensland）是澳大利亚的六个州之一，其名字是为了纪念英国的维多利亚女王。昆士兰州位于澳大利亚大陆的东北部，东濒太平洋，西与北部地方及南澳大利亚州相接，南邻新南威尔士州，北濒卡奔塔利亚湾，面积为172.72万平方公里，约占澳大利亚大陆面积的22.4%，是澳大利亚第二大州。昆士兰州约有54%的面积位于南回归线以北，降雨量少，气候温暖、阳光明媚，有“阳光之州”的美誉。</p>
+						<img src="images/5.jpg" width="100%" height="100%">
+						<h2>主要城市</h2>
+						<br></br>
+						<img src="images/6.jpg" width="30%" height="30%">
+						
+						<img src="images/7.jpg" width="30%" height="30%">
+						
+						<img src="images/8.jpg" width="30%" height="30%">
+						
+					</div>
+					 <br></br>
+				     <br></br>
+					<div id="zw">
+						<h1>维多利亚州</h1>
+						<p>维多利亚州位于澳大利亚大陆的东南沿海，西北部分别与南澳大利亚州和新南威尔士州相邻，是澳大利亚最小的大陆州。东北部是峰峦耸立的山区，海拔多在1000米至2000米之间，东南部分布着广袤的森林、众多的岩洞和湖泊，西部是广阔的丘陵、草原，素有“花园之州”的美誉，被称为“澳洲缩影”，是澳大利亚传统经济大州，是澳大利亚人口最密集、工业化程度最高、农牧业生产最为发达的一个州。
+						<img src="images/9.jpg" width="100%" height="100%">
+						<h2>主要城市</h2>
+						<br></br>
+						<img src="images/10.jpg" width="30%" height="30%">
+						
+						<img src="images/10.jpg" width="30%" height="30%">
+						
+						<img src="images/10.jpg" width="30%" height="30%">
+						
+					</div>
+					<br></br>
+					<br></br>
+					<div id="zw">
+						<h1>北领地</h1>
+						<p>北领地是澳大利亚境内一个直属澳大利亚联邦政府的领地，是澳大利亚的两个内陆领地之一，位于澳大利亚大陆中北部，首府是达尔文。
+       澳大利亚北领地地广人稀，占澳大利亚总面积约20%。北部阿拉弗拉海沿岸曲折低平，东北部为巴克利高原，中西部为平原草地，南部为山地和沙漠地区，西南部多干涸盐湖。北领地约五分之四面积位于热带内，跨越两个明显的气候带，普遍高温。北领地是古代土著文化的发源地，北部阿纳姆地为土著居民保留地</p>
+						<img src="images/13.jpg" width="100%" height="100%">
+						<h2>主要城市</h2>
+						<br></br>
+						<img src="images/14.jpg" width="30%" height="30%">
+						
+						<img src="images/15.jpg" width="30%" height="30%">
+						
+						<img src="images/16.jpg" width="30%" height="30%">
+						
+
+						
+					</div>
+					<br></br>
+					<br></br>
+					<div id="zw">
+						<h1>南澳大利亚</h1>
+						<p>南澳大利亚州（South Australia，缩写SA），简称南澳州，昵称“节日之州”，其首府城市为阿德莱德。南澳大利亚是世界上最干旱的地区之一，位于澳洲大陆南部海岸线的中心位置，北领地和昆士兰州以南，新南威尔士州和维多利亚州以西，南冰洋和大澳大利亚湾以北，海岸线长达3700公里，辖境总面积约1,043,514平方公里，为澳大利亚六州中的第三大州（北领地除外），是唯一与澳大利亚大陆上所有州都接壤的一州，以山脉、草地和山谷为主的地形，沙漠广布，独特的气候地理环境和丰富多彩的动植物生态，构成了特有的大自然景观。该州以盛产奶制品、葡萄酒和小麦著称，是澳大利亚知名的葡萄酒产地，是著名的“鱼米之乡”。</p>
+						<img src="images/17.jpg" width="100%" height="100%">
+						<h2>主要城市</h2>
+						<br></br>
+						<img src="images/18.jpg" width="30%" height="30%">
+						
+						<img src="images/18.jpg" width="30%" height="30%">
+						
+						<img src="images/18.jpg" width="30%" height="30%">
+						
+					</div>
+					<br></br>
+					<br></br>
+					<div id="zw">
+						<h1>西澳大利亚</h1>
+						<p>西澳大利亚州位于澳洲大陆西部，濒临印度洋，面积相当于整个西欧，占澳洲总面积1/3，是澳大利亚最大一个州。该州多沙漠和盐湖，地广人稀，蕴藏着丰富的矿产，自然风光与生态环境仍保留原始状态，是澳大利亚最富有原始自然景观的一个州，是最能领略澳大利亚风情的地区之一，也是澳大利亚最富裕一个州。海岸线南北长达12500公里，被印度洋和南大洋环抱，为澳大利亚联邦全国之最。经济以农牧业和工矿业为主。</p>
+						<img src="images/21.jpg" width="100%" height="100%">
+						<h2>主要城市</h2>
+						<br></br>
+						<img src="images/22.jpg" width="30%" height="30%">
+						
+						<img src="images/23.jpg" width="30%" height="30%">
+						
+						<img src="images/24.jpg" width="30%" height="30%">
+						
+						
+					</div>
+
+					
+					
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+</html>
+
