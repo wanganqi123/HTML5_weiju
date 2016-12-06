@@ -77,10 +77,10 @@ a:hover {
 	font-size: 16px;
 }
 .menu ul li a{
-	width: 85px;
+	width: 87px;
 	color: #fff;
 	display: block;
-	padding: 35px 20px;
+	padding: 35px 19px;
 }
 .menu ul li a:hover{
 	color: #fff;
@@ -97,10 +97,10 @@ a:hover {
 	text-align: center;
 }
 .menu ul li ul li a{
-	width: 95px;
+	width: 97px;
 	display:inline-block;
 	font-size: 0.9em;
-	padding: 18px 15px;
+	padding: 18px 14px;
 	border-top: 1px solid rgba(228,228,228,0.3);
 }
 .menu li:hover{
@@ -119,7 +119,7 @@ a:hover {
 	background-position: 96px 18px;
 }
 .rheader{
-	margin-top: -480px;
+	margin-top: -500px;
 	float: right;
 	position:relative;
 	margin-right: 8%;
@@ -128,7 +128,7 @@ a:hover {
 .dlzc{
 	float: left;
 	position:relative;
-	margin: 32% 20px;
+	margin: 44% 20px 0 20px;
 }
 .dlzc ul li{
 	font-size: 13px;
@@ -145,7 +145,7 @@ a:hover {
 .search{
 	float: left;
 	position:relative;
-	margin: 30% 0px;
+	margin-top: 40%;
 }
 .hr1{
 	margin-top: -480px;
@@ -154,6 +154,79 @@ a:hover {
 	position:relative;
 	opacity: 0.5;
 	z-index: 3;
+}
+.search1{
+	clear:left;
+	margin-left: 70%;
+	position:relative;
+	z-index: 3;
+	opacity: 0.9;
+}
+#search1{
+	width: 255px;
+	margin-top: 10px;
+    padding: 6px 0 6px 45px;
+    height: 20px;
+    font: 12px '宋体';
+    border: 0 none;
+    background: url("../images/srhico.png") no-repeat 16px 7px #c7c7c9;
+    color: #fff;
+    border-radius: 3px;
+}
+.search2{
+	width: 300px;
+	clear:left;
+	margin-left: 70%;
+	position:relative;
+	z-index: 3;
+	background: rgba(255,255,255,0.9)!important;
+	border-radius: 0 0 4px 4px;
+}
+.searchz{
+	width: 300px;
+}
+.searchztb{
+	background: url(../images/searchtb.gif) no-repeat 6px 6px;
+	font: 12px 微软雅黑;
+    color: #999;
+    border-bottom: 1px solid #d0d0d0;
+    padding-left: 26px;
+    margin-bottom: 5px;
+    padding-right: 24px;
+    padding-top: 4px;
+    line-height: 30px;
+}
+.searchztb a{
+	margin-right: 4px;
+}
+.searchgb{
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	background: url(../images/searchgb.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+.searchcs{
+	width: 284px;
+	margin-left: 16px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.searchcs a{
+	color: #666;
+}
+.searchcs a:hover{
+	color: rgb(255,134,13);
+}
+.searchcs table tr td{
+    font: 12px 微软雅黑;
+    padding-left: 4%;
+    line-height: 30px;
+    width: 90px;
+}
+.searchcs2{
+	display: none;
 }
 .black_overlay{
 	display:none;
@@ -174,7 +247,6 @@ a:hover {
 	top:20%;
 	left:37.5%;
 	width:25%;
-	height:60%;
 	padding:10px 15px;
 	border-radius:2%;
 	background-color:rgb(247,247,247);
@@ -270,7 +342,6 @@ a:hover {
 	top:0%;
 	left:32%;
 	width:36%;
-	height:104%;
 	padding:10px 15px 0 15px;
 	border-radius:2%;
 	background-color:rgb(247,247,247);

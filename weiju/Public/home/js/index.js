@@ -154,29 +154,60 @@ stringBuffer.prototype.clear = function () {
 
 //进入登录页（1.从主页等网站直接进去登录页，2.从注册页进入登录页，注册页退出，背景有阴影）
 function login(){              
-    document.getElementById('light1').style.display='block'; 
-    document.getElementById('fade').style.display='block';
-    document.getElementById('light2').style.display='none';
+    $("#light1").show(); 
+    $("#fade").show(); 
+    $("#light2").hide();
 }
 //登录页退出(无论什么情况，登录页退出时都无阴影)
 function close1(){              
-    document.getElementById('light1').style.display='none';
-    document.getElementById('fade').style.display='none';
+    $("#light1").hide();
+    $("#fade").hide();
 }
 //进入注册页（无论什么情况，都在原来的基础上打开注册页，背景有阴影）
 function register1(){           
-    document.getElementById('light2').style.display='block'; 
-    document.getElementById('fade').style.display='block';
+    $("#light2").show(); 
+    $("#fade").show();
 }
 //注册页退出（1.若从登录页进入注册页，完毕后登录页显示，背景有阴影；2.若从主页等网站直接进入注册页，完毕后直接退出，无阴影）
 function close2(){              
     if(document.getElementById('light1').style.display=='block'){
-        document.getElementById('light2').style.display='none';
+         $("#light2").hide();
     }
     else{
-        document.getElementById('light2').style.display='none';
-        document.getElementById('fade').style.display='none';
+        $("#light2").hide();
+        $("#fade").hide();
     }
+}
+//实现搜索功能
+function search1(){
+  if(document.getElementById('search1').style.display == 'none'){
+    $("#search1").show(); 
+  }
+  else{
+    $("#search1").hide();
+    $("#search2").hide();
+  }
+}
+function search2_1(){
+  $("#search1").click(function(e) {  
+    $("#search2").show();  
+        e.stopPropagation();  
+  });  
+  $("#search2").click(function(e) {  
+    $(this).show();  
+      e.stopPropagation();
+  });  
+  $("#search2_2").click(function(e) {  
+    if (true) {
+      $("#search2").hide(); 
+      e.stopPropagation();
+    } 
+  });  
+  $(document).click(function(event) {  
+    if (true) {
+      $("#search2").hide(); 
+    } 
+  });
 }
 
 //输入框获得焦点时，显示提示内容
