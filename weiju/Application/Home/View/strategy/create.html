@@ -1,0 +1,75 @@
+<layout name="layoutadmin" />
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:U('Admin/index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allRooms.html">攻略管理</a><span class="crumb-step">&gt;</span><span>新增攻略</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Admin/strategy/store')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody><tr>
+                                <th><i class="require-red">*</i>攻略标题</th>
+                                <td>
+                                    <input class="common-text required" id="thumb" name="thumb" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>上传时间</th>
+                                <td>
+                                    <input class="common-text required" id="price" name="price" size="50" value="" type="text">元
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>攻略内容</th>
+                                <td><input name="smallimg" id="" type="file"></td>
+                            </tr>
+                            <tr>
+                                <th>关键词</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>游玩时长</th>
+                                <td><select name="colId" id="catid" class="required">
+                                    <option value="">请选择实践</option>
+                                    <option value="19">一天</option>
+                                    <option value="19">两天</option>
+                                    <option value="20">三天</option>
+                                    <option value="20">四天</option>
+                                    <option value="20">五天</option>
+                                    <option value="20">六天</option>
+                                    <option value="20">七天</option>
+                                    <option value="20">八天</option>
+                                    <option value="20">九天</option>
+                                    <option value="20">十天</option>
+                                    <option value="20">十一天</option>
+                                    <option value="20">十二天</option>
+                                    <option value="20">十三天</option>
+                                    <option value="20">十四天</option>
+                                    <option value="20">十五天</option>
+
+                                </select></td>
+                            </tr>
+                            <tr>
+                            <th>攻略内容</th>
+                            <td><input type="file"></td>
+                            
+                            </tr>
+                            <tr>
+                                <th>备注：</th>
+                                <td><textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%;" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+   
