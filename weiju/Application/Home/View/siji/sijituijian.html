@@ -3,24 +3,29 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>微距，一个最贴切的旅游网站！</title>
+		<title>四季推荐</title>
+		<!--头部导航轮播图-->
+		<link href="__PUBLIC__/home/css/nav.css" rel="stylesheet" type="text/css">
 		<link type="image/x-icon" rel="icon" href="__PUBLIC__/home/images/bitbug_favicon.ico" media="screen" />
 		<script type="text/javascript" src="__PUBLIC__/home/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/home//js/index.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/index.js"></script>
+		<!--界面和面包屑-->
+		<link rel="stylesheet" href="__PUBLIC__/home/css/style.css">
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/style.js"></script>
+		<!--竖版菜单导航-->
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/juheweb.js"></script>
+		<!--尾部样式-->
+		<link href="__PUBLIC__/home/css/footer.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript">
 		window.onload = function (){
 			document.getElementById("body").style.zoom = window.screen.width/1366;
 		}
 		</script>
-		
 	</head>
-	<link href="__PUBLIC__/home/css/nav.css" rel="stylesheet" type="text/css">
-	<link href="__PUBLIC__/home/css/index.css" rel="stylesheet" type="text/css">
-	<link href="__PUBLIC__/home/css/footer.css" rel="stylesheet" type="text/css">
-	<body id="body" style="background-image: url(__PUBLIC__/home/images/bj.jpg);">
-
-<!--************************************header*************************************-->
-	
+	<body id="body">
+		<!--头部导航与轮播图-->
 		<div id="header">
 			<div class="banner" id="slide">
     			<ul id="picList">
@@ -51,7 +56,7 @@
 	                <div class="menu">
 	                    <ul>
 	                        <li>
-	                        	<a href="{:U('Home/index/index')}" title="首页" class="index" style="background-color:rgba(0,0,0,0.2)!important; filter:Alpha(opacity=30);">首页</a>
+	                        	<a href="{:U('Home/index/index')}" title="首页" class="index" >首页</a>
 	                       	</li>
 	                        <li id="ejdh1">
 	                        	<a href="{:U('Home/yaoqu/yaoqudedifang')}" title="要去的地方" class="ejdh1">要去的地方</a>
@@ -65,7 +70,7 @@
 	                        	</ul>
 	                        </li>
 	                        <li id="ejdh2">
-	                        	<a href="{:U('Home/siji/sijituijian')}" title="四季推荐" class="ejdh2">四季推荐</a>
+	                        	<a href="{:U('Home/siji/sijituijian')}" title="四季推荐" class="ejdh2" style="background-color:rgba(0,0,0,0.2)!important; filter:Alpha(opacity=30);">四季推荐</a>
 	                        	<ul>
 	                        		<li><a href="{:U('Home/siji/sijituijian')}">春</a></li>
 	                        		<li><a href="{:U('Home/siji/sijituijian')}">夏</a></li>
@@ -306,139 +311,63 @@
 			</form>
 		</div>
 		<div id="fade" class="black_overlay">123</div>
-
-<!--************************************contant*************************************-->
-
+		<!--面包屑分割线与竖版菜单导航与内容-->
 		<div class="content">
-			<div class="yqddf">
-				<div class="yqddf1">
-					<div class="ddd">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u17.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">袋鼠岛</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>充满爱的岛屿</label></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="dbj">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u21.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">大堡礁</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>世界最大的珊瑚礁群</label></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="xn">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u19.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">悉尼</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>世界著名的国际大都市</label></a></li>
-							</ul>
-						</div>
-					</div>
-					</div>
-					<div class="yqddf2">
-					<div class="bly">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u37.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">波浪岩</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>澳大利亚最奇特的景观</label></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="lbt">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u187.jpg"></a>
-					</div>
-					<div class="xndq">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u45.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">悉尼大桥</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>世界第一单孔拱桥</label></a></li>
-							</ul>
-						</div>
-					</div>
+
+			<div class="content-header">
+				<div id="mbx">
+					<ul id="breadcrumb">
+						<li><a href="{:U('Home/index/index')}"><span class="icon icon-home"> </span>首页</a></li>
+  						<li><a href="{:U('Home/siji/sijituijian')}"><span class="icon icon-beaker"> </span> 四季推荐</a></li>
+  						<li><a href="{:U('Home/siji/sijituijian')}"><span class="icon icon-double-angle-right"></span> 春</a></li>
+  					</ul>
 				</div>
-				<div class="gd1"><a href="{:U('Home/yaoqu/content')}">更多&gt;&gt;</a></div>
+
+				<div>
+					<HR style="border:1 dashed #987cb9; margin-left:10%; margin-top:20px; margin-bottom:50px;" width="80%" color=#987cb9 SIZE=1>
+				</div>
+			</div>
 			
-			</div>
-			<div class="sjtj">
-				<div class="sjtj1"><a href="{:U('Home/siji/sijituijian')}">四季推荐</a></div>
-				<div class="sjtjsm"><label>无论是春夏时节还是秋冬时节，爱春夏还是爱秋冬，总有一季适合你</label></div>
-				<div class="sjtjnr">
-					<div class="spring">
-						<a href="{:U('Home/siji/sijituijian')}"><img src="__PUBLIC__/home/images/u143.jpg"></a>
-						<p><a href="{:U('Home/siji/sijituijian')}">春暖花开</a></p>
-					</div>
-					<div class="summer">
-						<a href="{:U('Home/siji/sijituijian')}"><img src="__PUBLIC__/home/images/u145.jpg"></a>
-						<p><a href="{:U('Home/siji/sijituijian')}">夏阳酷暑</a></p>
-					</div>
-					<div class="autumn">
-						<a href="{:U('Home/siji/sijituijian')}"><img src="__PUBLIC__/home/images/u147.jpg"></a>
-						<p><a href="{:U('Home/siji/sijituijian')}">秋高气爽</a></p>
-					</div>
-					<div class="winter">
-						<a href="{:U('Home/siji/sijituijian')}"><img src="__PUBLIC__/home/images/u149.jpg"></a>
-						<p><a href="{:U('Home/siji/sijituijian')}">冰天雪地</a></p>
-					</div>
+			<div class="content-footer">
+
+				<div class="lanrenzhijia" id="lanrenzhijia">
+					<ul>
+						<li class="on"><a href="{:U('Home/siji/sijituijian')}">春</a></li>
+						<li class=""><a href="{:U('Home/siji/sijituijian')}">夏</a></li>
+						<li class=""><a href="{:U('Home/siji/sijituijian')}">秋</a></li>
+						<li class=""><a href="{:U('Home/siji/sijituijian')}">冬</a></li>
+					</ul>
+					<div class="hover" style="top: 40px;"></div>
 				</div>
-			</div>
-			<div class="xctj">
-				<div class="xctj1"><a href="xingcheng.html">精彩行程推荐</a></div>
-				<div class="xctjsm"><label>无论是自驾族还是背包客，爱美景还是爱美食，总能找到适合你的路线</label></div>
-				<div class="xctjnr">
-					<div class="xctjnr1">
-						<div class="hazl">
-							<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u67.jpg"></a>
-							<p><a href="{:U('Home/xingcheng/xingcheng_content')}">海岸之旅</a></p>
-						</div>
-						<div class="mebdkes">
-							<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u71.jpg"></a>
-							<p><a href="{:U('Home/xingcheng/xingcheng_content')}">墨尔本到凯恩斯</a></p>
-						</div>
-						<div class="dyldmeb">
-							<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u69.jpg"></a>
-							<p><a href="{:U('Home/xingcheng/xingcheng_content')}">大洋路到墨尔本</a></p>
-						</div>
-						<div class="dbj11">
-							<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u73.jpg"></a>
-							<p><a href="{:U('Home/xingcheng/xingcheng_content')}">大堡礁</a></p>
-						</div>
+			
+				<div class="content-text">
+					<div id="zw">
+						<h1><a href="#">邦迪海滩</a></h1>
+						<p>邦迪海滩（Bondi Beach）的名字来自于原居民的语言bondi，意思是海水拍岸的声浪。邦迪海滩（读音："BOND-eye" with a long i 听起来象“邦待”）长达1公里，虽然只是个沙滩滨海小镇，却是澳洲具历史的冲浪运动中心，是澳洲传统冲浪救生训练基地。邦迪海滩常年吸引无数国内富人和国外背包客、名人、家庭、滑板爱好者，以及美女们的到来，人们沿着邦迪海滩漫步，享受悉尼海滩的美好。</p>
+						<a href="#"><img src="__PUBLIC__/home/images/春1.jpg" width="100%" height="300px"></a>
+						<p class="zxkk"><a href="#">仔细看看&gt;&gt;</a></p>
 					</div>
-					<div class="xctjnr2">
-						<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u75.jpg"></a>
-						<p><a href="{:U('Home/xingcheng/xingcheng_content')}">澳大利亚自驾游篇</a></p>
+					<div id="zw">
+						<h1><a href="#">圣玛丽大教堂</a></h1>
+						<p>圣玛丽大教堂（Great St Mary's Church）位于剑桥市中心的核心位置。风景名胜圣玛丽大教堂教堂气势恢宏，拱廊极高，建有垂直线条的窗户。最佳旅游时间圣玛丽大教堂地处英国剑桥，气候温湿，四季皆宜旅游。历史文化圣玛丽大教堂是1478年后在一座老教堂原址上重新修建的。这座大学教堂很早就是剑桥的市教堂了。直到15世纪创建老学堂 (Old School)，院长和院士们都是在大圣玛丽教堂开会，大学将它的资料保存在这里，可以说，那时候这里是执政中心。一直到1730年，辩论、授予头衔和大学的其它活动都在这所教堂里举行。</p>
+						<a href="#"><img src="__PUBLIC__/home/images/春2.jpg" width="100%" height="300px"></a>
+						<p class="zxkk"><a href="#">仔细看看&gt;&gt;</a></p>
 					</div>
-					<div class="gd2"><a href="{:U('Home/xingcheng/xingcheng')}">更多&gt;&gt;</a></div>
-				</div>
-			</div>
-			<div class="ykxz">
-				<div class="ykxz1"><label>提醒一下哦（游客须知概况）</label></div>
-				<div class="ykxznr">
-					<div class="gyqz">
-						<a href="{:U('Home/zhuyi/zhuyishixiang')}"><img src="__PUBLIC__/home/images/u55.jpg"></a>
-						<p><a href="{:U('Home/zhuyi/zhuyishixiang')}">关于签证</a></p>
+					<div id="zw">
+						<h1><a href="#">悉尼歌剧院</a></h1>
+						<p>悉尼歌剧院位于澳大利亚悉尼，是20世纪最具特色的建筑之一，也是世界著名的表演艺术中心、悉尼市的标志性建筑。该剧院设计者为丹麦设计师约恩·乌松，建设工作从1959开始，1973年大剧院正式落成。在2007年6月28日这栋建筑被联合国教科文组织评为世界文化遗产。悉尼歌剧院坐落在悉尼港的便利朗角（Bennelong Point），其特有的帆造型，加上作为背景的悉尼港湾大桥，与周围景物相映成趣。</p>
+						<a href="#"><img src="__PUBLIC__/home/images/春3.jpg" width="100%" height="300px"></a>
+						<p class="zxkk"><a href="#">仔细看看&gt;&gt;</a></p>
 					</div>
-					<div class="gytq">
-						<a href="{:U('Home/zhuyi/zhuyishixiang')}"><img src="__PUBLIC__/home/images/u57.jpg"></a>
-						<p><a href="{:U('Home/zhuyi/zhuyishixiang')}">关于天气</a></p>
+
+					<div id="zw">
+						<p class="fy"><a href="#">&lt;&lt;</a>&nbsp;&nbsp;&nbsp;<a href="#">&lt;</a>&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FF0000">1</a>&nbsp;&nbsp;&nbsp;<a href="#">2</a>&nbsp;&nbsp;&nbsp;<a href="#">3</a>&nbsp;&nbsp;&nbsp;<a href="#">4</a>&nbsp;&nbsp;&nbsp;<a href="#">5</a>&nbsp;&nbsp;&nbsp;<a href="#">&gt;&gt;</a></p>
 					</div>
-					<div class="gyadly">
-						<a href="{:U('Home/zhuyi/zhuyishixiang')}"><img src="__PUBLIC__/home/images/u59.jpg"></a>
-						<p><a href="{:U('Home/zhuyi/zhuyishixiang')}">关于澳大利亚</a></p>
-					</div>
-					<div class="gd3"><a href="{:U('Home/zhuyi/zhuyishixiang')}">更多&gt;&gt;</a></div>
 				</div>
 			</div>
 		</div>
 
-<!--************************************footer*************************************-->
-
+		<!--尾部信息-->
 		<div class="footer">
 			<div class="footerjkgz">
 				<div class="footer1">

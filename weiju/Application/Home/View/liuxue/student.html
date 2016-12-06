@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>微距，一个最贴切的旅游网站！</title>
+		<title>留学生页面</title>
+		<!--头部导航轮播图-->
+		<link href="__PUBLIC__/home/css/nav.css" rel="stylesheet" type="text/css">
 		<link type="image/x-icon" rel="icon" href="__PUBLIC__/home/images/bitbug_favicon.ico" media="screen" />
 		<script type="text/javascript" src="__PUBLIC__/home/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/home//js/index.js"></script>
-		<script type="text/javascript">
-		window.onload = function (){
-			document.getElementById("body").style.zoom = window.screen.width/1366;
-		}
-		</script>
-		
-	</head>
-	<link href="__PUBLIC__/home/css/nav.css" rel="stylesheet" type="text/css">
-	<link href="__PUBLIC__/home/css/index.css" rel="stylesheet" type="text/css">
-	<link href="__PUBLIC__/home/css/footer.css" rel="stylesheet" type="text/css">
-	<body id="body" style="background-image: url(__PUBLIC__/home/images/bj.jpg);">
+		<script type="text/javascript" src="__PUBLIC__/home/js/index.js"></script>
+		<!--界面和面包屑-->
+		<link rel="stylesheet" href="__PUBLIC__/home/css/style.css">
+		<link href="__PUBLIC__/home/css/footer.css" rel="stylesheet" type="text/css">
 
-<!--************************************header*************************************-->
-	
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/style.js"></script>
+		<!--竖版菜单导航-->
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/juheweb.js"></script>
+
+        <style>
+        	.flex-container{
+        		display: -webkit-flex;
+        		display: flex;
+        		width: 100%;
+        		height: 100%;
+        		margin-bottom: 40px;
+        	}
+
+            .flex-item1{
+            	width: 25%;
+        
+           
+            }
+        	.flex-item2{
+        		width:75%;
+        	
+        	}
+        </style>
+        <script type="text/javascript">
+        window.onload = function (){
+            document.getElementById("body").style.zoom = window.screen.width/1366;
+        }
+ </script>
+	</head>
+	<body  id="body">
+		<!--头部导航与轮播图-->
 		<div id="header">
 			<div class="banner" id="slide">
     			<ul id="picList">
@@ -51,7 +75,7 @@
 	                <div class="menu">
 	                    <ul>
 	                        <li>
-	                        	<a href="{:U('Home/index/index')}" title="首页" class="index" style="background-color:rgba(0,0,0,0.2)!important; filter:Alpha(opacity=30);">首页</a>
+	                        	<a href="{:U('Home/index/index')}" title="首页" class="index" >首页</a>
 	                       	</li>
 	                        <li id="ejdh1">
 	                        	<a href="{:U('Home/yaoqu/yaoqudedifang')}" title="要去的地方" class="ejdh1">要去的地方</a>
@@ -91,7 +115,7 @@
 	                        <li>
 	                        	<a href="{:U('Home/zhuna/zhunali')}" title="住哪里">住哪里</a>
 	                        </li>
-	                        <li><a href="{:U('Home/liuxue/student')}" title="留学生导游">留学生导游</a></li>
+	                        <li><a href="{:U('Home/liuxue/student')}" title="留学生导游"style="background-color:rgba(0,0,0,0.2)!important; filter:Alpha(opacity=30);">留学生导游</a></li>
 	                    </ul>
 	                </div>
 	            </div>
@@ -306,140 +330,127 @@
 			</form>
 		</div>
 		<div id="fade" class="black_overlay">123</div>
-
-<!--************************************contant*************************************-->
-
+		<!--面包屑分割线与竖版菜单导航与内容-->
 		<div class="content">
-			<div class="yqddf">
-				<div class="yqddf1">
-					<div class="ddd">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u17.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">袋鼠岛</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>充满爱的岛屿</label></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="dbj">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u21.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">大堡礁</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>世界最大的珊瑚礁群</label></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="xn">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u19.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">悉尼</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>世界著名的国际大都市</label></a></li>
-							</ul>
-						</div>
-					</div>
-					</div>
-					<div class="yqddf2">
-					<div class="bly">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u37.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">波浪岩</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>澳大利亚最奇特的景观</label></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="lbt">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u187.jpg"></a>
-					</div>
-					<div class="xndq">
-						<a href="{:U('Home/yaoqu/content')}"><img src="__PUBLIC__/home/images/u45.jpg"></a>
-						<div class="yqddfwz">
-							<ul>
-								<li><a href="{:U('Home/yaoqu/content')}" class="indexa">悉尼大桥</a></li>
-								<li><a href="{:U('Home/yaoqu/content')}"><label>世界第一单孔拱桥</label></a></li>
-							</ul>
-						</div>
-					</div>
+
+			<div class="content-header">
+				<div id="mbx">
+					<ul id="breadcrumb">
+						<li><a href="{:U('Home/index/index')}"><span class="icon icon-home"> </span>首页</a></li>
+  						<li><a href="{:U('Home/liuxue/student')}"><span class="icon icon-beaker"> </span> 留学生导游</a></li>
+  						<li><a href="{:U('Home/liuxue/student')}"><span class="icon icon-double-angle-right"></span> 新南威尔士州</a></li>	
+  					</ul>
 				</div>
-				<div class="gd1"><a href="{:U('Home/yaoqu/content')}">更多&gt;&gt;</a></div>
+
+				<div>
+					<HR style="border:1 dashed #987cb9; margin-left:10%; margin-top:20px; margin-bottom:50px;" width="80%" color=#987cb9 SIZE=1>
+				</div>
+			</div>
 			
-			</div>
-			<div class="sjtj">
-				<div class="sjtj1"><a href="{:U('Home/siji/sijituijian')}">四季推荐</a></div>
-				<div class="sjtjsm"><label>无论是春夏时节还是秋冬时节，爱春夏还是爱秋冬，总有一季适合你</label></div>
-				<div class="sjtjnr">
-					<div class="spring">
-						<a href="{:U('Home/siji/sijituijian')}"><img src="__PUBLIC__/home/images/u143.jpg"></a>
-						<p><a href="{:U('Home/siji/sijituijian')}">春暖花开</a></p>
-					</div>
-					<div class="summer">
-						<a href="{:U('Home/siji/sijituijian')}"><img src="__PUBLIC__/home/images/u145.jpg"></a>
-						<p><a href="{:U('Home/siji/sijituijian')}">夏阳酷暑</a></p>
-					</div>
-					<div class="autumn">
-						<a href="{:U('Home/siji/sijituijian')}"><img src="__PUBLIC__/home/images/u147.jpg"></a>
-						<p><a href="{:U('Home/siji/sijituijian')}">秋高气爽</a></p>
-					</div>
-					<div class="winter">
-						<a href="{:U('Home/siji/sijituijian')}"><img src="__PUBLIC__/home/images/u149.jpg"></a>
-						<p><a href="{:U('Home/siji/sijituijian')}">冰天雪地</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="xctj">
-				<div class="xctj1"><a href="xingcheng.html">精彩行程推荐</a></div>
-				<div class="xctjsm"><label>无论是自驾族还是背包客，爱美景还是爱美食，总能找到适合你的路线</label></div>
-				<div class="xctjnr">
-					<div class="xctjnr1">
-						<div class="hazl">
-							<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u67.jpg"></a>
-							<p><a href="{:U('Home/xingcheng/xingcheng_content')}">海岸之旅</a></p>
-						</div>
-						<div class="mebdkes">
-							<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u71.jpg"></a>
-							<p><a href="{:U('Home/xingcheng/xingcheng_content')}">墨尔本到凯恩斯</a></p>
-						</div>
-						<div class="dyldmeb">
-							<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u69.jpg"></a>
-							<p><a href="{:U('Home/xingcheng/xingcheng_content')}">大洋路到墨尔本</a></p>
-						</div>
-						<div class="dbj11">
-							<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u73.jpg"></a>
-							<p><a href="{:U('Home/xingcheng/xingcheng_content')}">大堡礁</a></p>
-						</div>
-					</div>
-					<div class="xctjnr2">
-						<a href="{:U('Home/xingcheng/xingcheng_content')}"><img src="__PUBLIC__/home/images/u75.jpg"></a>
-						<p><a href="{:U('Home/xingcheng/xingcheng_content')}">澳大利亚自驾游篇</a></p>
-					</div>
-					<div class="gd2"><a href="{:U('Home/xingcheng/xingcheng')}">更多&gt;&gt;</a></div>
-				</div>
-			</div>
-			<div class="ykxz">
-				<div class="ykxz1"><label>提醒一下哦（游客须知概况）</label></div>
-				<div class="ykxznr">
-					<div class="gyqz">
-						<a href="{:U('Home/zhuyi/zhuyishixiang')}"><img src="__PUBLIC__/home/images/u55.jpg"></a>
-						<p><a href="{:U('Home/zhuyi/zhuyishixiang')}">关于签证</a></p>
-					</div>
-					<div class="gytq">
-						<a href="{:U('Home/zhuyi/zhuyishixiang')}"><img src="__PUBLIC__/home/images/u57.jpg"></a>
-						<p><a href="{:U('Home/zhuyi/zhuyishixiang')}">关于天气</a></p>
-					</div>
-					<div class="gyadly">
-						<a href="{:U('Home/zhuyi/zhuyishixiang')}"><img src="__PUBLIC__/home/images/u59.jpg"></a>
-						<p><a href="{:U('Home/zhuyi/zhuyishixiang')}">关于澳大利亚</a></p>
-					</div>
-					<div class="gd3"><a href="{:U('Home/zhuyi/zhuyishixiang')}">更多&gt;&gt;</a></div>
-				</div>
-			</div>
-		</div>
+			<div class="content-footer">
 
-<!--************************************footer*************************************-->
+				<div class="lanrenzhijia" id="lanrenzhijia">
+					<ul>
+						<li class="on"><a href="{:U('Home/zhuyi/zhuyishixiang')}">新南威尔士州</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang')}">昆士兰</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang')}">维多利亚州</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang')}">北领地</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang')}">南澳大利亚</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang')}">西澳大利亚</a></li>
+					</ul>
+					<div class="hover" style="top: 40px;"></div>
+				</div>
+			
+			<div class="flex-container">
+				<div class="flex-item1"></div>
+				<div class="flex-item2">
+					<div style="float:left; text-align: center;" >
+					   <a href="{:U('Home/liuxue/student1')}"><img src="__PUBLIC__/home/images/u32.png" height="160px" width="173px" ></a>
+                       <a href="{:U('Home/liuxue/student1')}"><p>某某某</p></a>
+			      	<p>澳大利亚大学留学生</p>
+			      	<p>☆☆☆☆☆</p>
+					</div>
+					<div style="float:left;margin-left:8%;line-height: 28px;"> <p>居住在某某某城市</br>工作时间（每日更新）：周一下午周二周三全天</br>工作地点范围：新南威尔士州</br>收费：1000-2000欧元</br>是否提供接机：是</br>联系方式：  1：手机  15111111111    2：微信    xxxxxx</p></div>
+				</div>
+			</div>
 
-		<div class="footer">
+			<div class="flex-container">
+				<div class="flex-item1"></div>
+				<div class="flex-item2">
+					<div style="float:left; text-align: center;">
+					   <a href="{:U('Home/liuxue/student1')}"><img src="__PUBLIC__/home/images/u32.png" height="160px" width="173px" ></a>
+                       <a href="{:U('Home/liuxue/student1')}"><p>某某某</p></a>
+			      	<p>澳大利亚大学留学生</p>
+			      	<p>☆☆☆☆☆</p>
+					</div>
+					<div style="float:left;margin-left:8%;line-height: 28px;"> <p>居住在某某某城市</br>工作时间（每日更新）：周一下午周二周三全天</br>工作地点范围：新南威尔士州</br>收费：1000-2000欧元</br>是否提供接机：是</br>联系方式：  1：手机  15111111111    2：微信    xxxxxx</p></div>
+				</div>
+			</div>
+
+			<div class="flex-container">
+				<div class="flex-item1"></div>
+				<div class="flex-item2">
+					<div style="float:left; text-align: center;">
+					   <a href="{:U('Home/liuxue/student1')}"><img src="__PUBLIC__/home/images/u32.png" height="160px" width="173px" ></a>
+                       <a href="{:U('Home/liuxue/student1')}"><p>某某某</p></a>
+			      	<p>澳大利亚大学留学生</p>
+			      	<p>☆☆☆☆☆</p>
+					</div>
+					<div style="float:left;margin-left:8%;line-height: 28px;"> <p>居住在某某某城市</br>工作时间（每日更新）：周一下午周二周三全天</br>工作地点范围：新南威尔士州</br>收费：1000-2000欧元</br>是否提供接机：是</br>联系方式：  1：手机  15111111111    2：微信    xxxxxx</p></div>
+				</div>
+			</div>
+
+			<div id="zw" style="clear:left">
+						<p class="fy"><a href="#">&lt;&lt;</a>&nbsp;<a href="#">&lt;</a>&nbsp;<a href="#" style="color:#FF0000">1</a>&nbsp;<a href="#">2</a>&nbsp;<a href="#">3</a>&nbsp;<a href="#">4</a>&nbsp;<a href="#">5</a>&nbsp;<a href="#">&gt;&gt;</a></p>
+			    </div>
+
+			<!-- <div class="content-text">	
+			    <div id="zw">
+					<div style="float:left">
+			      	<a href=""><img src="images/u32.png" height="160px" width="173px"></a>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp某某某</p>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp澳大利亚大学留学生</p>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp☆☆☆☆☆</p>
+			      	</div>
+			      	<div style="float:left;margin-left:20%">
+      		        <p>居住在某某某城市</br>工作时间（每日更新）：周一下午周二周三全天</br>工作地点范围：新南威尔士州</br>收费：1000-2000欧元</br>是否提供接机：是</br>联系方式：  1：手机  15111111111    2：微信    xxxxxx</p>
+      	            </div>
+                </div>
+                
+                <div id="zw" style="clear:left">
+					<div style="float:left">
+			      	<a href=""><img src="images/u32.png" height="160px" width="173px"></a>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp某某某</p>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp澳大利亚大学留学生</p>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp☆☆☆☆☆</p>
+			      	</div>
+			      	<div style="float:left;margin-left:20%">
+      		        <p>居住在某某某城市</br>工作时间（每日更新）：周一下午周二周三全天</br>工作地点范围：新南威尔士州</br>收费：1000-2000欧元</br>是否提供接机：是</br>联系方式：  1：手机  15111111111    2：微信    xxxxxx</p>
+      	            </div>
+                </div>
+
+                <div id="zw" style="clear:left">
+					<div style="float:left">
+			      	<a href=""><img src="images/u32.png" height="160px" width="173px"></a>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp某某某</p>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp澳大利亚大学留学生</p>
+			      	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp☆☆☆☆☆</p>
+			      	</div>
+			      	<div style="float:left;margin-left:20%">
+      		        <p>居住在某某某城市</br>工作时间（每日更新）：周一下午周二周三全天</br>工作地点范围：新南威尔士州</br>收费：1000-2000欧元</br>是否提供接机：是</br>联系方式：  1：手机  15111111111    2：微信    xxxxxx</p>
+      	            </div>
+                </div>
+
+                
+                <div id="zw" style="clear:left">
+						<p class="fy"><a href="#">&lt;&lt;</a>&nbsp;&nbsp;&nbsp;<a href="#">&lt;</a>&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FF0000">1</a>&nbsp;&nbsp;&nbsp;<a href="#">2</a>&nbsp;&nbsp;&nbsp;<a href="#">3</a>&nbsp;&nbsp;&nbsp;<a href="#">4</a>&nbsp;&nbsp;&nbsp;<a href="#">5</a>&nbsp;&nbsp;&nbsp;<a href="#">&gt;&gt;</a></p>
+			    </div>
+               
+			</div>
+		</div> -->
+
+		<!--尾部信息-->
+			<div class="footer">
 			<div class="footerjkgz">
 				<div class="footer1">
 					<div><label>即刻关注：</label></div>
@@ -560,3 +571,4 @@
 		</div>
 	</body>
 </html>
+
