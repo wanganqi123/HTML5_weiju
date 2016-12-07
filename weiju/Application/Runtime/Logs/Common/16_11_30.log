@@ -1,0 +1,6 @@
+[ 2016-11-30T10:28:01+08:00 ] 127.0.0.1 /thinkphp_3/index.php/a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+ERR: 无法加载模块:A
+

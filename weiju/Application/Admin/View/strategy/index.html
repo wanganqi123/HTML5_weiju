@@ -1,0 +1,57 @@
+<layout name="layoutadmin" />
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:U('Admin/index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">攻略管理</span></div>
+        </div>
+
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="{:U('Admin/strategy/create')}"><i class="icon-font"></i>新增攻略</a>
+                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
+                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th>排序</th>
+                            <th>ID</th>
+                            <th>攻略标题</th>
+                            <th>上传时间</th>
+                            <th>关键词</th>
+                            <th>游玩时间</th>
+                            <th>攻略内容</th>
+                            <th>操作</th>
+                        </tr>
+                        
+                        
+                        <volist name="strategy" id="vo">
+                        <tr>
+                            <td class="tc"><input name="id[]" value="{$vo.sid}" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="{$vo.sid}" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="{$vo.sid}" type="text">
+                            </td>
+                            <td>{$vo.sid}</td>
+                            <td>{$vo.title}</td>
+                            <td>{$vo.ptime}</td>
+                            <td>{$vo.key}</td>
+                            <td>{$vo.date}</td>
+                            <td>{$vo.content}</td>
+                            <td>
+                                <a class="link-update" href="{:U('Admin/strategy/edit')}/id/{$vo.id}">修改</a>
+                                <a class="link-del" href="{:U('Admin/strategy/destroy')}/id/{$vo.id}">删除</a>
+                            </td>
+                        </tr>
+                        </volist>
+                        
+                    </table>
+                    <div class="list-page"> 2 条 1/1 页</div>
+                </div>
+            </form>
+        </div>
+    </div>
