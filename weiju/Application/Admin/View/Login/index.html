@@ -6,6 +6,23 @@
 	<link href="__PUBLIC__/admin/css/login.css" type="text/css" rel="stylesheet"/>
 	<link rel="stylesheet" href="__PUBLIC__/admin/css/bootstrap.min.css"> 
 	<script src="__PUBLIC__/admin/js/login.js"></script>
+	<style type="text/css">
+	.logosub1{
+	margin-top: 20px;
+}
+.logosub1 input{
+	display: block;
+    width: 40%;
+    border: 1px solid #4169E1;
+    height: 34px;
+    font: 20px/34px \5FAE\8F6F\96C5\9ED1;
+    color: #4169E1;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
 </head>
 <body>
 <br/><br/><br/><br/><br/><br/><br/><br/>
@@ -28,10 +45,11 @@
 		
 		 <input type="checkbox" value="checkbox" data-label="记住用户名" checked/> 记住用户名<br/>
 		 
-		<div class="denglu">
-       	 <a href="index.html"><input type="button" style="background:url(images/登录_u17.png) no-repeat; border:none; color:black; width:84px; height:20px;" value="登录" /></a>
-       	 <input type="button" style="background:url(images/登录_u17.png) no-repeat; border:none; color:black; width:84px; height:20px;" value="注册" />
-       	 </div>
+		
+       	 <p class="logosub1">
+       	 <a href="{:U('Admin/index/index')}"><input type="button" name="" value="立即登录"></a>
+					
+				</p>
        	 </div>
 
 	</div>
