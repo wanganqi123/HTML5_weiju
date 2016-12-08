@@ -1,0 +1,71 @@
+.con4{
+     width: 300px;
+     height: auto;
+     overflow: hidden;
+     margin: 50px auto;
+     color: #FFFFFF;
+}
+.con4 .btn{
+     width: 100%;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     background: #d8b49c;
+     display: block;
+     font-size: 16px;
+     border-radius: 5px;
+}
+.upload{
+     float: left;
+     position: relative;
+}
+.upload_pic{
+     display: block;
+     width: 100%;
+     height: 40px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     opacity: 0;
+     border-radius: 5px;
+}
+#cvs{
+	border: 1px solid #000;
+	margin:20px 0 20px 50px;
+     background:url(../images/tx.jpg);
+     border-radius: 100px;
+}
+.namejj{
+     text-align: center;
+}
+.xx h1{
+     margin-left: 20%;
+}
+.xxxg{
+     margin-left: 25%;  
+}
+.xxxg span{
+     margin-left: 150px;
+}
+.xxmc{
+     float: left;
+}
+.xxxgbf{
+     margin-left: 30%;
+     float: left;
+}
+.bkxg{
+     width: 100px;
+     text-align: right;
+     float: left;
+}
+.kxg{
+     float: left;
+}
+.kxg span{
+     width: 300px;
+     text-align: left;
+}
+.kxg a{     
+
+}
