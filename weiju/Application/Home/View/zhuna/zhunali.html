@@ -210,13 +210,15 @@
                 <hr color="#E4E4E4" width=91.5% size=1 align=center noshade>
             </div>
             <div class="search1">
-                <input id="search1" name="search1" value="" title="请输入目的地" tabindex="4" type="text" placeholder="搜目的地" style="display: none;" onfocus="search2_1()">
+                <div id="searchform">
+                    <input type="text-align" name="" style="display: none;">
+                </div>
             </div>
             <div class="search2" id="search2" style="display: none;">
                 <div class="searchz">
                     <h6 class="searchztb">
-                        <a href="#" style="font-weight: bold;">新南威尔士州</a>
-                        <a href="#">昆士兰</a>
+                        <a href="javascript:void(0)" onmouseover="searchqh1()" style="font-weight: bold;" id="searchztb1">新南威尔士州</a>
+                        <a href="#" onmouseover="searchqh2()" id="searchztb2">昆士兰</a>
                         <a href="#">维多利亚州</a>
                         <a href="#">北领地</a>
                         <a href="#">南澳大利亚</a>
@@ -224,8 +226,8 @@
                     </h6>
                 </div>
                 <a href="javascript:void(0);" class="searchgb" id="search2_2"></a>
-                <div class="searchcs">
-                    <table class="searchcs1">
+                <div class="searchcs" id="searchcslist">
+                    <table class="searchcs1" id="searchcs1">
                         <tr>
                             <td><a href="#">悉尼</a></td>
                             <td><a href="#">卧龙岗</a></td>
@@ -252,31 +254,31 @@
                             <td><a href="#">德尼利昆</a></td>
                         </tr>
                     </table>
-                    <table class="searchcs2">
+                    <table class="searchcs2" id="searchcs2">
                         <tr>
-                            <td><a href="#">悉尼</a></td>
-                            <td><a href="#">卧龙岗</a></td>
-                            <td><a href="#">蓝山</a></td>
+                            <td><a href="#">大堡礁</a></td>
+                            <td><a href="#">南岸公园</a></td>
+                            <td><a href="#">洛岛</a></td>
                         </tr>
                         <tr>
-                            <td><a href="#">纽卡斯尔</a></td>
-                            <td><a href="#">斯蒂芬斯港</a></td>
-                            <td><a href="#">卢拉镇</a></td>
+                            <td><a href="#">海洋世界</a></td>
+                            <td><a href="#">袋鼠角</a></td>
+                            <td><a href="#">其瓦拉海滩</a></td>
                         </tr>
                         <tr>
-                            <td><a href="#">布罗肯希尔</a></td>
-                            <td><a href="#">默威伦巴</a></td>
-                            <td><a href="#">利斯莫尔</a></td>
+                            <td><a href="#">天堂农庄</a></td>
+                            <td><a href="#">库克敦</a></td>
+                            <td><a href="#">莫斯曼</a></td>
                         </tr>
                         <tr>
-                            <td><a href="#">库马</a></td>
-                            <td><a href="#">巴利纳</a></td>
-                            <td><a href="#">卡通巴</a></td>
+                            <td><a href="#">萨瓦纳湾</a></td>
+                            <td><a href="#">奈利湾</a></td>
+                            <td><a href="#">惠森迪岛</a></td>
                         </tr>
                         <tr>
-                            <td><a href="#">古尔本</a></td>
-                            <td><a href="#">楠巴卡黑兹</a></td>
-                            <td><a href="#">德尼利昆</a></td>
+                            <td><a href="#">昆士兰绿岛</a></td>
+                            <td><a href="#">水晶洞穴</a></td>
+                            <td><a href="#">云戈布拉</a></td>
                         </tr>
                     </table>
                 </div>
