@@ -61,4 +61,27 @@ public function update(){
 		$this->error('数据更新失败');
 	}
 }
+// public function update(){
+//     $upload = new \Think\Upload();// 实例化上传类
+//     $upload->maxSize=3145728 ;// 设置附件上传大小
+//     $upload->exts=array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+//     $upload->rootPath  = THINK_PATH; // 设置附件上传根目录
+//     $upload->savePath  ='../Public/uploads/'; // 设置附件上传（子）目录
+//     // 上传文件 
+//     $info   =   $upload->upload();
+//     if(!$info) {
+//         $this->error($upload->getError());
+//     }else{
+//         $userModel = M('user');
+//         $data = $userModel->create();
+//         $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
+//         //添加
+//         if($userModel->save($data)){
+//             $this->success('数据更新成功', 'index');
+//         }else{
+//             $this->error('数据更新失败');
+//         }
+//     }
+// }
+
 }

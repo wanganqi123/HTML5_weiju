@@ -104,7 +104,7 @@
 
                             <tr>
                                 <th>留言人</th>
-                                <td><input type="text" value="<?php echo ($board["author"]); ?>"></td>
+                                <td><input type="text" value="<?php echo ($board["buid"]); ?>"></td>
                             </tr>
                             <tr>
                                 <th></th>

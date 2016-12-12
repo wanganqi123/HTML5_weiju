@@ -1,0 +1,20 @@
+[ 2016-12-07T09:42:43+08:00 ] 127.0.0.1 /weiju/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000613s ]
+INFO: [ app_init ] --END-- [ RunTime:0.052526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.026488s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.026827s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.622587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.622939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.055987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.056296s ]
+

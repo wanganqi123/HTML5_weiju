@@ -1,0 +1,375 @@
+[ 2016-12-07T09:43:05+08:00 ] 127.0.0.1 /weiju/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.730250s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.730483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003757s ]
+
+[ 2016-12-07T09:43:41+08:00 ] 127.0.0.1 /weiju/index.php/Admin/board/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003646s ]
+SQL: SHOW COLUMNS FROM `board` [ RunTime:0.6009s ]
+SQL: SELECT * FROM `board`  [ RunTime:0.0204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Undefined index: username F:\WebServer\wwwroot\weiju\Application\Runtime\Cache\Admin\11d0cd8e257cea7f1457d4329691b9c5.php 第 116 行.
+NOTIC: [8] Undefined index: id F:\WebServer\wwwroot\weiju\Application\Runtime\Cache\Admin\11d0cd8e257cea7f1457d4329691b9c5.php 第 120 行.
+NOTIC: [8] Undefined index: id F:\WebServer\wwwroot\weiju\Application\Runtime\Cache\Admin\11d0cd8e257cea7f1457d4329691b9c5.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003607s ]
+
+[ 2016-12-07T09:43:46+08:00 ] 127.0.0.1 /weiju/index.php/Admin/board/destroy/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005355s ]
+SQL: SHOW COLUMNS FROM `board` [ RunTime:0.0285s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-12-07T10:33:50+08:00 ] 127.0.0.1 /weiju/index.php/Admin/user/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006153s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.4970s ]
+SQL: SELECT `uid`,`name`,`password`,`type`,`star`,`thumb` FROM `user`  [ RunTime:0.0129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
+NOTIC: [8] Undefined index: comment F:\WebServer\wwwroot\weiju\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: comment F:\WebServer\wwwroot\weiju\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: comment F:\WebServer\wwwroot\weiju\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.308335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.308614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.023116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017258s ]
+
+[ 2016-12-07T10:33:52+08:00 ] 127.0.0.1 /weiju/index.php/Admin/board/destroy/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005543s ]
+SQL: SHOW COLUMNS FROM `board` [ RunTime:0.0353s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-12-07T10:33:59+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003555s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.1383s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003339s ]
+
+[ 2016-12-07T10:34:04+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/destroy/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002886s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0564s ]
+SQL: DELETE FROM `city` WHERE ( id=3 ) [ RunTime:0.1161s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000538s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002386s ]
+
+[ 2016-12-07T10:34:06+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007480s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002562s ]
+
+[ 2016-12-07T10:37:49+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000781s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003141s ]
+
+[ 2016-12-07T10:37:52+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/store
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010634s ]
+
+[ 2016-12-07T10:38:30+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/store
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004674s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\WebServer\wwwroot\weiju\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0370s ]
+NOTIC: [8] Undefined index: validate F:\WebServer\wwwroot\weiju\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\WebServer\wwwroot\weiju\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: thumb F:\WebServer\wwwroot\weiju\Application\Admin\Controller\CityController.class.php 第 37 行.
+NOTIC: [8] Undefined index: thumb F:\WebServer\wwwroot\weiju\Application\Admin\Controller\CityController.class.php 第 37 行.
+SQL: INSERT INTO `city` (`season`,`thumb`) VALUES ('','') [ RunTime:1.4710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003813s ]
+
+[ 2016-12-07T10:38:32+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006760s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024438s ]
+
+[ 2016-12-07T10:38:37+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/destroy/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005798s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0451s ]
+SQL: DELETE FROM `city` WHERE ( id=4 ) [ RunTime:0.0656s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008711s ]
+
+[ 2016-12-07T10:38:40+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019249s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0336s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003451s ]
+
+[ 2016-12-07T10:51:11+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/edit/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005360s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0343s ]
+SQL: SELECT * FROM `city` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Undefined variable: user F:\WebServer\wwwroot\weiju\Application\Runtime\Cache\Admin\7e6368960579144c86a2596265a26497.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003056s ]
+
+[ 2016-12-07T10:51:19+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/store
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002923s ]
+
+[ 2016-12-07T10:51:31+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/store
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003265s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\WebServer\wwwroot\weiju\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0328s ]
+NOTIC: [8] Undefined index: validate F:\WebServer\wwwroot\weiju\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\WebServer\wwwroot\weiju\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: thumb F:\WebServer\wwwroot\weiju\Application\Admin\Controller\CityController.class.php 第 37 行.
+NOTIC: [8] Undefined index: thumb F:\WebServer\wwwroot\weiju\Application\Admin\Controller\CityController.class.php 第 37 行.
+SQL: INSERT INTO `city` (`season`,`thumb`) VALUES ('春夏','') [ RunTime:0.1047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002781s ]
+
+[ 2016-12-07T10:51:33+08:00 ] 127.0.0.1 /weiju/index.php/Admin/city/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015106s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000360s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.040624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.041604s ]
+

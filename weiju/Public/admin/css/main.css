@@ -1,11 +1,11 @@
-.sidebar-wrap{float: left;width: 189px;min-height:700px;background:rgb(255,220,169);border-right:1px solid #ccc;/*cursor:e-resize;*/}
+.sidebar-wrap{float: left;width: 189px;min-height:580px;background:rgb(255,220,169);border-right:1px solid #ccc;/*cursor:e-resize;*/}
 .main-wrap{margin-left: 190px;min-height:100%;}
 .sidebar-title{height: 40px;line-height: 40px;text-indent:1em;font-size: 24px;text-align: left;background:rgb(235,84,9);}
 .sidebar-title h1{font-weight: normal;color: #fff;}
 .sidebar-content{padding-top: 5px;}
 .sidebar-list li{border:1px solid #e5e5e5;border-width:1px 0;}
 .sidebar-list li .icon-font{margin-right: 5px;color: rgb(245,125,11);font-size: 14px;}
-.sidebar-list li a{padding: 0 16px 0 20px;display: block;height: 38px;line-height: 38px;color: #333;}
+.sidebar-list li a{padding: 0 16px0 0 20px;display: block;height: 38px;line-height: 38px;color: #333;}
 .sidebar-list li ul li a:hover{color: rgb(235,84,123);}
 .sub-menu{border-top: 1px solid #e5e5e5;background: rgb(255,243,225);}
 .sub-menu li{padding-left: 21px;}

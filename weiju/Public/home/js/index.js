@@ -154,105 +154,30 @@ stringBuffer.prototype.clear = function () {
 
 //进入登录页（1.从主页等网站直接进去登录页，2.从注册页进入登录页，注册页退出，背景有阴影）
 function login(){              
-    $("#light1").show(); 
-    $("#fade").show(); 
-    $("#light2").hide();
+    document.getElementById('light1').style.display='block'; 
+    document.getElementById('fade').style.display='block';
+    document.getElementById('light2').style.display='none';
 }
 //登录页退出(无论什么情况，登录页退出时都无阴影)
 function close1(){              
-    $("#light1").hide();
-    $("#fade").hide();
+    document.getElementById('light1').style.display='none';
+    document.getElementById('fade').style.display='none';
 }
 //进入注册页（无论什么情况，都在原来的基础上打开注册页，背景有阴影）
 function register1(){           
-    $("#light2").show(); 
-    $("#fade").show();
+    document.getElementById('light2').style.display='block'; 
+    document.getElementById('fade').style.display='block';
 }
 //注册页退出（1.若从登录页进入注册页，完毕后登录页显示，背景有阴影；2.若从主页等网站直接进入注册页，完毕后直接退出，无阴影）
 function close2(){              
     if(document.getElementById('light1').style.display=='block'){
-         $("#light2").hide();
+        document.getElementById('light2').style.display='none';
     }
     else{
-        $("#light2").hide();
-        $("#fade").hide();
+        document.getElementById('light2').style.display='none';
+        document.getElementById('fade').style.display='none';
     }
 }
-//实现搜索功能
-function search1(){
-  if(document.getElementById('search1').style.display == 'none'){
-    $("#search1").show(); 
-  }
-  else{
-    $("#search1").hide();
-    $("#search2").hide();
-  }
-}
-function search2_1(){
-  $("#search1").click(function(e) {  
-    $("#search2").show();  
-        e.stopPropagation();  
-  });  
-  $("#search2").click(function(e) {  
-    $(this).show();  
-      e.stopPropagation();
-  });  
-  $("#search2_2").click(function(e) {  
-    if (true) {
-      $("#search2").hide(); 
-      e.stopPropagation();
-    } 
-  });  
-  $(document).click(function(event) {  
-    if (true) {
-      $("#search2").hide(); 
-    } 
-  });
-}
-function searchqh1(){
-  document.getElementById('searchcs1').style.display="block";
-  document.getElementById('searchcs2').style.display="none";
-  document.getElementById('searchztb1').style.fontWeight = "bold";
-  document.getElementById('searchztb2').style.fontWeight = "normal";
-}
-function searchqh2(){
-  document.getElementById('searchcs1').style.display="none";
-  document.getElementById('searchcs2').style.display="block";
-  document.getElementById('searchztb1').style.fontWeight = "normal";
-  document.getElementById('searchztb2').style.fontWeight = "bold";
-}
-
-(function ($) {
-  jQuery.expr[':'].Contains = function(a,i,m){
-      return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
-  };
-  function filterList(header, list) { 
-  var form = $("<form>").attr({"class":"filterform","action":"#","method":"post"}),
-  input = $("<input>").attr({"class":"filterinput","type":"text","id":"search1","title":"请输入目的地","tabindex":"4","placeholder":"搜目的地","style":"display: none;","onfocus":"search2_1()","onkeydown":"if(event.keyCode==13) return false;"});
-  $(form).append(input).appendTo(header);
-  $(input)
-      .change( function () {
-        var filter = $(this).val();
-        if(filter) {
-      $matches = $(list).find('a:Contains(' + filter + ')').parent();
-      $('td', list).not($matches).slideUp();
-      $("#searchcs2").show();
-      $matches.slideDown();
-        } else {
-          $("#searchcs1").show();
-          $("#searchcs2").hide();
-          $(list).find("td").slideDown();
-        }
-        return false;
-      })
-    .keyup( function () {
-        $(this).change();
-    });
-  }
-  $(function () {
-    filterList($("#searchform"), $("#searchcslist"));
-  });
-}(jQuery));
 
 //输入框获得焦点时，显示提示内容
 function showDesc(obj)

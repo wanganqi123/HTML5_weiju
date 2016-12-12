@@ -106,13 +106,13 @@
                                 </td>
                             </tr>
                             
-                            <tr>
+                            <!-- <tr>
                                 <th><i class="require-red">*</i>缩略图：</th>
                                 <td>
                                 <img src="/weiju/Public/<?php echo ($user["head_pic"]); ?>" width="300px" height="50px"/>
                                 <input name="head_pic" id="" type="file"></td>
                             </tr>
-
+ -->
                             <tr>
                                 <th></th>
                                 <td>
