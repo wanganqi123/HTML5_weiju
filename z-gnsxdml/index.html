@@ -7,315 +7,60 @@
 		<link type="image/x-icon" rel="icon" href="images/bitbug_favicon.ico" media="screen" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
+   		<script type="text/javascript" src="js/rocketTop.js"></script>
     	<script type="text/javascript" src="js/common.js"></script>
-		
-		
+	    <script type="text/javascript" src="js/main.js"></script> 
 	</head>
-	<link href="css/nav.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/rocketTop.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style4.css">
 	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<link href="css/footer.css" rel="stylesheet" type="text/css">
 	<body id="body">
 
 <!--************************************header*************************************-->
-	
-		<div id="header">
-			<div class="banner" id="slide">
-    			<ul id="picList">
-					<li class="slide_li first">
-						<div class="imgBg_home"></div>
-						<img class="slide_img" src="images/first1.jpg" width="100%" height="480px"/> 
-					</li>
-					<li class="slide_li">
-						<div class="imgBg_air"></div>
-						<img class="slide_img" src="images/first2.jpg" width="100%" height="480px"/>
-					</li>
-					<li class="slide_li">
-						<div class="imgBg_work"></div>
-						<img class="slide_img" src="images/first3.jpg" width="100%" height="480px"/> 
-					</li>
-				</ul>
-    			<div id="slideThumb"></div>
-			</div>
-			<div class="lheader">
-				<div class="hl">
-					<div class="logo">
-		                <h1>
-							<a href="index.html" title="微距">
-								<img src="images/u146.gif" width="98px" height="85px">
-							</a>
-		                </h1>
-		            </div>
-	                <div class="menu">
-	                    <ul>
-	                        <li>
-	                        	<a href="index.html" title="首页" class="index" style="background-color:rgba(0,0,0,0.2)!important; filter:Alpha(opacity=30);">首页</a>
-	                       	</li>
-	                        <li id="ejdh1">
-	                        	<a href="yaoqudedifang.html" title="要去的地方" class="ejdh1">要去的地方</a>
-	                        	<ul>
-	                        		<li><a href="#">美食</a></li>
-	                        		<li><a href="#">天气</a></li>
-	                        		<li><a href="#">人文</a></li>
-	                        		<li><a href="#">景点</a></li>
-	                        		<li><a href="#">路线</a></li>
-	                        	</ul>
-	                        </li>
-	                        <li id="ejdh2">
-	                        	<a href="sijituijian.html" title="四季推荐" class="ejdh2">四季推荐</a>
-	                        	<ul>
-	                        		<li><a href="#">春</a></li>
-	                        		<li><a href="#">夏</a></li>
-	                        		<li><a href="#">秋</a></li>
-	                        		<li><a href="#">冬</a></li>
-	                        	</ul>
-	                        </li>
-	                        <li>
-	                        	<a href="xingcheng.html" title="行程推荐">行程推荐</a>
-	                        </li>
-	                        <li id="ejdh3">
-	                        	<a href="zhuyishixiang.html" title="注意事项" class="ejdh3">注意事项</a>
-	                        	<ul>
-	                        		<li><a href="#">货币</a></li>
-	                        		<li><a href="#">时区</a></li>
-	                        		<li><a href="#">交通</a></li>
-	                        		<li><a href="#">签证</a></li>
-	                        		<li><a href="#">道路安全</a></li>
-	                        		<li><a href="#">健康安全</a></li>
-	                        		<li><a href="#">实用信息</a></li>
-	                        	</ul>
-	                        </li>
-	                        <li>
-	                        	<a href="zhunali.html" title="住哪里">住哪里</a>
-	                        </li>
-	                        <li><a href="student.html" title="留学生导游">留学生导游</a></li>
-	                    </ul>
-	                </div>
-	            </div>
-			</div>
-	        <div class="rheader">
-		        <div class="dlzc">
-			        <ul>	
-			            <li><a href="javascript:void(0)" title="登录" onclick="login()">登录</a></li>
-			            <li>|</li>
-			            <li><a href="javascript:void(0)" title="注册" onclick="register1()" title="注册">注册</a></li>
-			        </ul>
-			    </div>
-			    <div class="search">
-			        <a href="javascript:void(0)" onclick="search1()"><img src="images/u127.jpg" width="20px" height="20px" /></a>
-			    </div>
-			</div>
-			<div class="hr1">
-				<hr color="#E4E4E4" width=91.5% size=1 align=center noshade>
-			</div>
-			<div class="search1">
-				<div id="searchform">
-					<input type="text-align" name="" style="display: none;">
-				</div>
-			</div>
-			<div class="search2" id="search2" style="display: none;">
-				<div class="searchz">
-					<h6 class="searchztb">
-						<a href="#" style="font-weight: bold;">新南威尔士州</a>
-						<a href="#">昆士兰</a>
-						<a href="#">维多利亚州</a>
-						<a href="#">北领地</a>
-						<a href="#">南澳大利亚</a>
-						<a href="#">西澳大利亚</a>
-					</h6>
-				</div>
-				<a href="javascript:void(0);" class="searchgb" id="search2_2"></a>
-				<div class="searchcs" id="searchcslist">
-					<table class="searchcs1">
-						<tr>
-							<td><a href="#">悉尼</a></td>
-							<td><a href="#">卧龙岗</a></td>
-							<td><a href="#">蓝山</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">纽卡斯尔</a></td>
-							<td><a href="#">斯蒂芬斯港</a></td>
-							<td><a href="#">卢拉镇</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">布罗肯希尔</a></td>
-							<td><a href="#">默威伦巴</a></td>
-							<td><a href="#">利斯莫尔</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">库马</a></td>
-							<td><a href="#">巴利纳</a></td>
-							<td><a href="#">卡通巴</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">古尔本</a></td>
-							<td><a href="#">楠巴卡黑兹</a></td>
-							<td><a href="#">德尼利昆</a></td>
-						</tr>
-					</table>
-					<table class="searchcs2" id="searchcs2">
-						<tr>
-							<td><a href="#">大堡礁</a></td>
-							<td><a href="#">南岸公园</a></td>
-							<td><a href="#">洛岛</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">海洋世界</a></td>
-							<td><a href="#">袋鼠角</a></td>
-							<td><a href="#">其瓦拉海滩</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">天堂农庄</a></td>
-							<td><a href="#">库克敦</a></td>
-							<td><a href="#">莫斯曼</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">萨瓦纳湾</a></td>
-							<td><a href="#">奈利湾</a></td>
-							<td><a href="#">惠森迪岛</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">昆士兰绿岛</a></td>
-							<td><a href="#">水晶洞穴</a></td>
-							<td><a href="#">云戈布拉</a></td>
-						</tr>
-					</table>
-				</div>
-			</div>
-
-
-
-
-
+		<!-- header section -->
+    <section class="banner" role="banner">
+      <header id="header">
+        <div class="header-content clearfix"> 
+          <a class="logo" href="#"><img src="images/u146.gif" width="98px" height="70px"></a>
+          <nav class="navigation" role="navigation">
+            <ul class="primary-nav">
+    		      <li><a href="#">首页</a></li>
+              <li><a href="#">要去的地方</a></li>
+              <li><a href="#">四季推荐</a></li> 
+              <li><a href="#">行程推荐</a></li>
+              <li><a href="#">注意事项</a></li>
+              <li><a href="#">住哪里</a></li>
+              <li><a href="#t">留学生导游</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="nav-toggle">Menu<span></span></a>
         </div>
-		<div id="light1" class="white_content1">
-			<a href="javascript:void(0)" onclick="close1()">
-				<img src="images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
-			</a>
-			<form method="post" id="signin1" action="index.html">
-				<h1>登录</h1>
-				<hr/>
-				<div>
-					<label>
-						<p>用户名</p>
-						<p>
-							<input id="USERNAMEDL" name="usernamedl" value="" title="usernamedl" tabindex="4" type="text" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="您的用户名"> 
-						</p>
-						<span id="usernamedl"  class='tip'></span>
-					</label>
-				</div>
-				<div>
-					<label>
-						<p>密码</p>
-						<p>
-					       	<input id="PASSWORDDL" name="passworddl" value="" title="password" tabindex="5" type="password"  onfocus="showDesc(this)" onblur="checkText(this)" placeholder="您的密码">
-					    </p>
-					    <span id="passworddl"  class='tip'></span>
-					</label>
-				</div>
-				<p class="remember">
-					<label><input type="checkbox" name="自动登录" > 保存密码</label>        
-					<a href=""></a>
-				</p>
-				<p class="logosub1">
-					<input type="button" name="" value="立即登录">
-				</p>
-				<div>
-					<p class="toregister">
-						还没有账号？<a href="javascript:void(0)" onclick="register1()">点击这里注册</a>
-					</p>
-				</div>
-			</form>
-		</div>
-		<div id="light2" class="white_content2">
-			<a href="javascript:void(0)" onclick="close2()">
-				<img src="images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
-			</a>
-			<form method="post" id="signin2" action="index.html">
-				<h1>注册</h1>
-				<hr/>
-				<div class="tregister">
-					<div>
-						<label>
-							<p>用户名<span> *</span></p>
-							<p>
-								<input id="USERNAME" name="username" value="" title="username" tabindex="4" type="text" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请输入1~16位以内的英文、数字组合" class="inputpp"> 
-							</p>
-							<span id="username"  class='tip'></span>
-						</label>
-					</div>
-					<div style="clear: left;" class="margintop">
-						<label>
-							<p>登录密码<span> *</span></p>
-							<p>
-						       	<input id="PASSWORD" name="password" value="" title="password" tabindex="5" type="password" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请输入6~16位以内的英文、数字组合" class="inputpp">
-						       	<span id="password" class='tip'></span>
-							</p>
-						</label>
-					</div>
-					<div class="margintop">
-						<label>
-							<p>确认密码<span> *</span></p>
-							<p>
-						       	<input id="PASSWORD2" name="password2" value="" title="password" tabindex="5" type="password" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请再次输入密码" class="inputpp">
-						       	<span id="password2"  class='tip'></span>
-							</p>
-						</label>
-					</div>
-					<div class="margintop">
-						<label>
-							<p>姓名</p>
-							<p>
-						       	<input id="IDname" name="IDname" value="" title="IDname" tabindex="5" type="text" placeholder="请输入您的真实姓名(选填)" class="inputpp">
-							</p>
-						</label>
-					</div>
-					<div class="sex">
-						<p>性别</p>
-						<p>
-							<div class="nan"><input type="radio" name="sex" checked="checked"> 男</div>
-							<div class="nv"><input type="radio" name="sex"> 女</div>
-						</p>
-					</div>
-					<div class="margintop">
-						<label>
-							<p>国家/地区</p>
-							<p>
-								<div>
-						       		<input id="place" name="place" value="" title="place" tabindex="5" type="text" placeholder="请输入您所在的国家/地区(选填)" class="inputpp">
-								</div>
-							</p>
-						</label>
-					</div>
-					<div class="IDtype">
-							<p>用户类型<span> *</span></p>
-							<p>
-								<div class="tourist"><label><input type="radio" name="用户类型" checked="checked"> 游客</label></div>
-							    <div class="ciceroni"><label><input type="radio" name="用户类型" > 导游</label></div>
-						    </p>
-					</div>
-				</div>
-				<div class="bregister">
-					<div class="logosub2">
-						<a href="javascript:void(0)"  onclick="login()"><input type="button" name="" value="完成注册" style="text-align: center;"></a>
-					</div>
-					<div>
-						<p class="toregister">
-							已拥有账户？<a href="javascript:void(0)" onclick="login()">点击这里登录</a>
-						</p>
-					</div>
-				</div>
-
-			</form>
-		</div>
-		<div id="fade" class="black_overlay">123</div>
+      </header>
+      <!-- banner text --> 
+        <div class="banner" id="banner">
+        	<label>
+    	  <ul class="cb-slideshow">
+                <li><span><img src="images/1.jpg" width="100%" height="668px"></span><div><h3>轮播图1</h3></div></li>
+                <li><span><img src="images/2.jpg" width="100%" height="668px"></span><div><h3>轮播图2</h3></div></li>
+                <li><span><img src="images/3.jpg" width="100%" height="668px"></span><div><h3>轮播图3</h3></div></li>
+                <li><span><img src="images/4.jpg" width="100%" height="668px"></span><div><h3>轮播图4</h3></div></li>
+                <li><span><img src="images/5.jpg" width="100%" height="668px"></span><div><h3>轮播图5</h3></div></li>
+                <li><span><img src="images/6.jpg" width="100%" height="668px"></span><div><h3>轮播图6</h3></div></li>
+            </ul>
+            </label> 
+        </div> 
+    </section>
+		
 
 <!--************************************contant*************************************-->
 
 		<div class="content">
 			<div class="yqddf">
 				<div class="yqddf1">
-					<div class="ddd">
+					<div class="dsd">
 						<a href="content.html"><img src="images/u17.jpg"></a>
 						<div class="yqddfwz">
 							<ul>
@@ -342,8 +87,8 @@
 							</ul>
 						</div>
 					</div>
-					</div>
-					<div class="yqddf2">
+				</div>
+				<div class="yqddf2">
 					<div class="bly">
 						<a href="content.html"><img src="images/u37.jpg"></a>
 						<div class="yqddfwz">
@@ -371,7 +116,7 @@
 			</div>
 			<div class="idx-inspire">
     <ul>
-		        <li style="height: 579px; background-color: rgb(110,122,142)">
+		        <li style="height: 338px; background-color: rgb(110,122,142)">
            <div class="sjtj">
 				<div class="sjtj1"><a href="sijituijian.html">四季推荐</a></div>
 				<div class="sjtjsm"><label>无论是春夏时节还是秋冬时节，爱春夏还是爱秋冬，总有一季适合你</label></div>
@@ -580,5 +325,11 @@
 				</div>
 			</div>
 		</div>
+		<div id="shape">
+    		<div class="shapeColor">
+     			<div class="shapeFly"></div>
+			</div>
+		</div> 
+	    
 	</body>
 </html>

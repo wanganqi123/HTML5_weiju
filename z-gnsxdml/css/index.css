@@ -1,40 +1,28 @@
 .content{
 	width: 100%;
 	text-align: center;
+	font-size: 16px;
 }
 .indexa{
 	color: #444;
-	font-size: 1.4rem;
+	font-size: 1.4em;
 	font-weight: normal;
     font-family: 黑体, sans-serif;
 }
 .yqddf{
-	width: 20%;
+	width: 90%;
 	height: 860px;
-	margin-left: 5%;
-	margin-right: 8%;
-}
-.yqddf1{
-	display: -webkit-flex;
-	display: flex;
-	margin-bottom: 2%;
-}
-.yqddf2{
-	display: -webkit-flex;
-	display: flex;
+	margin-left: 10%;
 }
 .yqddf label{
 	color: rgb(150,150,150);
-	font-size: 14px;
+	font-size: 0.9em;
 }
-.yqddf ul{
-	height: 60px;
-}
-.ddd,.dbj,.xn,.bly,.xndq{
-	text-align: center;
+.dsd,.dbj,.xn,.bly,.xndq{
 	float: left;
-	margin-top: 40px;
-	margin-left: 7.5%;
+	margin-top: 4%;
+	margin-right: 3%;
+	width: 28%;
 }
 .yqddfwz{
 	line-height: 26px;
@@ -44,51 +32,52 @@
 }
 .lbt{
 	float: left;
-	margin-top: 40px;
-	margin-left: 7.5%;
+	margin-top: 4%;
+	margin-right: 3%;
+	width: 28%;
 }
 .lbt img{
-	width: 300px;
+	width: 100%;
 	height: 380px;
 }
-.ddd img,.dbj img,.xn img,.bly img,.xndq img{
+.dsd img,.dbj img,.xn img,.bly img,.xndq img{
 	border-radius: 10px 10px 0 0;
 }
-.ddd{}
-.ddd img{
-	width: 280px;
+.dsd{}
+.dsd img{
+	width: 100%;
 	height: 240px;
 }
 .dbj{}
 .dbj img{
-	width: 300px;
+	width: 100%;
 	height: 300px;
 }
 .xn{}
 .xn img{
-	width: 290px;
+	width: 100%;
 	height: 240px;
 }
 .bly{
 	clear: left;
-	margin-top: -20px;
+	margin-top: -1%;
 }
 .bly img{
-	width: 280px;
+	width: 100%;
 	height: 240px;
 }
 .xndq{
-	margin-top: -20px;
+	margin-top: -1%;
 	float: left;
 }
 .xndq img{
-	width: 293px;
+	width: 100%;
 	height: 240px;
 }
 .gd1{
 	clear: left;
 	float: right;
-	margin-top: -30px;
+	margin-right: 4%;
 }
 .gd1 a{
 	font-size: 14px;
@@ -98,10 +87,10 @@
 	color: rgb(255,134,13);
 }
 .sjtj1,.xctj1,.ykxz1{
-	padding-top: 80px;
+	padding-top: 12%;
 }
 .sjtj1 a,.xctj a,.ykxz1 label{
-	font-size: 3rem;
+	font-size: 3em;
 	color: rgb(253,253,253);
 	font-family: 黑体, sans-serif;
 }
@@ -109,12 +98,12 @@
 	margin-top: 3%;
 }
 .sjtjsm label,.xctjsm label{
-	font-size: 1.3rem;
+	font-size: 1.3em;
 	color: rgb(243,243,243);
 	font-family: 黑体, sans-serif;
 }
 .sjtjnr{
-	margin-top: 8%;
+	margin-top: 6%;
 	padding-left: 3%;
 }
 .sjtjnr div{
@@ -135,12 +124,12 @@
 	padding-top: 4%;
 }
 .sjtjnr p a,.xctjnr p a,.ykxznr p a{
-	font-size: 1rem;
+	font-size: 1em;
 	color: rgb(243,243,243);
 	font-family: 黑体, sans-serif; 
 }
 .xctjnr{
-	margin-top: 6%;
+	margin-top: 2%;
 	padding-left: 10%;
 }
 .xctjnr1 div{
@@ -176,14 +165,14 @@
 }
 .gd2 a{
 	font-family: 黑体, sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 	color: rgb(243,243,243);
 }
 .gd2 a:hover{
 	color: rgb(255,134,13);
 }
 .ykxznr{
-	margin-top: 10%;
+	margin-top: 8%;
 	padding-left: 6%;
 }
 .ykxznr div{
@@ -203,13 +192,14 @@
 }
 .gd3 a{
 	font-family: 黑体, sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 	color: rgb(243,243,243);
 }
 .gd3 a:hover{
 	color: rgb(255,134,13);
 }
 .idx-inspire{
+	clear: both;
 	overflow:hidden;
 	position:relative;
 }

@@ -274,81 +274,12 @@ $(function () {
     })
 	
 
-    /*注册登录*/
-    $('.lg-layer .td-btn a.o1').click(function () {
-        $('.lg-layer .third').addClass('third-out');
-        $(this).hide();
-        $(this).parent().siblings('.lg-btm').hide();
-        $('.lg-layer .td-btn a.o2').show();
-        return false
-    })
-    $('.lg-layer .td-btn a.o2').click(function () {
-        $('.lg-layer .third').removeClass('third-out');
-        $(this).hide();
-        $(this).parent().siblings('.lg-btm').show();
-        $('.lg-layer .td-btn a.o1').show();
-        return false
-    })
+   
 
-    $('.lg-layer .in .tool label').click(function () {
-        $(this).toggleClass('on');
-    })
+   
 
-    /*$('.lg-layer .sps').mousedown(function(){
-        $(this).siblings('input')[0].type='text';
-        $(this).attr('src','http://img1.lotour.com/common/sps2.png')
-    }).mouseup(function(){
-        $(this).siblings('input')[0].type='password';
-        $(this).attr('src','http://img1.lotour.com/common/sps.png')
-    })*/
+   
 
-
-    $('.lg-layer .sps').click(function () {
-        var vl = $(this).siblings('input').val(), pr = $(this).siblings('input').attr('placeholder'), ne = $(this).siblings('input').attr('name'), dd = $(this).siblings('input').attr('id'), br = $(this).siblings('input').attr('onblur');
-        if ($(this).siblings('input')[0].type == 'password') {
-            $(this).siblings('input').remove();
-            $(this).before('<input class="txt tl" placeholder="' + pr + '" value="' + vl + '" type="text" name="' + ne + '" id="' + dd + '" onblur="' + br + '">');
-            $(this).attr('src', 'http://img1.lotour.com/common/sps2.png')
-        } else if ($(this).siblings('input')[0].type == 'text') {
-            $(this).siblings('input').remove();
-            $(this).before('<input class="txt tl" placeholder="' + pr + '" value="' + vl + '" type="password" name="' + ne + '" id="' + dd + '" onblur="' + br + '">');
-            $(this).attr('src', 'http://img1.lotour.com/common/sps.png')
-        }
-    })
-
-    
-    $('.reler .sps').click(function () {
-        var vl = $(this).siblings('input').val(), pr = $(this).siblings('input').attr('placeholder'), ne = $(this).siblings('input').attr('name'), dd = $(this).siblings('input').attr('id'), br = $(this).siblings('input').attr('onblur');
-        if ($(this).siblings('input')[0].type == 'password') {
-            $(this).siblings('input').remove();
-            $(this).before('<input class="txt tl" placeholder="' + pr + '" value="' + vl + '" type="text" name="' + ne + '" id="' + dd + '" onblur="' + br + '">');
-            $(this).attr('src', 'http://img1.lotour.com/2016/index/sys.png')
-        } else if ($(this).siblings('input')[0].type == 'text') {
-            $(this).siblings('input').remove();
-            $(this).before('<input class="txt tl" placeholder="' + pr + '" value="' + vl + '" type="password" name="' + ne + '" id="' + dd + '" onblur="' + br + '">');
-            $(this).attr('src', 'http://img1.lotour.com/2016/index/sys.png')
-        }
-    })
-
-
-    /*$('.lg-layer .resent').click(function(){
-        var st=60,$this=$(this);
-        $this.addClass('resent2').html(st+'秒后重发');
-        var tot=setInterval(function(){
-                    st--
-                    if(st==0){
-                        clearInterval(tot);
-                        $this.html('重新获取验证码');
-                        $this.removeClass('resent2');
-                        return false
-                    }
-                    $this.html(st+'秒后重发');
-            },1000)
-    })*/
-
-    $('.s-layer .tx li').click(function () {
-        $(this).addClass('hover').siblings().removeClass('hover')
-    })
 
 
 
@@ -1207,12 +1138,6 @@ window.onload = function () {
 
 
 
-    $("#mddtj").click(function () { //点击mddtj
-        $(".len").hide(); //隐藏
-        $("#mytijiao").show(); //显示mytijiao
-        setTimeout('$("#mytijiao").hide()', 3000); //3秒后关闭mytijiao
-        return false;
-    });
-
+ 
 
 }
