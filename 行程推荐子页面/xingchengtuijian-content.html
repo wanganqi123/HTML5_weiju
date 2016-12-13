@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" href="css/vendors.min.css" type="text/css">
+        <link rel="stylesheet" href="css/css-zh.min.css" type="text/css">
+        <link type="image/x-icon" rel="icon" href="images/bitbug_favicon.ico" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/rocketTop.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/style4.css">
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link href="css/footer.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/modernizr.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/alljs.min(1).js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/rocketTop.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/main.js"></script> 
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+<section class="banner" role="banner">
+      <header id="header">
+        <div class="header-content clearfix"> 
+          <a class="logo" href="#"><img src="images/u146.gif" width="98px" height="70px" id="logowj"></a>
+          <nav class="navigation" role="navigation">
+            <div class="headernav">
+                <ul class="primary-nav">
+                  <li>
+                                <a href="index.html" title="首页" class="index" >首页</a>
+                            </li>
+                            <li id="ejdh1">
+                                <a href="yaoqudedifang.html" title="要去的地方" class="ejdh1">要去的地方</a>
+                                <ul id="ejdhlist1">
+                                    <li><a href="#">新南威尔士州</a></li>
+                                    <li><a href="#">昆士兰</a></li>
+                                    <li><a href="#">维多利亚州</a></li>
+                                    <li><a href="#">北领地</a></li>
+                                    <li><a href="#">南澳大利亚</a></li>
+                                    <li><a href="#">西澳大利亚</a></li>  
+                                </ul>
+                            </li>
+                            <li id="ejdh2">
+                                <a href="sijituijian.html" title="四季推荐" class="ejdh2">四季推荐</a>
+                                <ul id="ejdhlist2">
+                                    <li><a href="#">春</a></li>
+                                    <li><a href="#">夏</a></li>
+                                    <li><a href="#">秋</a></li>
+                                    <li><a href="#">冬</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="xingcheng.html" title="行程推荐">行程推荐</a>
+                            </li>
+                            <li id="ejdh3">
+                                <a href="zhuyishixiang.html" title="注意事项" class="ejdh3">注意事项</a>
+                                <ul id="ejdhlist3">
+                                    <li><a href="#">货币</a></li>
+                                    <li><a href="#">时区</a></li>
+                                    <li><a href="#">交通</a></li>
+                                    <li><a href="#">签证</a></li>
+                                    <li><a href="#">旅游贴士</a></li>
+                                    <li><a href="#">健康安全</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="zhunali.html" title="住哪里">住哪里</a>
+                            </li>
+                            <li><a href="student.html" title="留学生导游">留学生导游</a></li>
+                </ul>
+            </div>
+            <div class="rheader">
+                <div class="dlzc">
+                    <ul>    
+                        <li><a href="javascript:void(0)" title="登录" onclick="login()">登录</a></li>
+                        <li>|</li>
+                        <li><a href="javascript:void(0)" title="注册" onclick="register1()" title="注册">注册</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <a href="javascript:void(0)" onclick="search1()"><img src="images/u127.jpg" width="20px" height="20px" /></a>
+                </div>
+            </div>
+        </div>
+          </nav>
+          <a href="#" class="nav-toggle">Menu<span></span></a>
+        </div>
+        </header>
+        <div class="search1">
+                <div id="searchform">
+                    <input type="text-align" name="" style="display: none;">
+                </div>
+            </div>
+            <div class="search2" id="search2" style="display: none;">
+                <div class="searchz">
+                    <h6 class="searchztb">
+                        <a href="javascript:void(0)" onmouseover="searchqh1()" style="font-weight: bold;" id="searchztb1">新南威尔士州</a>
+                        <a href="#" onmouseover="searchqh2()" id="searchztb2">昆士兰</a>
+                        <a href="#">维多利亚州</a>
+                        <a href="#">北领地</a>
+                        <a href="#">南澳大利亚</a>
+                        <a href="#">西澳大利亚</a>
+                    </h6>
+                </div>
+                <a href="javascript:void(0);" class="searchgb" id="search2_2"></a>
+                <div class="searchcs" id="searchcslist">
+                    <table class="searchcs1" id="searchcs1">
+                        <tr>
+                            <td><a href="#">悉尼</a></td>
+                            <td><a href="#">卧龙岗</a></td>
+                            <td><a href="#">蓝山</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">纽卡斯尔</a></td>
+                            <td><a href="#">斯蒂芬斯港</a></td>
+                            <td><a href="#">卢拉镇</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">布罗肯希尔</a></td>
+                            <td><a href="#">默威伦巴</a></td>
+                            <td><a href="#">利斯莫尔</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">库马</a></td>
+                            <td><a href="#">巴利纳</a></td>
+                            <td><a href="#">卡通巴</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">古尔本</a></td>
+                            <td><a href="#">楠巴卡黑兹</a></td>
+                            <td><a href="#">德尼利昆</a></td>
+                        </tr>
+                    </table>
+                    <table class="searchcs2" id="searchcs2">
+                        <tr>
+                            <td><a href="#">大堡礁</a></td>
+                            <td><a href="#">南岸公园</a></td>
+                            <td><a href="#">洛岛</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">海洋世界</a></td>
+                            <td><a href="#">袋鼠角</a></td>
+                            <td><a href="#">其瓦拉海滩</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">天堂农庄</a></td>
+                            <td><a href="#">库克敦</a></td>
+                            <td><a href="#">莫斯曼</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">萨瓦纳湾</a></td>
+                            <td><a href="#">奈利湾</a></td>
+                            <td><a href="#">惠森迪岛</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">昆士兰绿岛</a></td>
+                            <td><a href="#">水晶洞穴</a></td>
+                            <td><a href="#">云戈布拉</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+      
+
+      <!-- banner text --> 
+        <div class="banner" id="banner">
+            <label>
+          <ul class="cb-slideshow">
+                <li><span><img src="images/1.jpg" width="100%" height="668px"></span><div><h3>轮播图1</h3></div></li>
+                <li><span><img src="images/2.jpg" width="100%" height="668px"></span><div><h3>轮播图2</h3></div></li>
+                <li><span><img src="images/3.jpg" width="100%" height="668px"></span><div><h3>轮播图3</h3></div></li>
+                <li><span><img src="images/4.jpg" width="100%" height="668px"></span><div><h3>轮播图4</h3></div></li>
+                <li><span><img src="images/5.jpg" width="100%" height="668px"></span><div><h3>轮播图5</h3></div></li>
+                <li><span><img src="images/6.jpg" width="100%" height="668px"></span><div><h3>轮播图6</h3></div></li>
+            </ul>
+            </label> 
+        </div> 
+    </section>
+    <div id="light1" class="white_content1">
+            <a href="javascript:void(0)" onclick="close1()">
+                <img src="images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
+            </a>
+            <form method="post" id="signin1" action="index.html">
+                <h1>登录</h1>
+                <hr/>
+                <div>
+                    <label>
+                        <p>用户名</p>
+                        <p>
+                            <input id="USERNAMEDL" name="usernamedl" value="" title="usernamedl" tabindex="4" type="text" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="您的用户名"> 
+                        </p>
+                        <span id="usernamedl"  class='tip'></span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <p>密码</p>
+                        <p>
+                            <input id="PASSWORDDL" name="passworddl" value="" title="password" tabindex="5" type="password"  onfocus="showDesc(this)" onblur="checkText(this)" placeholder="您的密码">
+                        </p>
+                        <span id="passworddl"  class='tip'></span>
+                    </label>
+                </div>
+                <p class="remember">
+                    <label><input type="checkbox" name="自动登录" > 保存密码</label>        
+                    <a href=""></a>
+                </p>
+                <p class="logosub1">
+                    <input type="button" name="" value="立即登录">
+                </p>
+                <div>
+                    <p class="toregister">
+                        还没有账号？<a href="javascript:void(0)" onclick="register1()">点击这里注册</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div id="light2" class="white_content2">
+            <a href="javascript:void(0)" onclick="close2()">
+                <img src="images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
+            </a>
+            <form method="post" id="signin2" action="index.html">
+                <h1>注册</h1>
+                <hr/>
+                <div class="tregister">
+                    <div>
+                        <label>
+                            <p>用户名<span> *</span></p>
+                            <p>
+                                <input id="USERNAME" name="username" value="" title="username" tabindex="4" type="text" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请输入1~16位以内的英文、数字组合" class="inputpp"> 
+                            </p>
+                            <span id="username"  class='tip'></span>
+                        </label>
+                    </div>
+                    <div style="clear: left;" class="margintop">
+                        <label>
+                            <p>登录密码<span> *</span></p>
+                            <p>
+                                <input id="PASSWORD" name="password" value="" title="password" tabindex="5" type="password" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请输入6~16位以内的英文、数字组合" class="inputpp">
+                                <span id="password" class='tip'></span>
+                            </p>
+                        </label>
+                    </div>
+                    <div class="margintop">
+                        <label>
+                            <p>确认密码<span> *</span></p>
+                            <p>
+                                <input id="PASSWORD2" name="password2" value="" title="password" tabindex="5" type="password" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请再次输入密码" class="inputpp">
+                                <span id="password2"  class='tip'></span>
+                            </p>
+                        </label>
+                    </div>
+                    <div class="margintop">
+                        <label>
+                            <p>姓名</p>
+                            <p>
+                                <input id="IDname" name="IDname" value="" title="IDname" tabindex="5" type="text" placeholder="请输入您的真实姓名(选填)" class="inputpp">
+                            </p>
+                        </label>
+                    </div>
+                    <div class="sex">
+                        <p>性别</p>
+                        <p>
+                            <div class="nan"><input type="radio" name="sex" checked="checked"> 男</div>
+                            <div class="nv"><input type="radio" name="sex"> 女</div>
+                        </p>
+                    </div>
+                    <div class="margintop">
+                        <label>
+                            <p>国家/地区</p>
+                            <p>
+                                <div>
+                                    <input id="place" name="place" value="" title="place" tabindex="5" type="text" placeholder="请输入您所在的国家/地区(选填)" class="inputpp">
+                                </div>
+                            </p>
+                        </label>
+                    </div>
+                    <div class="IDtype">
+                            <p>用户类型<span> *</span></p>
+                            <p>
+                                <div class="tourist"><label><input type="radio" name="用户类型" checked="checked"> 游客</label></div>
+                                <div class="ciceroni"><label><input type="radio" name="用户类型" > 导游</label></div>
+                            </p>
+                    </div>
+                </div>
+                <div class="bregister">
+                    <div class="logosub2">
+                        <a href="javascript:void(0)"  onclick="login()"><input type="button" name="" value="完成注册" style="text-align: center;"></a>
+                    </div>
+                    <div>
+                        <p class="toregister">
+                            已拥有账户？<a href="javascript:void(0)" onclick="login()">点击这里登录</a>
+                        </p>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+<!--content-->
+	<div id="parallax_elementID_7" style="top: 0px; left: 0px; position: fixed; overflow: hidden; height: 700px; width: 1349px; transform: translate3d(0px, -519px, 0px); x: 0px; y: -519px; visibility: visible;">
+		<img src="images/heroImage.adapt.1920.medium.jpg" style="position: absolute; max-width: none; height: 759px; width: 1349px; transform: translate3d(0px, 338px, 0px); x: 0px; y: 338px; visibility: visible;">
+    </div>
+    <div id="parallax_elementID_6" style="transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; x: 0px; y: 0px; position: fixed; overflow: hidden; height: 700px; width: 1349px; visibility: hidden;">
+    	<img src="images/heroImage.adapt.1920.medium(1).jpg" style="position: absolute; max-width: none; height: 759px; width: 1349px; visibility: hidden;">
+    </div>
+    <div id="parallax_elementID_5" style="transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; x: 0px; y: 0px; position: fixed; overflow: hidden; height: 700px; width: 1349px; visibility: hidden;">
+    	<img src="images/heroImage.adapt.1920.medium(2).jpg" style="position: absolute; max-width: none; height: 759px; width: 1349px; visibility: hidden;">
+    </div>
+    <div id="parallax_elementID_4" style="transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; x: 0px; y: 0px; position: fixed; overflow: hidden; height: 700px; width: 1349px; visibility: hidden;">
+    	<img src="images/heroImage.adapt.1920.medium(3).jpg" style="position: absolute; max-width: none; height: 759px; width: 1349px; visibility: hidden;">
+    </div>
+    <div id="parallax_elementID_3" style="transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; x: 0px; y: 0px; position: fixed; overflow: hidden; height: 700px; width: 1349px; visibility: hidden;">
+    	<img src="images/heroImage.adapt.1920.medium(4).jpg" style="position: absolute; max-width: none; height: 759px; width: 1349px; visibility: hidden;">
+    </div>
+    <div id="parallax_elementID_2" style="transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; x: 0px; y: 0px; position: fixed; overflow: hidden; height: 700px; width: 1349px; visibility: hidden;">
+    	<img src="images/heroImage.adapt.1920.medium(5).jpg" style="position: absolute; max-width: none; height: 759px; width: 1349px; visibility: hidden;">
+    </div>
+    <div id="parallax_elementID_1" style="transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; x: 0px; y: 0px; position: fixed; overflow: hidden; height: 700px; width: 1349px; visibility: hidden;">
+    	<img src="images/heroImage.adapt.1920.medium(6).jpg" style="position: absolute; max-width: none; height: 759px; width: 1349px; visibility: hidden;">
+    </div>
+
+    <!--路线-->
+    <div class="content-header">
+                <div id="mbx">
+                    <ul id="breadcrumb">
+                        <li><a href="index.html"><span class="icon icon-home"> </span>首页</a></li>
+                        <li><a href="#"><span class="icon icon-beaker"> </span> 行程推荐</a></li>
+                        <li><a href="#"><span class="icon icon-double-angle-right"></span> 自驾之旅</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <HR style="border:1 dashed #987cb9; margin-left:10%; margin-top:20px; margin-bottom:50px;" width="80%" color=#987cb9 SIZE=1>
+                </div>
+            </div>
+			<div class="type-summary">
+			    <p>悉尼 – 中央海岸 – 猎人谷 – 史蒂芬斯港 –考夫斯港– 拜伦湾 – 黄金海岸</p>
+			</div>
+			
+			<div class="type-body">
+                <h1>旅程概况</h1>
+                <p>漫步在中央海岸闪闪发光的海滩和草木茂盛的土地上，再去猎人谷的酿酒厂和迷人的史蒂芬斯港闲逛。在考夫斯港雨林中的高尔夫球课程中练习着挥杆，在拜伦湾海滩上感受着度假的气氛。在孤岛海洋公园潜水，和五颜六色的鱼类一同游泳，或是去黄金海岸享受着灿烂的阳光。这条驾驶路线将带领你从悉尼到布里斯班，沿途你将会看到大片的海滩、安宁的乡镇、苔藓覆盖的雨林，你会感觉自己时而在冒险时而在放松。</p>
+            </div>
+		        <div class="largeparallax l-padding-b">   
+		            	<div class="img-holder" data-parallax-height="700" style="visibility: hidden; height: 700px;"></div>
+		            	<div class="img-src" data-picture="">
+		                <div data-media="(min-width: 1px)" data-height="290"></div>
+		                <div data-media="(min-width: 481px)" data-height="500"></div>
+		                <div data-media="(min-width: 769px)" data-height="700"></div>
+		                <div data-media="(min-width: 993px)" data-height="700"></div>
+		                <div data-media="(min-width: 1366px)" data-height="700"></div>
+		      	</div>
+	            <div class="largeparallax-text">
+	                <div class="largeparallax-text-container">
+	                    <div class="inside">
+	                        <h2 class="">第一天</h2>
+	                    </div>
+	                </div>
+	            </div>
+        </div>
+    <div class="itinerary-day-content">
+        <div class="row l-center-1200">
+            <div class="col-xs-6 col-sm-push-3 itinerary-day-textarea">
+                <h3 class="type-h4 ">悉尼至中央海岸</h3>
+                <p>从悉尼绿草丛荫的北郊出发至中央海岸，你可以在那里的波蒂国家公园（Bouddi National Park）徒步旅行，在亚弗卡（Avoca）冲浪，在特里格尔（Terrigal）海滩钓鱼。沿着海岸步行路径穿过美丽的巴托湾，在托温湾（Toowoon Bay）受保护的海滩和野生动物的土地上闲逛。再往北一点的方向去，你可以在海滩的入口处垂钓，给鹈鹕喂食。到塘鹅（Tuggerah ）生态保护区后，你可以划独木舟、滑水、驾船、划船、驾帆板冲浪，或沿着岸边骑自行车环游。再继续向内陆前行，你可以乘轮渡或租一辆游艇前往布里斯班水域国家公园，穿越丛林，感受那里的原住民艺术和生机勃勃的野花丛。一天的旅行结束后，可以在你最喜欢的中央海岸镇上休憩一夜。<br>
+				</p>
+			</div>
+		</div>
+	</div>
+        <div class="largeparallax l-padding-b" data-pinterest-img-wrapper="">
+            <div class="img-holder" data-parallax-height="700" style="visibility: hidden; height: 700px;"></div>
+            <div class="img-src" data-picture="">
+            <div data-media="(min-width: 1px)" data-height="290"></div>
+            <div data-media="(min-width: 481px)" data-height="500"></div>
+            <div data-media="(min-width: 769px)" data-height="700"></div>
+            <div data-media="(min-width: 993px)" data-height="700"></div>
+            <div data-media="(min-width: 1366px)" data-height="700"></div>
+		</div>
+
+            <div class="largeparallax-text">
+                <div class="largeparallax-text-container">
+                    <div class="inside">
+                        <h2 class="">第二天</h2>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    
+    <div class="itinerary-day-content">
+        <div class="row l-center-1200">
+            <div class="col-xs-6 col-sm-push-3 itinerary-day-textarea">
+                <h3 class="type-h4 ">中央海岸至猎人谷</h3>
+                <p>驾车经过纽卡素（Newcastle），去诺比斯海滩（Nobby's Beach）冲浪，在酒吧海滩（Bar Beach）游泳，去迪克森公园滑翔，或是在纽卡素海港附近体验水肺潜水。中午在木板人行道附近的咖啡店享用午餐后继续前往猎人谷的葡萄园。尝尝这个地区最有名的赛美蓉葡萄酒和设拉子葡萄酒，这里有著名的麦克圭根（McGuigan）、泰瑞尔（Tyrrell）、图罗赫（Tulloch）和德雷顿（Drayton）等120家酿酒厂。你可以直接从拉伍达乐群山之间的酒窖那里购买，然后在布洛肯品尝手工制作的葡萄酒，布洛肯是一个被橄榄树丛和黄色岩悬崖环绕的安静小城。如果你想去冒险，你可以在赛斯诺克挑战双人跳伞运动，或是在燕勾国家公园徒步旅行，在珀蔻滨乘坐热气球穿过葡萄园区。在拉伍达乐（Lovedale）的精致的小旅馆度过一个难忘的夜晚，最后去赛斯诺克或历史小镇卧龙比参观一下。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        	<div class="largeparallax l-padding-b" data-pinterest-img-wrapper="">
+           	 	<div class="img-holder" data-parallax-height="700" data-id-for-parallax="parallax_elementID_3" style="visibility: hidden; height: 700px;"></div>
+            	<div class="img-src" data-picture="">
+                <div data-media="(min-width: 1px)" data-height="290"></div>
+                <div data-media="(min-width: 481px)" data-height="500"></div>
+                <div data-media="(min-width: 769px)" data-height="700"></div>
+                <div data-media="(min-width: 993px)" data-height="700"></div>
+                <div data-media="(min-width: 1366px)" data-height="700"></div>
+			</div>
+            <div class="largeparallax-text">
+                <div class="largeparallax-text-container">
+                    <div class="inside">
+                        <h2 class="">第三天</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="itinerary-day-content">
+        <div class="row l-center-1200">
+            <div class="col-xs-6 col-sm-push-3 itinerary-day-textarea">
+                <h3 class="type-h4 ">猎人谷至史蒂芬斯港</h3>
+                <p>向北前行，途经卡里卡里镇到达度假胜地史蒂芬斯港的26处海滩。驾车前往尼尔森角灯塔，坐下来喝杯咖啡，欣赏海湾的美景。从尼尔森湾出发，你可以乘坐皮划艇或乘船与宽吻海豚同行，还可以在飞行角潜水或浮潜到其它海洋生物中间。然后乘坐渡轮抵达茶园，你可以在那里享用午餐，然后出发至鹰隼巢，在海滩游泳，或是到米亚尔湖国家公园垂钓。然后再回到海湾对面，在托马利国家公园的托马利海岬顶端散步，在斯托克顿海滩（Stockton Beach）茫茫沙丘上驾驶四轮摩托车或四轮越野车。在宁静的安娜湾或丰戈尔湾畅饮，度过愉快的夜晚，或是在距尼尔森湾码头几分钟步行距离的地方享受度假般的放松。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        	<div class="largeparallax l-padding-b">      
+            	<div class="img-holder" data-parallax-height="700" style="visibility: hidden; height: 700px;"></div>
+            	<div class="img-src" data-picture="">
+                <div data-media="(min-width: 1px)" data-height="290"></div>
+                <div data-media="(min-width: 481px)" data-height="500"></div>
+                <div data-media="(min-width: 769px)" data-height="700"></div>
+                <div data-media="(min-width: 993px)" data-height="700"></div>
+                <div data-media="(min-width: 1366px)" data-height="700"></div>
+            </div>
+            <div class="largeparallax-text">
+                <div class="largeparallax-text-container">
+                    <div class="inside">
+                        <h2 class="">第四天</h2>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    <div class="itinerary-day-content">
+        <div class="row l-center-1200">
+            <div class="col-xs-6 col-sm-push-3 itinerary-day-textarea">
+                <h3 class="type-h4 ">史蒂芬斯港至考夫斯港</h3>
+                <p>离开史蒂芬斯港，途经猎人河边的历史小镇雷蒙德特雷斯。继续沿着海岸线行驶，你可以到海豹湾去钓鱼和水肺潜水，在福斯特海滩上散散步。或者，你可以往内陆行驶，去被列入世界文化遗产的巴灵顿高地荒野。你可以在这里的丛林徒步旅行，或是乘橡皮艇穿过亚热带雨林经过死火山口去看一看。沿着麦奎利港（Port Macquarie）的灯塔海滩，你可以去参观一下塔里和壮观的埃伦伯勒瀑布，骑着骆驼行走在麦奎利港的灯塔海滩上。再向北行驶一段距离，你可以在西南岩潜水、浮潜，或是体验深海钓鱼，在南巴卡角（Nambucca Heads）人烟稀少的白色海滩，这个四处环绕着茂密森林和国家公园的旅游胜地上结束一天的行程。<br>
+				</p>
+            </div>   
+        </div>
+    </div>
+</div>
+</div>
+        	<div class="largeparallax l-padding-b" data-pinterest-img-wrapper="">
+            	<div class="img-holder" data-parallax-height="700" style="visibility: hidden; height: 700px;"></div>
+            	<div class="img-src" data-picture="">
+                <div data-media="(min-width: 1px)" data-height="290"></div>
+                <div data-media="(min-width: 481px)" data-height="500"></div>
+                <div data-media="(min-width: 769px)" data-height="700"></div>
+                <div data-media="(min-width: 993px)" data-height="700"></div>
+                <div data-media="(min-width: 1366px)" data-height="700"></div>
+            </div>
+            <div class="largeparallax-text">
+                <div class="largeparallax-text-container">
+                    <div class="inside">
+                        <h2 class="">第五天</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="itinerary-day-content">
+        <div class="row l-center-1200">
+            <div class="col-xs-6 col-sm-push-3 itinerary-day-textarea">
+                <h3 class="type-h4 ">考夫斯港至拜伦湾</h3>
+                <p>出发至更大的冒险乐园考夫斯海岸之前，在海滩上享用早餐，在著名的大香蕉景点拍照留恋。乘着皮划艇穿越邦哥尔国家公园，或是在宁邦达河上玩激流漂筏。在孤岛海洋公园钓鱼或潜水。也可以到转向西南方向，去树木茂盛的嬉皮小镇贝林艮徒步穿越瀑布和多瑞哥国家公园的岗得瓦纳雨林。再向北走，在迷人的省会城市格拉夫顿停留，喝杯咖啡，乘船在嘉尼伦斯河与海豚同行，乘坐古老的蒸汽火车穿过格伦瑞的群山。向林邦达出发体验激流漂筏、攀岩、参观这个地区最大的鸭嘴兽繁殖地。然后再返回到太平洋公路，在到达拜伦湾过夜之前去参观一下忙碌的滨河小镇百灵娜。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        	<div class="largeparallax l-padding-b" data-pinterest-img-wrapper="">           
+            	<div class="img-holder" data-parallax-height="700" data-id-for-parallax="parallax_elementID_6" style="visibility: hidden; height: 700px;"></div>
+            	<div data-picture="">
+                <div data-media="(min-width: 1px)" data-height="290"></div>
+                <div data-media="(min-width: 481px)" data-height="500"></div>
+                <div data-media="(min-width: 769px)" data-height="700"></div>
+                <div data-media="(min-width: 993px)" data-height="700"></div>
+                <div data-media="(min-width: 1366px)" data-height="700"></div>
+            </div>
+
+            <div class="largeparallax-text">
+                <div class="largeparallax-text-container">
+                    <div class="inside">
+                        <h2 class="">第六天</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    <div class="itinerary-day-content">
+        <div class="row l-center-1200">
+            <div class="col-xs-6 col-sm-push-3 itinerary-day-textarea">
+                <h3 class="type-h4 ">拜伦湾至黄金海岸</h3>
+                <p>日出时沿着拜伦角步行道漫步，看着拜伦湾灯塔在清晨第一缕阳光的映衬下变成粉红色。还能在5月至11月期间与拜伦角海洋公园的座头鲸、海龟和海豚一同浮潜，观看鲸鱼的年度大迁徙活动。坐在拜伦的咖啡店里享受一顿丰盛的早餐，然后在主海滩与海豚一同游泳后划皮划艇，或者在山口的著名冲浪的地方体验冲浪运动。驾驶滑翔器越过灯塔，在班哥龙体验骑马运动，或加入观光四轮驱动车穿过倒映着彩虹的瀑布和拜伦内陆的雨林。这种波西米亚风格的海滩天堂也是塔罗牌咨询的地方，你可以找一个热带雨林度假酒店或是在周六去集市上看看当地艺术家的作品。当你休息充足后，便可以继续沿着黄金海岸驾驶90分钟的车程欣赏沿途的风景。你还可以绕着莫威伦巴附近的国家公园行驶，去爬一下古老的侵蚀火山沃宁山。最后在建在冲浪者天堂沙滩上的高楼上，或是在独家酒店里度过一夜。</p>
+            </div>       
+        </div>
+    </div>
+</div>
+</div>
+        <div class="largeparallax l-padding-b">
+            	<div class="img-holder" data-parallax-height="700" style="visibility: hidden; height: 700px;"></div>
+            	<div data-picture="">
+                <div data-media="(min-width: 1px)" data-height="290"></div>
+                <div data-media="(min-width: 481px)" data-height="500"></div>
+                <div data-media="(min-width: 769px)" data-height="700"></div>
+                <div data-media="(min-width: 993px)" data-height="700"></div>
+                <div data-media="(min-width: 1366px)" data-height="700"></div>
+            </div>
+
+            <div class="largeparallax-text">
+                <div class="largeparallax-text-container">
+                    <div class="inside">
+                        <h2 class="">第七天</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="itinerary-day-content">
+        <div class="row l-center-1200">
+            <div class="col-xs-6 col-sm-push-3 itinerary-day-textarea" id="nrdbjl">
+                <h3 class="type-h4 ">黄金海岸至布里斯班</h3>
+                <p>你可以在黄金海岸的海滩沐浴着阳光、在商场购物逛街度过美好的一天。在世界著名的冲浪地点宽滩、基拉和主海滩上冲浪。或躺在冲浪者天堂海滩上沐浴着阳光，之后再去逛逛卡维尔大道上的商店、咖啡店和餐厅。在主海滩浮潜或潜水，去看看苏格兰王子号沉船的残骸，或是去狭颈附近看看人工礁。在内陆地区你可以去看看坦伯林山国家公园、春溪国家公园和雷明顿国家公园的瀑布、岩石区潮水潭和亚热带雨林。你可以去主题公园体验刺激的游乐项目，或是在海洋世界和海豚同游，与海豹相拥，去电影世界看看电影，在梦想世界体验模拟海啸的生存方法。等你玩得开心后便可以继续驾驶前往布里斯班了。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--fottor-->
+<div class="footer">
+            <div class="footerjkgz">
+                <div class="footer1">
+                    <div><label>即刻关注：</label></div>
+                    <div><a href="#"><img src="images/14515034.png" width="50px" height="45px"></a></div>
+                    <div class="footera"><a href="#">官方微博</a></div>
+                    <div><a href="#"><img src="images/20161123213710.png" width="50px" height="45px"></a></div>
+                    <div class="footera"><a href="#">官方微信</a></div>
+                </div>
+                <div class="footer2">
+                    <div><label class="yqlj_">友情链接：</label></div>
+                    <div class="yqlj"><a href="http://www.cnta.com/" target="_blank">国家旅游局</a></div>
+                    <div class="yqlj"><a href="http://travel.people.com.cn/" target="_blank">人民网旅游</a></div>
+                    <div class="yqlj"><a href="http://travel.gmw.cn/index.htm" target="_blank">光明网旅游</a></div>
+                </div>
+            </div>
+            <div class="hr2">
+                <hr color="#E4E4E4" size=1 align=center noshade>
+            </div>
+            <div class="footerliebiao">
+                <div class="footerliebiao1">
+                    <div>
+                        <a href="#">要去的地方</a>
+                    </div>
+                    <hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+                    <div>
+                        <ul>
+                            <li><a href="#">新南威尔士州</a></li>
+                            <li><a href="#">昆士兰</a></li>
+                            <li><a href="#">维多利亚州</a></li>
+                            <li><a href="#">北领地</a></li>
+                            <li><a href="#">南澳大利亚</a></li>
+                            <li><a href="#">西澳大利亚</a></li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerliebiao1">
+                    <div>
+                        <a href="#">四季推荐</a>
+                    </div>
+                    <hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+                    <div>
+                        <ul>
+                            <li><a href="#">春</a></li>
+                            <li><a href="#">夏</a></li>
+                            <li><a href="#">秋</a></li>
+                            <li><a href="#">冬</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerliebiao1">
+                    <div>
+                        <a href="#">行程推荐</a>
+                    </div>
+                    <hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+                    <div>
+                        <ul>
+                            <li><a href="#">自驾之旅</a></li>
+                            <li><a href="#">探险之旅</a></li>
+                            <li><a href="#">自然野生动物</a></li>
+                            <li><a href="#">美食美酒</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerliebiao1">
+                    <div>
+                        <a href="#">注意事项</a>
+                    </div>
+                    <hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+                    <div>
+                        <ul>
+                            <li><a href="#">货币</a></li>
+                            <li><a href="#">时区</a></li>
+                            <li><a href="#">交通</a></li>
+                            <li><a href="#">签证</a></li>
+                            <li><a href="#">旅游贴士</a></li>
+                            <li><a href="#">健康安全</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerliebiao1">
+                    <div>
+                        <a href="#">住哪里</a>
+                    </div>
+                    <hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+                    <div>
+                        <ul>
+                            <li><a href="#">按地区筛选</a></li>
+                            <li><a href="#">按主题筛选</a></li>
+                            <li><a href="#">按景观筛选</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerliebiao1">
+                    <div>
+                        <a href="#">留学生导游</a>
+                    </div>
+                    <hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+                    <div>
+                        <ul>
+                            <li><a href="#">留学生导游信息</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerqita">
+                <div class="footerbz">
+                    <a href="#"><img src="images/u146.gif" width="110px" height="90px"></a>
+                </div>
+                <div class="footerlxfs">
+                    <ul>
+                        <li>地址：河北师范大学新校区</li>
+                        <li>电子邮件：zmalqp246805@163.com</li>
+                        <li>版权所有：河北师范大学软件学院微距小组</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="fade" class="black_overlay"></div>
+        <div id="shape">
+        <div class="shapeColor">
+            <div class="shapeFly">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
