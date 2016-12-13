@@ -9,7 +9,6 @@
 }
 .cb-slideshow:after {
     content: '';
-    background: transparent url(pattern.png)/*images/pattern.png*/ repeat top left;
 }
 .cb-slideshow li span {
     width: 100%;
@@ -50,9 +49,9 @@
     line-height: 200px;
     color: rgba(255, 255, 255, 0.88);
 }
-.cb-slideshow li:nth-child(1) span { background-image: url(1.jpg)/*images/slides/1.jpg*/ }
+.cb-slideshow li:nth-child(1) span { background-image: url(../images/1.jpg)/*images/slides/1.jpg*/ }
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(2.jpg)/*images/slides/2.jpg*/;
+    background-image: url(../images/2.jpg)/*images/slides/2.jpg*/;
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -60,7 +59,7 @@
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(3.jpg)/*images/slides/3.jpg*/;
+    background-image: url(../images/3.jpg)/*images/slides/3.jpg*/;
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -68,7 +67,7 @@
     animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(4.jpg)/*images/slides/4.jpg*/;
+    background-image: url(../images/4.jpg)/*images/slides/4.jpg*/;
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -76,7 +75,7 @@
     animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(5.jpg)/*images/slides/5.jpg*/;
+    background-image: url(../images/5.jpg)/*images/slides/5.jpg*/;
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -84,7 +83,7 @@
     animation-delay: 24s;
 }
 .cb-slideshow li:nth-child(6) span {
-    background-image: url(6.jpg)/*images/slides/6.jpg*/;
+    background-image: url(../images/6.jpg)/*images/slides/6.jpg*/;
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;

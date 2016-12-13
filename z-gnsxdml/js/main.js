@@ -5,19 +5,19 @@ $(document).ready(function() {
 
 		if (scroll >= 50) {
 			$('#header').addClass('fixed');
+			$('#ejdhlist1').attr('style','background: rgb(247,247,247);');
+			$('#ejdhlist2').attr('style','background: rgb(247,247,247);');
+			$('#ejdhlist3').attr('style','background: rgb(247,247,247);');
+			$('#logowj').attr('src','images/u1476.gif');
+			$('#searchform').attr('src','images/u1476.gif');
 		}
 		else {
 			$('#header').removeClass('fixed');
+			$('#ejdhlist1').attr('style','background: transparent;');
+			$('#ejdhlist2').attr('style','background: transparent;');
+			$('#ejdhlist3').attr('style','background: transparent;');
+			$('#logowj').attr('src','images/u146.gif');
 		}
-	});
-
-	// Fancybox
-	$('.work-box').fancybox();
-
-	// Flexslider
-	$('.flexslider').flexslider({
-		animation: "fade",
-		directionNav: false,
 	});
 
 	// Page Scroll
