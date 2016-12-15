@@ -1,183 +1,131 @@
-var jq = $;
-$(document).ready(
-    function () {
-        /*创建幻灯片开始
-        */
-        var s = new slide();
-        s.urls = ['images/first1.png', 'images/first2.png', 'images/first3.png'];//banner图片链接
-        s.playTime = 4000;
-        s.duration = 800;
-        s.easing = "easeInOutQuad";
-        s.clickEasing = "easeOutCubic";
-        try {
-            s.play();
-        } catch (e) {
-        }
-        /*创建幻灯片结束*/
-    }
-);
-
-/*幻灯片*/
-function slide(urls, playTime, duration, easing, clickEasing) {
-    var direction = "left";
-    var flag = false;
-    var prev = 2, num = 0, next = 1;
-    var picList = jq("#picList");
-    var slide_li = jq('.slide_li');
-    var slide_img = jq('.slide_img');
-    var thumb = jq("#slideThumb");
-    var slideNum, size, tmpnum;
-    var _this = this;
-    var w;
-    _this.urls = urls;//banner图片链接
-    _this.playTime = playTime;//设置切换秒数
-    _this.duration = duration;//设置滑动延迟秒数
-    _this.easing = easing;//滑动效果
-    _this.clickEasing = clickEasing;//点击时滑动效果
-
-
-    /*自动设置切换按钮*/
-    function setThumb() {
-        size = picList.find("li").length;
-        //var links = jq("#picList li img:first");
-        var sb = new stringBuffer();
-        sb.clear();
-        for (var i = 1; i <= size; i++) {
-            sb.append("<span class=\"slideNum\"></span>");
-        }
-        thumb.html(sb.toString());
-        slideNum = thumb.find(".slideNum");
-        num = (slideNum.width() + parseInt(slideNum.css("margin-right")) + 2) * size + 1;
-        slideNum.eq(0).addClass("active");
-    }
-
-    //幻灯基本大小设置
-    function slideLi(){
-        w = 1920;
-        slide_li.width(w);
-    }
-
-    function titleBar() {
-        thumb.width(num + 2);
-        jq("#titleBar .slideNum:first").addClass("active");
-    }
-
-    //自动播放
-    function autoPlay() {
-        flag = setInterval
-            (
-                function () {
-                    num = jq("#slideThumb").find(".active").index("#slideThumb .slideNum");
-                    if (num == (size - 1)) {
-                        num = 0;
-                        next = 1;
-                        prev = 2;
-                    }
-                    else {
-                        num++;
-                        next = (num + 1)%3;
-                        prev = (next + 1)%3;
-                    }
-                    //slide_li.eq(num).fadeIn(_this.duration).siblings().hide();
-                    //picList.stop().animate({"margin-left":0 - num * w},{duration:_this.duration, easing:_this.easing});
-                    slide_li.eq(prev).siblings().css({'left':0 + w});
-                    slide_li.eq(prev).stop().animate({'left':0 - w},_this.duration,function(){
-                        $(this).removeClass('.sActive').css({'left':0 + w});
-                    });
-                    slide_li.eq(num).stop().animate({'left':0},_this.duration);
-                    slideNum.removeClass("active").eq(num).addClass("active");
-                }, _this.playTime
-            );
-    }
-
-    //点击事件
-    function slideEvent() {
-        slideNum.click
-            (
-                function () {
-                    var thisNum = jq(this).index("#slideThumb .slideNum");
-                    //slide_li.eq(thisNum).fadeIn(_this.duration).siblings().hide();
-                    //picList.stop().animate({"margin-left":0 - jq(this).index("#slideThumb .slideNum") * w},{duration:_this.duration, easing:_this.clickEasing});
-                    if(thisNum != num){
-                        slide_li.stop();
-                        slideNum.removeClass("active").eq(thisNum).addClass("active");
-                        slide_li.eq(prev).css({'left':0 + w});
-                        slide_li.eq(num).animate({'left':0 - w},_this.duration,function(){
-                            if(thisNum == 2){
-                                slide_li.eq(0).css({'left':0 + w})
-                            }else{
-                                $(this).next().css({'left':0 + w})
-                            }
-                        });
-                        slide_li.eq(thisNum).css({'left':0 + w,'z-index':5}).animate({'left':0},_this.duration,function(){
-                            slide_li.eq(thisNum).css({'z-index':1}).siblings().css({'left':0 + w});
-                        });
-                        num = thisNum;
-                        next = (num + 1)%3;
-                        prev = (next + 1)%3;
-                    }else{return false}
-                }
-            );     
-    }
-
-    this.play = function () {
-        setThumb();
-        titleBar();
-		autoPlay();
-        slideLi();
-		slideEvent();
-		if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
-			$('.airBottom').attr('src', 'style/images/blank.gif').get(0).runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='style/images/airBottom.png',sizingMethod='scale')";
-		}//修复ie6图片透明
-        slide_li.eq(0).removeClass('first').siblings().css({'left':0 + w});
-        num = 0;
-    }
-
-    //窗口大小变化
-    $(window).resize(slideLi);
-}
-
-//StringBuffer功能，用于拼接字符串
-function stringBuffer() {
-    this._strings = new Array();
-}
-stringBuffer.prototype.append = function (str) {
-    this._strings.push(str);
-}
-stringBuffer.prototype.toString = function () {
-    return this._strings.join("");
-}
-stringBuffer.prototype.clear = function () {
-    this._strings = [];
-}
 //登录注册实现
 
 //进入登录页（1.从主页等网站直接进去登录页，2.从注册页进入登录页，注册页退出，背景有阴影）
 function login(){              
-    document.getElementById('light1').style.display='block'; 
-    document.getElementById('fade').style.display='block';
-    document.getElementById('light2').style.display='none';
+    $("#light1").show(); 
+    $("#fade").show(); 
+    $("#light2").hide();
 }
 //登录页退出(无论什么情况，登录页退出时都无阴影)
 function close1(){              
-    document.getElementById('light1').style.display='none';
-    document.getElementById('fade').style.display='none';
+    $("#light1").hide();
+    $("#fade").hide();
 }
 //进入注册页（无论什么情况，都在原来的基础上打开注册页，背景有阴影）
 function register1(){           
-    document.getElementById('light2').style.display='block'; 
-    document.getElementById('fade').style.display='block';
+    $("#light2").show(); 
+    $("#fade").show();
 }
 //注册页退出（1.若从登录页进入注册页，完毕后登录页显示，背景有阴影；2.若从主页等网站直接进入注册页，完毕后直接退出，无阴影）
 function close2(){              
     if(document.getElementById('light1').style.display=='block'){
-        document.getElementById('light2').style.display='none';
+         $("#light2").hide();
     }
     else{
-        document.getElementById('light2').style.display='none';
-        document.getElementById('fade').style.display='none';
+        $("#light2").hide();
+        $("#fade").hide();
     }
 }
+function loginf(){
+  $("#light1").hide();
+  $("#fade").hide();
+  document.getElementById('dlzc').style.display = 'none';
+  document.getElementById('dlzcf').style.display = 'block';
+}
+function loginf1(){
+  
+}
+//实现搜索功能
+function search1(){
+  if(document.getElementById('search1').style.display == 'none'){
+    $("#search1").show(); 
+  }
+  else{
+    $("#search1").hide();
+    $("#search2").hide();
+  }
+}
+function search2_1(){
+  $("#search1").click(function(e) {  
+    $("#search2").show();  
+        e.stopPropagation();  
+  });  
+  $("#search2").click(function(e) {  
+    $(this).show();  
+      e.stopPropagation();
+  });  
+  $("#search2_2").click(function(e) {  
+    if (true) {
+      $("#search2").hide(); 
+      e.stopPropagation();
+    } 
+  });  
+  $(document).click(function(event) {  
+    if (true) {
+      $("#search2").hide(); 
+    } 
+  });
+}
+function searchqh1(){
+  document.getElementById('searchcs1').style.display="block";
+  document.getElementById('searchcs2').style.display="none";
+  document.getElementById('searchztb1').style.fontWeight = "bold";
+  document.getElementById('searchztb2').style.fontWeight = "normal";
+}
+function searchqh2(){
+  document.getElementById('searchcs1').style.display="none";
+  document.getElementById('searchcs2').style.display="block";
+  document.getElementById('searchztb1').style.fontWeight = "normal";
+  document.getElementById('searchztb2').style.fontWeight = "bold";
+}
+function searchqh1_1(){
+  document.getElementById('searchcs1').style.display="block";
+  document.getElementById('searchcs2').style.display="block";
+  document.getElementById('searchztb1').style.fontWeight = "bold";
+  document.getElementById('searchztb2').style.fontWeight = "normal";
+}
+function searchqh2_1(){
+  document.getElementById('searchcs1').style.display="block";
+  document.getElementById('searchcs2').style.display="block";
+  document.getElementById('searchztb1').style.fontWeight = "normal";
+  document.getElementById('searchztb2').style.fontWeight = "bold";
+}
+(function ($) {
+  jQuery.expr[':'].Contains = function(a,i,m){
+      return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+  };
+  function filterList(header, list) { 
+  var form = $("<form>").attr({"class":"filterform","action":"#","method":"post"}),
+  input = $("<input>").attr({"class":"filterinput","type":"text","id":"search1","title":"请输入目的地","tabindex":"4","placeholder":"搜目的地","style":"display: none;","onfocus":"search2_1()","onkeydown":"if(event.keyCode==13) return false;"});
+  $(form).append(input).appendTo(header);
+  $(input)
+      .change( function () {
+        var filter = $(this).val();
+        if(filter) {
+      $matches = $(list).find('a:Contains(' + filter + ')').parent();
+      $('td', list).not($matches).slideUp();
+      $("#searchcs1").show();
+      $("#searchcs2").show();
+      $('#searchztb1').attr('onmouseover','searchqh1_1()');
+      $('#searchztb2').attr('onmouseover','searchqh2_1()');
+      $matches.slideDown();
+        } else {
+          $('#searchztb1').attr('onmouseover','searchqh1()');
+          $('#searchztb2').attr('onmouseover','searchqh2()');
+          $("#searchcs1").show();
+          $("#searchcs2").hide();
+          $(list).find("td").slideDown();
+        }
+        return false;
+      })
+    .keyup( function () {
+        $(this).change();
+    });
+  }
+  $(function () {
+    filterList($("#searchform"), $("#searchcslist"));
+  });
+}(jQuery));
 
 //输入框获得焦点时，显示提示内容
 function showDesc(obj)
