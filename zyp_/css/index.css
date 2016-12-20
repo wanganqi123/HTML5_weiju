@@ -1,0 +1,241 @@
+.content{
+	width: 100%;
+	text-align: center;
+}
+.indexa{
+	color: #444;
+	font-size: 1.4em;
+	font-weight: normal;
+    font-family: 黑体, sans-serif;
+}
+.yqddf{
+	width: 90%;
+	height: 860px;
+	margin-left: 10%;
+}
+.yqddf label{
+	color: rgb(150,150,150);
+	font-size: 0.9em;
+}
+.dsd,.dbj,.xn,.bly,.xndq{
+	float: left;
+	margin-top: 4%;
+	margin-right: 3%;
+	width: 28%;
+}
+.yqddfwz{
+	line-height: 26px;
+	margin-top: -5px;
+	border: 1px solid #999;
+	border-radius: 0 0 10px 10px;
+}
+.lbt{
+	float: left;
+	margin-top: 4%;
+	margin-right: 3%;
+	width: 28%;
+}
+.lbt img{
+	width: 100%;
+	height: 380px;
+}
+.dsd img,.dbj img,.xn img,.bly img,.xndq img{
+	border-radius: 10px 10px 0 0;
+}
+.dsd{}
+.dsd img{
+	width: 100%;
+	height: 240px;
+}
+.dbj{}
+.dbj img{
+	width: 100%;
+	height: 300px;
+}
+.xn{}
+.xn img{
+	width: 100%;
+	height: 240px;
+}
+.bly{
+	clear: left;
+	margin-top: -1%;
+}
+.bly img{
+	width: 100%;
+	height: 240px;
+}
+.xndq{
+	margin-top: -1%;
+	float: left;
+}
+.xndq img{
+	width: 100%;
+	height: 240px;
+}
+.gd1{
+	clear: left;
+	float: right;
+	margin-right: 4%;
+}
+.gd1 a{
+	font-size: 14px;
+	color: rgb(50,50,50);
+}
+.gd1 a:hover{
+	color: rgb(255,134,13);
+}
+.sjtj1,.xctj1,.ykxz1{
+	padding-top: 12%;
+}
+.sjtj1 a,.xctj a,.ykxz1 label{
+	font-size: 3em;
+	color: rgb(253,253,253);
+	font-family: 黑体, sans-serif;
+}
+.sjtjsm,.xctjsm{
+	margin-top: 3%;
+}
+.sjtjsm label,.xctjsm label{
+	font-size: 1.3em;
+	color: rgb(243,243,243);
+	font-family: 黑体, sans-serif;
+}
+.sjtjnr{
+	margin-top: 6%;
+	padding-left: 3%;
+}
+.sjtjnr div{
+	width: 22%;
+	height: 160px;
+	padding-right: 2%; 
+	float: left;
+}
+.sjtjnr img{
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+}
+.sjtjnr p,.xctjnr p{
+	padding-top: 4%;
+}
+.ykxznr p{
+	padding-top: 4%;
+}
+.sjtjnr p a,.xctjnr p a,.ykxznr p a{
+	font-size: 1em;
+	color: rgb(243,243,243);
+	font-family: 黑体, sans-serif; 
+}
+.xctjnr{
+	margin-top: 2%;
+	padding-left: 10%;
+}
+.xctjnr1 div{
+	width: 18%;
+	height: 140px;
+	padding-right: 2%; 
+	float: left;
+}
+.xctjnr2{
+	width: 45%;
+	height: 270px;
+	float: left;
+	margin-top: -140px;
+}
+.dyldmeb{
+	clear: left;
+	margin-top: 2%;
+}
+.dbj11{
+	margin-top: 2%;
+}
+.xctjnr1 img{
+	width: 100%;
+	height: 80%;
+}
+.xctjnr2 img{
+	height: 100%;
+	width: 100%;
+}
+.gd2{
+	clear: left;
+	margin-left: 80%
+}
+.gd2 a{
+	font-family: 黑体, sans-serif;
+	font-size: 1em;
+	color: rgb(243,243,243);
+}
+.gd2 a:hover{
+	color: rgb(255,134,13);
+}
+.ykxznr{
+	margin-top: 8%;
+	padding-left: 6%;
+}
+.ykxznr div{
+	padding-right: 2%; 
+	float: left;
+	width: 30%;
+	height: 200px;
+}
+.ykxznr img{
+	width: 100%;
+	height: 100%;
+}
+.gd3{
+	padding-top: 6%;
+	clear: left;
+	margin-left: 82%;
+}
+.gd3 a{
+	font-family: 黑体, sans-serif;
+	font-size: 1em;
+	color: rgb(243,243,243);
+}
+.gd3 a:hover{
+	color: rgb(255,134,13);
+}
+.idx-inspire{
+	clear: both;
+	overflow:hidden;
+	position:relative;
+}
+.idx-inspire ul{
+	position:relative;
+	z-index:1
+}
+.idx-inspire ul li{
+	width:100%;
+}
+.idx-inspire li{
+	background-size:cover;
+	width:100%;
+	background-position:top center;
+	position:relative;
+	overflow:hidden
+}
+.idx-inspire .pt{
+	position:absolute;
+	width:12px;
+	right:3%;
+	top:40%;
+	z-index:998
+}
+.idx-inspire .pt a{
+	width:8px;
+	height:8px;
+	background:#fff;
+	border-radius:100%;
+	margin:10px auto;
+	display:block;
+	-webkit-animation-time:.5s
+}
+.idx-inspire .pt a.on{
+	width:8px;
+	height:8px;
+	background:none;
+	border:2px solid #eb6100;
+	border-radius:100%
+}
