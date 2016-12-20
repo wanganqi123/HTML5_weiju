@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>注意事项</title>
+		<link type="image/x-icon" rel="icon" href="__PUBLIC__/home/images/bitbug_favicon.ico" media="screen" />
+		<!--头部导航轮播图-->
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.mousewheel.min.js"></script>
+	    <script type="text/javascript" src="__PUBLIC__/home/js/main.js"></script>
+	    <script type="text/javascript" src="__PUBLIC__/home/js/index.js"></script>
+	    <link rel="stylesheet" href="__PUBLIC__/home/css/main.css">
+   	 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/style4.css">
+		<!--界面和面包屑-->
+		<link rel="stylesheet" href="__PUBLIC__/home/css/style.css">
+		<script type="text/javascript" src="__PUBLIC__/home/js/style.js"></script>
+		<!--竖版菜单导航-->
+		<script type="text/javascript" src="__PUBLIC__/home/js/juheweb.js"></script>
+		<!--尾部样式-->
+		<link href="__PUBLIC__/home/css/footer.css" rel="stylesheet" type="text/css">
+		<!--本页面-->
+		<style type="text/css">
+		#zw a:link{
+			color: #FF5F3E;
+		}
+		#zw a:hover{
+			text-decoration: underline;
+		}
+		#zw a:visited { 
+			color:#FF0000; 
+			text-decoration:none; 
+		} 
+		#zw h1{
+			margin-top: 5%;
+			margin-bottom: 5%;
+			margin-left: 40%;
+			font-size: 32px;
+			color: #333333;
+		}
+		#zw h2{
+			font-family: "Myriad Pro", "Lucida Grande", "Verdana", sans-serif;
+			margin-left:20%;
+		}
+		</style>
+	</head>
+	<body>
+		<!--头部导航与轮播图-->
+		<section class="banner" role="banner">
+      <header id="header">
+        <div class="header-content clearfix"> 
+          <a class="logo" href="{:U('Home/index/index')}"><img src="__PUBLIC__/home/images/u146.gif" width="98px" height="70px" id="logowj"></a>
+          <nav class="navigation" role="navigation">
+          	<div class="headernav">
+	            <ul class="primary-nav">
+	    		  <li>
+	                        	<a href="{:U('Home/index/index')}" title="首页" class="index" >首页</a>
+	                       	</li>
+	                        <li id="ejdh1">
+	                        	<a href="{:U('Home/yaoqu/yaoqudedifang')}" title="要去的地方" class="ejdh1">要去的地方</a>
+	                        	<ul id="ejdhlist1">
+	                        		<li><a href="{:U('Home/yaoqu/content')}">新南威尔士州</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">昆士兰</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">维多利亚州</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">北领地</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">南澳大利亚</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">西澳大利亚</a></li>
+	                        	</ul>
+	                        </li>
+	                        <li id="ejdh2">
+	                        	<a href="{:U('Home/siji/sijituijian')}" title="四季推荐" class="ejdh2">四季推荐</a>
+	                        	<ul id="ejdhlist2">
+	                        		<li><a href="{:U('Home/siji/sijituijian')}">春</a></li>
+	                        		<li><a href="{:U('Home/siji/sijituijian')}">夏</a></li>
+	                        		<li><a href="{:U('Home/siji/sijituijian')}">秋</a></li>
+	                        		<li><a href="{:U('Home/siji/sijituijian')}">冬</a></li>
+	                        	</ul>
+	                        </li>
+	                        <li>
+	                        	<a href="{:U('Home/xingcheng/xingcheng')}" title="行程推荐">行程推荐</a>
+	                        </li>
+	                        <li id="ejdh3">
+	                        	<a href="{:U('Home/zhuyi/zhuyishixiang_hb')}" title="注意事项" class="ejdh3">注意事项</a>
+	                        	<ul id="ejdhlist3">
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_hb')}">货币</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_sq')}">时区</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_jt')}">交通</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_qz')}">签证</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_lyts')}">旅游贴士</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_jkaq')}">健康安全</a></li>
+	                        	</ul>
+	                        </li>
+	                        <li>
+	                        	<a href="{:U('Home/zhuna/zhunali')}" title="住哪里">住哪里</a>
+	                        </li>
+	                        <li><a href="{:U('Home/liuxue/student')}" title="留学生导游">留学生导游</a></li>
+	            </ul>
+	        </div>
+            <div class="rheader">
+		        <div class="dlzc">
+			        <ul>	
+			            <li><a href="javascript:void(0)" title="登录" onclick="login()">登录</a></li>
+			            <li>|</li>
+			            <li><a href="javascript:void(0)" title="注册" onclick="register1()" title="注册">注册</a></li>
+			        </ul>
+			    </div>
+			    <div class="search">
+			        <a href="javascript:void(0)" onclick="search1()"><img src="__PUBLIC__/home/images/u127.jpg" width="20px" height="20px" /></a>
+			    </div>
+			</div>
+        </div>
+          </nav>
+          <a href="#" class="nav-toggle">Menu<span></span></a>
+        </div>
+        </header>
+        <div class="search1">
+				<div id="searchform">
+					<input type="text-align" name="" style="display: none;">
+				</div>
+			</div>
+			<div class="search2" id="search2" style="display: none;">
+				<div class="searchz">
+					<h6 class="searchztb">
+						<a href="javascript:void(0)" onmouseover="searchqh1()" style="font-weight: bold;" id="searchztb1">新南威尔士州</a>
+						<a href="#" onmouseover="searchqh2()" id="searchztb2">昆士兰</a>
+						<a href="#">维多利亚州</a>
+						<a href="#">北领地</a>
+						<a href="#">南澳大利亚</a>
+						<a href="#">西澳大利亚</a>
+					</h6>
+				</div>
+				<a href="javascript:void(0);" class="searchgb" id="search2_2"></a>
+				<div class="searchcs" id="searchcslist">
+					<table class="searchcs1" id="searchcs1">
+						<tr>
+							<td><a href="#">悉尼</a></td>
+							<td><a href="#">卧龙岗</a></td>
+							<td><a href="#">蓝山</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">纽卡斯尔</a></td>
+							<td><a href="#">斯蒂芬斯港</a></td>
+							<td><a href="#">卢拉镇</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">布罗肯希尔</a></td>
+							<td><a href="#">默威伦巴</a></td>
+							<td><a href="#">利斯莫尔</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">库马</a></td>
+							<td><a href="#">巴利纳</a></td>
+							<td><a href="#">卡通巴</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">古尔本</a></td>
+							<td><a href="#">楠巴卡黑兹</a></td>
+							<td><a href="#">德尼利昆</a></td>
+						</tr>
+					</table>
+					<table class="searchcs2" id="searchcs2">
+						<tr>
+							<td><a href="#">大堡礁</a></td>
+							<td><a href="#">南岸公园</a></td>
+							<td><a href="#">洛岛</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">海洋世界</a></td>
+							<td><a href="#">袋鼠角</a></td>
+							<td><a href="#">其瓦拉海滩</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">天堂农庄</a></td>
+							<td><a href="#">库克敦</a></td>
+							<td><a href="#">莫斯曼</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">萨瓦纳湾</a></td>
+							<td><a href="#">奈利湾</a></td>
+							<td><a href="#">惠森迪岛</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">昆士兰绿岛</a></td>
+							<td><a href="#">水晶洞穴</a></td>
+							<td><a href="#">云戈布拉</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+      
+
+      <!-- banner text --> 
+        <div class="banner" id="banner">
+        	<label>
+    	  <ul class="cb-slideshow">
+                <li><span><img src="__PUBLIC__/home/images/1.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/2.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/3.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/4.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/5.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/6.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+            </ul>
+            </label> 
+        </div> 
+    </section>
+    <div id="light1" class="white_content1">
+			<a href="javascript:void(0)" onclick="close1()">
+				<img src="__PUBLIC__/home/images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
+			</a>
+			<form method="post" id="signin1" action="index.html">
+				<h1>登录</h1>
+				<hr/>
+				<div>
+					<label>
+						<p>用户名</p>
+						<p>
+							<input id="USERNAMEDL" name="usernamedl" value="" title="usernamedl" tabindex="4" type="text" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="您的用户名"> 
+						</p>
+						<span id="usernamedl"  class='tip'></span>
+					</label>
+				</div>
+				<div>
+					<label>
+						<p>密码</p>
+						<p>
+					       	<input id="PASSWORDDL" name="passworddl" value="" title="password" tabindex="5" type="password"  onfocus="showDesc(this)" onblur="checkText(this)" placeholder="您的密码">
+					    </p>
+					    <span id="passworddl"  class='tip'></span>
+					</label>
+				</div>
+				<p class="remember">
+					<label><input type="checkbox" name="自动登录" > 保存密码</label>        
+					<a href=""></a>
+				</p>
+				<p class="logosub1">
+					<input type="button" name="" value="立即登录">
+				</p>
+				<div>
+					<p class="toregister">
+						还没有账号？<a href="javascript:void(0)" onclick="register1()">点击这里注册</a>
+					</p>
+				</div>
+			</form>
+		</div>
+		<div id="light2" class="white_content2">
+			<a href="javascript:void(0)" onclick="close2()">
+				<img src="__PUBLIC__/home/images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
+			</a>
+			<form method="post" id="signin2" action="index.html">
+				<h1>注册</h1>
+				<hr/>
+				<div class="tregister">
+					<div>
+						<label>
+							<p>用户名<span> *</span></p>
+							<p>
+								<input id="USERNAME" name="username" value="" title="username" tabindex="4" type="text" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请输入1~16位以内的英文、数字组合" class="inputpp"> 
+							</p>
+							<span id="username"  class='tip'></span>
+						</label>
+					</div>
+					<div style="clear: left;" class="margintop">
+						<label>
+							<p>登录密码<span> *</span></p>
+							<p>
+						       	<input id="PASSWORD" name="password" value="" title="password" tabindex="5" type="password" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请输入6~16位以内的英文、数字组合" class="inputpp">
+						       	<span id="password" class='tip'></span>
+							</p>
+						</label>
+					</div>
+					<div class="margintop">
+						<label>
+							<p>确认密码<span> *</span></p>
+							<p>
+						       	<input id="PASSWORD2" name="password2" value="" title="password" tabindex="5" type="password" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请再次输入密码" class="inputpp">
+						       	<span id="password2"  class='tip'></span>
+							</p>
+						</label>
+					</div>
+					<div class="margintop">
+						<label>
+							<p>姓名</p>
+							<p>
+						       	<input id="IDname" name="IDname" value="" title="IDname" tabindex="5" type="text" placeholder="请输入您的真实姓名(选填)" class="inputpp">
+							</p>
+						</label>
+					</div>
+					<div class="sex">
+						<p>性别</p>
+						<p>
+							<div class="nan"><input type="radio" name="sex" checked="checked"> 男</div>
+							<div class="nv"><input type="radio" name="sex"> 女</div>
+						</p>
+					</div>
+					<div class="margintop">
+						<label>
+							<p>国家/地区</p>
+							<p>
+								<div>
+						       		<input id="place" name="place" value="" title="place" tabindex="5" type="text" placeholder="请输入您所在的国家/地区(选填)" class="inputpp">
+								</div>
+							</p>
+						</label>
+					</div>
+					<div class="IDtype">
+							<p>用户类型<span> *</span></p>
+							<p>
+								<div class="tourist"><label><input type="radio" name="用户类型" checked="checked"> 游客</label></div>
+							    <div class="ciceroni"><label><input type="radio" name="用户类型" > 导游</label></div>
+						    </p>
+					</div>
+				</div>
+				<div class="bregister">
+					<div class="logosub2">
+						<a href="javascript:void(0)"  onclick="login()"><input type="button" name="" value="完成注册" style="text-align: center;"></a>
+					</div>
+					<div>
+						<p class="toregister">
+							已拥有账户？<a href="javascript:void(0)" onclick="login()">点击这里登录</a>
+						</p>
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<!--面包屑分割线与竖版菜单导航与内容-->
+
+		<div class="content">
+			<div class="content-header">
+				<div id="mbx">
+					<ul id="breadcrumb">
+						<li><a href="{:U('Home/index/index')}"><span class="icon icon-home"> </span>首页</a></li>
+  						<li><a href="{:U('Home/zhuyi/zhuyishixiang_hb')}"><span class="icon icon-beaker"> </span> 注意事项</a></li>
+  						<li><a href="{:U('Home/zhuyi/zhuyishixiang_lyts')}"><span class="icon icon-double-angle-right"></span> 旅游贴士</a></li>
+  					</ul>
+				</div>
+
+				<div>
+					<HR style="border:1 dashed #987cb9; margin-left:10%; margin-top:20px; margin-bottom:50px;" width="80%" color=#987cb9 SIZE=1>
+				</div>
+			</div>
+
+			<div class="content-footer">
+
+				<div class="lanrenzhijia" id="lanrenzhijia">
+					<ul>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang_hb')}">货币</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang_sq')}">时区</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang_jt')}">交通</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang_qz')}">签证</a></li>
+						<li class="on"><a href="{:U('Home/zhuyi/zhuyishixiang_lyts')}">旅游贴士</a></li>
+						<li class=""><a href="{:U('Home/zhuyi/zhuyishixiang_jkaq')}">健康安全</a></li>
+					</ul>
+					<div class="hover" style="top: 280px;"></div>
+				</div>
+
+				<div class="content-text">
+					<div id="zw">
+						<h1>前往澳大利亚</h1>
+						<h2>实用贴士</h2>
+						<p id="zw">
+							参考我们的实用贴士来准备您的澳大利亚之行吧。了解我们的货币、如何拨打国际电话、维护自身安全、购物时的责任，以及残疾人士旅游须知。然后，您就可以高枕无忧地享受澳大利亚之旅了！
+							<br/><br/>
+							货币
+							<br/><br/>
+							澳大利亚的货币是澳元（AUD）。澳元可在银行、酒店和国际机场兑换。一般商店普遍接受的信用卡包括美国运通卡、Bankcard卡、大来卡、万事达卡、Visa 卡和 JCB 卡及其附属机构的信用卡。
+							<br/><br/>
+							商品及服务税
+							<br/><br/>
+							澳大利亚收取 10% 的商品及服务税（GST）。如果您离澳前30天内在同一间商店花费300澳元或以上，您可以申请退税。游客退税计划柜台位于国际机场或码头的离境厅。如需更多详细信息，请查阅澳大利亚政府有关游客<a href="http://www.customs.gov.au/site/page4643.asp" target="_blank">退税计划</a>的信息。
+							<br/><br/>
+							购物
+							<br/><br/>
+							在澳大利亚各地都有大型百货商店、购物街、购物中心、礼品和纪念品商店。营业时间全国各异，但旅游区和市区的商店通常营业至下午6点，有些州逢周四或周五营业到晚上。在澳大利亚，您受到澳大利亚消费者保护法的保障，该法例要求商店公平对待每一位顾客。
+							<br/><br/>
+							小费及议价
+							<br/><br/>
+							酒店和餐馆不会在您的账单上加上服务费。在高级餐馆，游客通常会因获得优质服务而向侍应生支付小费，小费金额一般相当于账单10%。但是，是否给小费始终由您决定。澳大利亚的店铺没有议价的风俗习惯。
+							<br/><br/>
+							紧急援助
+							<br/><br/>
+							呼叫警察、救护车和消防车的紧急电话号码是000。
+							<br/><br/>
+							冲浪及水上安全
+							<br/><br/>
+							从十月到翌年四月，澳大利亚最受欢迎的海滩通常都有救生员志愿者当值，海滩会用红色和黄色旗子标示出最安全的游泳区域。有关水母和鳄鱼防护的信息，请查阅昆士兰政府网站。
+							<br/><br/>
+							语言
+							<br/><br/>
+							澳大利亚的官方语言为英语。但是，作为一个拥有大量移民人口的多元文化国家，我们还有多元化的语言和文化。
+							<br/><br/>
+							电源插座
+							<br/><br/>
+							澳大利亚采用的电源是 220-240 伏特、50 赫兹的交流电。澳大利亚常用的三孔插座与某些国家不同，所以您可能需要带转换插头。
+							<br/><br/>
+							通讯
+							<br/><br/>
+							澳大利亚的国际长途国家代码是 61。使用公用电话打本地电话不计时，每次收费 0.50 澳元。手机通讯、长途电话及越洋电话通常是依照时间计算收费。流动电话网络覆盖整个澳大利亚，但在一些偏僻地区覆盖范围可能有限。网吧、住宿场所和图书馆都普遍有上网设施。
+							<br/><br/>
+							邮寄服务
+							<br/><br/>
+							邮局通常的营业时间为周一至周五上午九时到下午五时，有些城市的邮局周六上午也会营业。游客可以安排在澳大利亚全国各地的邮局收取邮件。
+							<br/><br/>
+							无障碍旅游
+							<br/><br/>
+							如果您行动不便而又希望游历澳大利亚，我们将为您提供大量支持服务和优惠满足您的需求。作好充分准备对畅游澳大利亚不可或缺，所以请与旅行社的工作人员谈谈您的特别要求。如需了解有关澳大利亚无障碍旅游的更多信息，请浏览<a href="http://www.nican.com.au" target="_blank">NICAN</a>或<a href="http://www.australiaforall.com" target="_blank">AustraliaForAll</a>网站。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div class="footer">
+			<div class="footerjkgz">
+				<div class="footer1">
+					<div><label>即刻关注：</label></div>
+					<div><a href="#"><img src="__PUBLIC__/home/images/14515034.png" width="50px" height="45px"></a></div>
+					<div class="footera"><a href="#">官方微博</a></div>
+					<div><a href="#"><img src="__PUBLIC__/home/images/20161123213710.png" width="50px" height="45px"></a></div>
+					<div class="footera"><a href="#">官方微信</a></div>
+				</div>
+				<div class="footer2">
+					<div><label class="yqlj_">友情链接：</label></div>
+					<div class="yqlj"><a href="http://www.cnta.com/" target="_blank">国家旅游局</a></div>
+					<div class="yqlj"><a href="http://travel.people.com.cn/" target="_blank">人民网旅游</a></div>
+					<div class="yqlj"><a href="http://travel.gmw.cn/index.htm" target="_blank">光明网旅游</a></div>
+				</div>
+			</div>
+			<div class="hr2">
+				<hr color="#E4E4E4" size=1 align=center noshade>
+			</div>
+			<div class="footerliebiao">
+				<div class="footerliebiao1">
+					<div>
+						<a href="{:U('Home/yaoqu/yaoqudedifang')}">要去的地方</a>
+					</div>
+					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+					<div>
+						<ul>
+							<li><a href="{:U('Home/yaoqu/content')}">新南威尔士州</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">昆士兰</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">维多利亚州</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">北领地</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">南澳大利亚</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">西澳大利亚</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerliebiao1">
+					<div>
+						<a href="{:U('Home/siji/sijituijian')}">四季推荐</a>
+					</div>
+					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+					<div>
+						<ul>
+							<li><a href="{:U('Home/siji/sijituijian')}">春</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">夏</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">秋</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">冬</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerliebiao1">
+					<div>
+						<a href="{:U('Home/xingcheng/xingcheng')}">行程推荐</a>
+					</div>
+					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+					<div>
+						<ul>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerliebiao1">
+					<div>
+						<a href="{:U('Home/zhuyi/zhuyishixiang_hb')}">注意事项</a>
+					</div>
+					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+					<div>
+						<ul>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_hb')}">货币</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_sq')}">时区</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_jt')}">交通</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_qz')}">签证</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_lyts')}">旅游贴士</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_jkaq')}">健康安全</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerliebiao1">
+					<div>
+						<a href="{:U('Home/zhuna/zhunali')}">住哪里</a>
+					</div>
+					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+					<div>
+						<ul>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">windsor hotel</a></li>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">Port O Call Motel</a></li>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">Port 1 Call Motel</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerliebiao1">
+					<div>
+						<a href="{:U('Home/liuxue/student')}">留学生导游</a>
+					</div>
+					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
+					<div>
+						<ul>
+							<li><a href="{:U('Home/liuxue/student1')}">留学生导游信息</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footerqita">
+				<div class="footerbz">
+					<a href="{:U('Home/index/index')}"><img src="__PUBLIC__/home/images/u146.gif" width="110px" height="90px"></a>
+				</div>
+				<div class="footerlxfs">
+					<ul>
+						<li>地址：河北师范大学新校区</li>
+						<li>电子邮件：zmalqp246805@163.com</li>
+						<li>版权所有：河北师范大学软件学院微距小组</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	    <div id="fade" class="black_overlay"></div>
+	</body>
+</html>
