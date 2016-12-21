@@ -4,117 +4,192 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>个人主页</title>
-		<!--头部导航轮播图-->
-		<link href="__PUBLIC__/home/css/nav.css" rel="stylesheet" type="text/css">
 		<link type="image/x-icon" rel="icon" href="__PUBLIC__/home/images/bitbug_favicon.ico" media="screen" />
-		<script type="text/javascript" src="__PUBLIC__/home/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/home/js/index.js"></script>
+		<!--头部导航轮播图-->
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.mousewheel.min.js"></script>
+   		<script type="text/javascript" src="__PUBLIC__/home/js/main.js"></script> 
+   		<script type="text/javascript" src="__PUBLIC__/home/js/index.js"></script>
+   		<link rel="stylesheet" href="__PUBLIC__/home/css/main.css">
+    	<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/style4.css">
 		<!--界面-->
 		<link rel="stylesheet" href="__PUBLIC__/home/css/style.css">
 		<!--个人-->
 		<link href="__PUBLIC__/home/css/geren.css" rel="stylesheet" type="text/css">
 		<!--尾部样式-->
 		<link href="__PUBLIC__/home/css/footer.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript">
-		window.onload = function (){
-			document.getElementById("body").style.zoom = window.screen.width/1366-0.01;
-		}
-		</script>
 	</head>
-	<body id="body">
+	<body>
 		<!--头部导航与轮播图-->
-		<div id="header">
-			<div class="banner" id="slide">
-    			<ul id="picList">
-					<li class="slide_li first">
-						<div class="imgBg_home"></div>
-						<img class="slide_img" src="__PUBLIC__/home/images/first1.jpg" width="100%" height="480px"/> 
-					</li>
-					<li class="slide_li">
-						<div class="imgBg_air"></div>
-						<img class="slide_img" src="__PUBLIC__/home/images/first2.jpg" width="100%" height="480px"/>
-					</li>
-					<li class="slide_li">
-						<div class="imgBg_work"></div>
-						<img class="slide_img" src="__PUBLIC__/home/images/first3.jpg" width="100%" height="480px"/> 
-					</li>
-				</ul>
-    			<div id="slideThumb"></div>
-			</div>
-			<div class="lheader">
-				<div class="hl">
-					<div class="logo">
-		                <h1>
-							<a href="index.html" title="微距">
-								<img src="__PUBLIC__/home/images/u146.gif" width="98px" height="85px">
-							</a>
-		                </h1>
-		            </div>
-	                <div class="menu">
-	                    <ul>
-	                        <li>
-	                        	<a href="index.html" title="首页" class="index" >首页</a>
+		<section class="banner" role="banner">
+      <header id="header">
+        <div class="header-content clearfix"> 
+          <a class="logo" href="{:U('Home/index/index')}"><img src="__PUBLIC__/home/images/u146.gif" width="98px" height="70px" id="logowj"></a>
+          <nav class="navigation" role="navigation">
+          	<div class="headernav">
+	            <ul class="primary-nav">
+	    		  <li>
+	                        	<a href="{:U('Home/index/index')}" title="首页" class="index" >首页</a>
 	                       	</li>
 	                        <li id="ejdh1">
-	                        	<a href="yaoqudedifang.html" title="要去的地方" class="ejdh1">要去的地方</a>
-	                        	<ul>
-	                        		<li><a href="#">新南威尔士州</a></li>
-<li><a href="#">昆士兰</a></li>
-<li><a href="#">维多利亚州</a></li>
-<li><a href="#">北领地</a></li>
-<li><a href="#">南澳大利亚</a></li>
-<li><a href="#">西澳大利亚</a></li>
+	                        	<a href="{:U('Home/yaoqu/yaoqudedifang')}" title="要去的地方" class="ejdh1">要去的地方</a>
+	                        	<ul id="ejdhlist1">
+	                        		<li><a href="{:U('Home/yaoqu/content')}">新南威尔士州</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">昆士兰</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">维多利亚州</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">北领地</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">南澳大利亚</a></li>
+									<li><a href="{:U('Home/yaoqu/content')}">西澳大利亚</a></li>
 	                        	</ul>
 	                        </li>
 	                        <li id="ejdh2">
-	                        	<a href="sijituijian.html" title="四季推荐" class="ejdh2">四季推荐</a>
-	                        	<ul>
-	                        		<li><a href="#">春</a></li>
-	                        		<li><a href="#">夏</a></li>
-	                        		<li><a href="#">秋</a></li>
-	                        		<li><a href="#">冬</a></li>
+	                        	<a href="{:U('Home/siji/sijituijian')}" title="四季推荐" class="ejdh2">四季推荐</a>
+	                        	<ul id="ejdhlist2">
+	                        		<li><a href="{:U('Home/siji/sijituijian')}">春</a></li>
+	                        		<li><a href="{:U('Home/siji/sijituijian')}">夏</a></li>
+	                        		<li><a href="{:U('Home/siji/sijituijian')}">秋</a></li>
+	                        		<li><a href="{:U('Home/siji/sijituijian')}">冬</a></li>
 	                        	</ul>
 	                        </li>
 	                        <li>
-	                        	<a href="xingcheng.html" title="行程推荐">行程推荐</a>
+	                        	<a href="{:U('Home/xingcheng/xingcheng')}" title="行程推荐">行程推荐</a>
 	                        </li>
 	                        <li id="ejdh3">
-	                        	<a href="zhuyishixiang.html" title="注意事项" class="ejdh3">注意事项</a>
-	                        	<ul>
-	                        		<li><a href="#">货币</a></li>
-	                        		<li><a href="#">时区</a></li>
-	                        		<li><a href="#">交通</a></li>
-	                        		<li><a href="#">签证</a></li>
-	                        		<li><a href="#">道路安全</a></li>
-	                        		<li><a href="#">健康安全</a></li>
-	                        		<li><a href="#">实用信息</a></li>
+	                        	<a href="{:U('Home/zhuyi/zhuyishixiang_hb')}" title="注意事项" class="ejdh3">注意事项</a>
+	                        	<ul id="ejdhlist3">
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_hb')}">货币</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_sq')}">时区</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_jt')}">交通</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_qz')}">签证</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_lyts')}">旅游贴士</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_jkaq')}">健康安全</a></li>
 	                        	</ul>
 	                        </li>
 	                        <li>
-	                        	<a href="zhunali.html" title="住哪里">住哪里</a>
+	                        	<a href="{:U('Home/zhuna/zhunali')}" title="住哪里">住哪里</a>
 	                        </li>
-	                        <li><a href="student.html" title="留学生导游">留学生导游</a></li>
-	                    </ul>
-	                </div>
-	            </div>
-			</div>
-	        <div class="rheader">
+	                        <li><a href="{:U('Home/liuxue/student')}" title="留学生导游">留学生导游</a></li>
+	            </ul>
+	        </div>
+            <div class="rheader">
 		        <div class="dlzc">
-			        <ul>	
+			        <ul id="dlzc" style="display: block;">	
 			            <li><a href="javascript:void(0)" title="登录" onclick="login()">登录</a></li>
 			            <li>|</li>
 			            <li><a href="javascript:void(0)" title="注册" onclick="register1()" title="注册">注册</a></li>
 			        </ul>
+			        <ul id="dlzcf" style="display: none;">	
+			            <li style="width: 100px;overflow: hidden;">
+			            	<a href="{:U('Home/index/gerenzhuye')}">z741092665z741092665z741092665</a>
+			            	<ul id="ejdhlist4">
+			            		<li><a href="{:U('Home/index/gerenzhuye')}">个人中心</a></li>
+			            		<li><a href="">退出账号</a></li>
+			            	</ul>
+			            </li>
+			            
+			        </ul>
+			        
 			    </div>
 			    <div class="search">
-			        <a href="#"><img src="__PUBLIC__/home/images/u127.jpg" width="20px" height="20px" /></a>
+			        <a href="javascript:void(0)" onclick="search1()"><img src="__PUBLIC__/home/images/u127.jpg" width="20px" height="20px" /></a>
 			    </div>
 			</div>
-			<div class="hr1">
-				<hr color="#E4E4E4" width=91.5% size=1 align=center noshade>
-			</div>
         </div>
-		<div id="light1" class="white_content1">
+          </nav>
+          <a href="#" class="nav-toggle">Menu<span></span></a>
+        </div>
+        </header>
+        <div class="search1">
+				<div id="searchform">
+					<input type="text-align" name="" style="display: none;">
+				</div>
+			</div>
+			<div class="search2" id="search2" style="display: none;">
+				<div class="searchz">
+					<h6 class="searchztb">
+						<a href="{:U('Home/yaoqu/content')}" onmouseover="searchqh1()" style="font-weight: bold;" id="searchztb1">新南威尔士州</a>
+						<a href="{:U('Home/yaoqu/content')}" onmouseover="searchqh2()" id="searchztb2">昆士兰</a>
+						<a href="{:U('Home/yaoqu/content')}">维多利亚州</a>
+						<a href="{:U('Home/yaoqu/content')}">北领地</a>
+						<a href="{:U('Home/yaoqu/content')}">南澳大利亚</a>
+						<a href="{:U('Home/yaoqu/content')}">西澳大利亚</a>
+					</h6>
+				</div>
+				<a href="javascript:void(0);" class="searchgb" id="search2_2"></a>
+				<div class="searchcs" id="searchcslist">
+					<table class="searchcs1" id="searchcs1">
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">悉尼</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">卧龙岗</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">蓝山</a></td>
+						</tr>
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">纽卡斯尔</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">斯蒂芬斯港</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">卢拉镇</a></td>
+						</tr>
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">布罗肯希尔</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">默威伦巴</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">利斯莫尔</a></td>
+						</tr>
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">库马</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">巴利纳</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">卡通巴</a></td>
+						</tr>
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">古尔本</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">楠巴卡黑兹</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">德尼利昆</a></td>
+						</tr>
+					</table>
+					<table class="searchcs2" id="searchcs2">
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">大堡礁</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">南岸公园</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">洛岛</a></td>
+						</tr>
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">海洋世界</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">袋鼠角</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">其瓦拉海滩</a></td>
+						</tr>
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">天堂农庄</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">库克敦</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">莫斯曼</a></td>
+						</tr>
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">萨瓦纳湾</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">奈利湾</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">惠森迪岛</a></td>
+						</tr>
+						<tr>
+							<td><a href="{:U('Home/yaoqu/content')}">昆士兰绿岛</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">水晶洞穴</a></td>
+							<td><a href="{:U('Home/yaoqu/content')}">云戈布拉</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+      
+
+      <!-- banner text --> 
+        <div class="banner" id="banner">
+        	<label>
+    	  <ul class="cb-slideshow">
+                <li><span><img src="__PUBLIC__/home/images/1.jpg" width="100%" height="668px"></span><div><h3>轮播图1</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/2.jpg" width="100%" height="668px"></span><div><h3>轮播图2</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/3.jpg" width="100%" height="668px"></span><div><h3>轮播图3</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/4.jpg" width="100%" height="668px"></span><div><h3>轮播图4</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/5.jpg" width="100%" height="668px"></span><div><h3>轮播图5</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/6.jpg" width="100%" height="668px"></span><div><h3>轮播图6</h3></div></li>
+            </ul>
+            </label> 
+        </div> 
+    </section>
+    <div id="light1" class="white_content1">
 			<a href="javascript:void(0)" onclick="close1()">
 				<img src="__PUBLIC__/home/images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
 			</a>
@@ -125,16 +200,18 @@
 					<label>
 						<p>用户名</p>
 						<p>
-							<input id="username1" name="username" value="" title="username" tabindex="4" type="text" placeholder="您的用户名"> 
+							<input id="USERNAMEDL" name="usernamedl" value="" title="usernamedl" tabindex="4" type="text" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="您的用户名"> 
 						</p>
+						<span id="usernamedl"  class='tip'></span>
 					</label>
 				</div>
 				<div>
 					<label>
 						<p>密码</p>
 						<p>
-					       	<input id="password1" name="password" value="" title="password" tabindex="5" type="password" placeholder="您的密码">
-						</p>
+					       	<input id="PASSWORDDL" name="passworddl" value="" title="password" tabindex="5" type="password"  onfocus="showDesc(this)" onblur="checkText(this)" placeholder="您的密码">
+					    </p>
+					    <span id="passworddl"  class='tip'></span>
 					</label>
 				</div>
 				<p class="remember">
@@ -142,7 +219,7 @@
 					<a href=""></a>
 				</p>
 				<p class="logosub1">
-					<input type="button" name="" value="立即登录">
+					<a href="javascript:void(0)"  onclick="loginf()"><input type="button" name="" value="立即登录"></a>
 				</p>
 				<div>
 					<p class="toregister">
@@ -163,15 +240,17 @@
 						<label>
 							<p>用户名<span> *</span></p>
 							<p>
-								<input id="username2" name="username" value="" title="username" tabindex="4" type="text" placeholder="请输入1~16位以内的英文、数字组合" class="inputpp"> 
+								<input id="USERNAME" name="username" value="" title="username" tabindex="4" type="text" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请输入1~16位以内的英文、数字组合" class="inputpp"> 
 							</p>
+							<span id="username"  class='tip'></span>
 						</label>
 					</div>
 					<div style="clear: left;" class="margintop">
 						<label>
 							<p>登录密码<span> *</span></p>
 							<p>
-						       	<input id="password2" name="password" value="" title="password" tabindex="5" type="password" placeholder="请输入6~16位以内的英文、数字组合" class="inputpp">
+						       	<input id="PASSWORD" name="password" value="" title="password" tabindex="5" type="password" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请输入6~16位以内的英文、数字组合" class="inputpp">
+						       	<span id="password" class='tip'></span>
 							</p>
 						</label>
 					</div>
@@ -179,7 +258,8 @@
 						<label>
 							<p>确认密码<span> *</span></p>
 							<p>
-						       	<input id="password2" name="password" value="" title="password" tabindex="5" type="password" placeholder="请再次输入密码" class="inputpp">
+						       	<input id="PASSWORD2" name="password2" value="" title="password" tabindex="5" type="password" onfocus="showDesc(this)" onblur="checkText(this)" placeholder="请再次输入密码" class="inputpp">
+						       	<span id="password2"  class='tip'></span>
 							</p>
 						</label>
 					</div>
@@ -211,14 +291,14 @@
 					<div class="IDtype">
 							<p>用户类型<span> *</span></p>
 							<p>
-								<div class="tourist"><label><input type="checkbox" name="用户类型" checked="checked"> 游客</label></div>
-							    <div class="ciceroni"><label><input type="checkbox" name="用户类型" > 导游</label></div>
+								<div class="tourist"><label><input type="radio" name="用户类型" checked="checked"> 游客</label></div>
+							    <div class="ciceroni"><label><input type="radio" name="用户类型" > 导游</label></div>
 						    </p>
 					</div>
 				</div>
 				<div class="bregister">
 					<div class="logosub2">
-						<input type="button" name="" value="完成注册" style="text-align: center;">
+						<a href="javascript:void(0)"  onclick="login()"><input type="button" name="" value="完成注册" style="text-align: center;"></a>
 					</div>
 					<div>
 						<p class="toregister">
@@ -226,9 +306,9 @@
 						</p>
 					</div>
 				</div>
+
 			</form>
 		</div>
-		<div id="fade" class="black_overlay">123</div>
 		<!--内容部分-->
 		<div class="content">
 			<div class="con4">
@@ -237,12 +317,12 @@
 			</div>
 			<div class="namejj">
 				<h2>小疯子阿杜</h2>
-				<p>一句话介绍一下自己吧，让别人更了解你。</p>
+				<br/><br/>
 			</div>
 			<div class="xx">
 				<div>
 					<h1>基本信息</h1>
-					<HR style="border:1 dashed #987cb9; margin-left:20%; margin-top:20px; margin-bottom:50px;" width="60%" color=#987cb9 SIZE=1>
+					<HR style="border:1 dashed #987cb9; margin-left:10%; margin-top:2%; margin-bottom:3%; width:80%;" color=#987cb9 SIZE=1>
 				</div>
 				<div class="xxxg">
 					<div class="bkxg">昵称</div>
@@ -262,9 +342,9 @@
 					<br/><br/>
 				</div>
 
-				<div>
+				<div class="xx">
 					<h1>联系信息</h1>
-					<HR style="border:1 dashed #987cb9; margin-left:20%; margin-top:20px; margin-bottom:50px;" width="60%" color=#987cb9 SIZE=1>
+					<HR style="border:1 dashed #987cb9; margin-left:10%; margin-top:2%; margin-bottom:3%; width:80%;" color=#987cb9 SIZE=1>
 				</div>
 				<div class="xxxg">
 					<div class="bkxg">邮箱</div>
@@ -277,9 +357,9 @@
 					<div class="kxg"><span>15027859876</span><a href="#0" onclick="cg(this)">修改</a></div>
 					<br/><br/>
 				</div>
-				<div>
+				<div class="xx">
 					<h1>留学生信息</h1>
-					<HR style="border:1 dashed #987cb9; margin-left:20%; margin-top:20px; margin-bottom:50px;" width="60%" color=#987cb9 SIZE=1>
+					<HR style="border:1 dashed #987cb9; margin-left:10%; margin-top:2%; margin-bottom:3%; width:80%;" color=#987cb9 SIZE=1>
 				</div>
 				<div class="xxxg">
 					<div class="bkxg">工作时间</div>
@@ -309,15 +389,15 @@
 				<div class="footer1">
 					<div><label>即刻关注：</label></div>
 					<div><a href="#"><img src="__PUBLIC__/home/images/14515034.png" width="50px" height="45px"></a></div>
-					<div><a href="#" class="footera">官方微博</a></div>
+					<div class="footera"><a href="#">官方微博</a></div>
 					<div><a href="#"><img src="__PUBLIC__/home/images/20161123213710.png" width="50px" height="45px"></a></div>
-					<div><a href="#" class="footera">官方微信</a></div>
+					<div class="footera"><a href="#">官方微信</a></div>
 				</div>
 				<div class="footer2">
 					<div><label class="yqlj_">友情链接：</label></div>
-					<div><a href="http://www.cnta.com/" class="yqlj" target="_blank">国家旅游局</a></div>
-					<div><a href="http://travel.people.com.cn/" class="yqlj" target="_blank">人民网旅游</a></div>
-					<div><a href="http://travel.gmw.cn/index.htm" class="yqlj" target="_blank">光明网旅游</a></div>
+					<div class="yqlj"><a href="http://www.cnta.com/" target="_blank">国家旅游局</a></div>
+					<div class="yqlj"><a href="http://travel.people.com.cn/" target="_blank">人民网旅游</a></div>
+					<div class="yqlj"><a href="http://travel.gmw.cn/index.htm" target="_blank">光明网旅游</a></div>
 				</div>
 			</div>
 			<div class="hr2">
@@ -326,93 +406,92 @@
 			<div class="footerliebiao">
 				<div class="footerliebiao1">
 					<div>
-						<a href="#">要去的地方</a>
+						<a href="{:U('Home/yaoqu/yaoqudedifang')}">要去的地方</a>
 					</div>
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">新南威尔士州</a></li>
-<li><a href="#">昆士兰</a></li>
-<li><a href="#">维多利亚州</a></li>
-<li><a href="#">北领地</a></li>
-<li><a href="#">南澳大利亚</a></li>
-<li><a href="#">西澳大利亚</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">新南威尔士州</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">昆士兰</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">维多利亚州</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">北领地</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">南澳大利亚</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">西澳大利亚</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footerliebiao1">
 					<div>
-						<a href="#">四季推荐</a>
+						<a href="{:U('Home/siji/sijituijian')}">四季推荐</a>
 					</div>
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">春</a></li>
-							<li><a href="#">夏</a></li>
-							<li><a href="#">秋</a></li>
-							<li><a href="#">冬</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">春</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">夏</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">秋</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">冬</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footerliebiao1">
 					<div>
-						<a href="#">行程推荐</a>
+						<a href="{:U('Home/xingcheng/xingcheng')}">行程推荐</a>
 					</div>
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">自驾之旅</a></li>
-							<li><a href="#">探险之旅</a></li>
-							<li><a href="#">自然野生动物</a></li>
-							<li><a href="#">美食美酒</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footerliebiao1">
 					<div>
-						<a href="#">注意事项</a>
+						<a href="{:U('Home/zhuyi/zhuyishixiang')}">注意事项</a>
 					</div>
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">货币</a></li>
-							<li><a href="#">时区</a></li>
-							<li><a href="#">交通</a></li>
-							<li><a href="#">签证</a></li>
-							<li><a href="#">道路安全</a></li>
-							<li><a href="#">健康安全</a></li>
-							<li><a href="#">实用信息</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">货币</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">时区</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">交通</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">签证</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">旅游贴士</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">健康安全</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footerliebiao1">
 					<div>
-						<a href="#">住哪里</a>
+						<a href="{:U('Home/zhuna/zhunali')}">住哪里</a>
 					</div>
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">按地区筛选</a></li>
-							<li><a href="#">按主题筛选</a></li>
-							<li><a href="#">按景观筛选</a></li>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">windsor hotel</a></li>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">Port O Call Motel</a></li>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">Port 1 Call Motel</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footerliebiao1">
 					<div>
-						<a href="#">留学生导游</a>
+						<a href="{:U('Home/liuxue/student')}">留学生导游</a>
 					</div>
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">留学生导游信息</a></li>
+							<li><a href="{:U('Home/liuxue/student1')}">留学生导游信息</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="footerqita">
 				<div class="footerbz">
-					<a href="#"><img src="__PUBLIC__/home/images/u146.gif" width="110px" height="90px"></a>
+					<a href="{:U('Home/index/index')}"><img src="__PUBLIC__/home/images/u146.gif" width="110px" height="90px"></a>
 				</div>
 				<div class="footerlxfs">
 					<ul>
@@ -423,6 +502,7 @@
 				</div>
 			</div>
 		</div>
+	    <div id="fade" class="black_overlay"></div>
 	</body>
 	<!--上传头像JS-->
 	<script type="text/javascript" src="__PUBLIC__/home/js/geren.js"></script>

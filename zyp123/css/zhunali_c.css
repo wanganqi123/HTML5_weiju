@@ -1,0 +1,129 @@
+*{ 
+             margin:0 auto;
+             padding: 0; 
+             text-decoration: none;
+             font-family: Microsoft YaHei, Helvitica, Verdana, Arial, san-    serif;
+    }
+    ul{
+            list-style: none;
+    }
+    body{
+        background-image: url(../images/bg.jpg);
+    }
+    .content{
+        margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .liuyan{
+        margin-left: 10%;
+      margin-right: 10%;
+    }
+    .fengexian{
+        margin-left: 10%;
+      margin-right: 10%;
+    }
+    .pic{
+            width:2400px;
+            position: absolute;
+            left:0;
+            animation-name: focusmap;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;//动画调用可以简写
+
+        }
+         @keyframes focusmap {
+            0%,30%{
+                left: 0;
+            }
+            35%,65%{
+                left: -600px;
+            }
+            70%,99%{
+                left: -1200px;
+            }
+            100%{
+                left: -1800px;
+            }
+           
+        }
+      .pic li{
+            float: left;
+            background: #5dd94e;
+        }
+
+      .pic li img {
+            width: 600px;
+            height: 300px;
+        }
+    .c_left{
+            position: relative;
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+            float: left;
+        }
+    .ch{
+        text-align: center;
+        font: 22px Microsoft YaHei, Helvitica, Verdana, Arial, san-serif;
+    }
+    .c_right{
+      float: left;
+      margin-left: 10%;
+      background-color: white;
+    }
+    .c_right td{
+        line-height: 2
+    }
+    .jianjie{
+        clear: both
+    }
+    .jianp{
+        margin-top:2%;
+        font: 18px Microsoft YaHei, Helvitica, Verdana, Arial, san-serif;
+    }
+    .t1{
+        margin-top: 2%;
+        margin-bottom:2%;
+        margin-left: 0%
+    }
+    .table1{
+        background-color: white
+    }
+    .table1 td{
+        font-size: 20px;
+        line-height: 2
+    }
+    .h1{
+        margin-top: 2%
+    }
+   .lvke{
+        margin-top: 2%
+        }
+    .l1{
+        height: 40%
+    }
+    .l_left{
+        float: left;
+        width: 10%;
+    }
+    .l_right{
+        float: left;
+        width: 80%;
+        margin-left: 10%
+    }
+    .l_left img{
+        width: 100%
+    }
+    .jubao ul li{
+        float:left;
+        list-style:none;
+        margin-left: 3%
+    }
+    .jubao ul li a{
+        font-size: 20px;
+        color:black;
+    }
+    .jubao{
+        margin-top: 5%
+    }

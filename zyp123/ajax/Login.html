@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+    $("#submit").click(function(){
+    $.ajax({
+        url:'demo.php',
+        type:"POST",
+        data:$('#form').serialize(),
+        success: function(data) {
+            $("#result").text(data);
+        }
+    });
+});
+
+
+  </script>
+</head>
+<body>
+  <form id="form">
+      <input name="data" type="text">
+      <input type="button" value="提交" id="submit">
+  </form>
+  <div id="result"></div>
+</body>
+</html>
+
+
+

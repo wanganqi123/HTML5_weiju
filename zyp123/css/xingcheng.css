@@ -1,0 +1,39 @@
+*{ 
+             margin:0 auto;
+             padding: 0; 
+             text-decoration: none;
+             position:relative;
+     }
+    ul{
+            list-style: none;
+    }
+    body{
+        background-image: url(../images/bg.jpg);
+        margin:0 auto;
+    }
+    .content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .list{
+        margin-top: 40px;
+        width: 100%;
+        height: 40%;
+    }
+    .list_img{
+        float:left;
+        width: 40%;
+        height:70%;
+    }
+    .list_img img{
+      width: 100%;
+      height: 100%
+    }
+    .list_content{
+        float:left;
+        width: 50%;
+        margin-left:10%;
+        font: 18px Microsoft YaHei, Helvitica, Verdana, Arial, san-serif;
+        
+    }
+   

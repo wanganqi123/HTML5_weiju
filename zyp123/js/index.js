@@ -26,6 +26,15 @@ function close2(){
         $("#fade").hide();
     }
 }
+function loginf(){
+  $("#light1").hide();
+  $("#fade").hide();
+  document.getElementById('dlzc').style.display = 'none';
+  document.getElementById('dlzcf').style.display = 'block';
+}
+function loginf1(){
+  
+}
 //实现搜索功能
 function search1(){
   if(document.getElementById('search1').style.display == 'none'){
@@ -69,7 +78,18 @@ function searchqh2(){
   document.getElementById('searchztb1').style.fontWeight = "normal";
   document.getElementById('searchztb2').style.fontWeight = "bold";
 }
-
+function searchqh1_1(){
+  document.getElementById('searchcs1').style.display="block";
+  document.getElementById('searchcs2').style.display="block";
+  document.getElementById('searchztb1').style.fontWeight = "bold";
+  document.getElementById('searchztb2').style.fontWeight = "normal";
+}
+function searchqh2_1(){
+  document.getElementById('searchcs1').style.display="block";
+  document.getElementById('searchcs2').style.display="block";
+  document.getElementById('searchztb1').style.fontWeight = "normal";
+  document.getElementById('searchztb2').style.fontWeight = "bold";
+}
 (function ($) {
   jQuery.expr[':'].Contains = function(a,i,m){
       return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
@@ -84,9 +104,14 @@ function searchqh2(){
         if(filter) {
       $matches = $(list).find('a:Contains(' + filter + ')').parent();
       $('td', list).not($matches).slideUp();
+      $("#searchcs1").show();
       $("#searchcs2").show();
+      $('#searchztb1').attr('onmouseover','searchqh1_1()');
+      $('#searchztb2').attr('onmouseover','searchqh2_1()');
       $matches.slideDown();
         } else {
+          $('#searchztb1').attr('onmouseover','searchqh1()');
+          $('#searchztb2').attr('onmouseover','searchqh2()');
           $("#searchcs1").show();
           $("#searchcs2").hide();
           $(list).find("td").slideDown();

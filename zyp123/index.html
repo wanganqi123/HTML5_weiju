@@ -11,13 +11,15 @@
    		<script type="text/javascript" src="js/index.js"></script>
     	<script type="text/javascript" src="js/common.js"></script>
 	    <script type="text/javascript" src="js/main.js"></script> 
+	    <script type="text/javascript" src="js/slide.js"></script>
 	</head>
 	<link rel="stylesheet" type="text/css" href="css/rocketTop.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/style4.css">
 	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<link href="css/footer.css" rel="stylesheet" type="text/css">
-	<body id="body">
+	<link href="css/slide.css" rel="stylesheet">
+	<body>
 
 <!--************************************header*************************************-->
 		<!-- header section -->
@@ -73,11 +75,22 @@
 	        </div>
             <div class="rheader">
 		        <div class="dlzc">
-			        <ul>	
+			        <ul id="dlzc" style="display: block;">	
 			            <li><a href="javascript:void(0)" title="登录" onclick="login()">登录</a></li>
 			            <li>|</li>
 			            <li><a href="javascript:void(0)" title="注册" onclick="register1()" title="注册">注册</a></li>
 			        </ul>
+			        <ul id="dlzcf" style="display: none;">	
+			            <li style="width: 100px;overflow: hidden;">
+			            	<a href="#">z741092665z741092665z741092665</a>
+			            	<ul id="ejdhlist4">
+			            		<li><a href="#">个人中心</a></li>
+			            		<li><a href="#">退出账号</a></li>
+			            	</ul>
+			            </li>
+			            
+			        </ul>
+			        
 			    </div>
 			    <div class="search">
 			        <a href="javascript:void(0)" onclick="search1()"><img src="images/u127.jpg" width="20px" height="20px" /></a>
@@ -208,7 +221,7 @@
 					<a href=""></a>
 				</p>
 				<p class="logosub1">
-					<input type="button" name="" value="立即登录">
+					<a href="javascript:void(0)"  onclick="loginf()"><input type="button" name="" value="立即登录"></a>
 				</p>
 				<div>
 					<p class="toregister">
@@ -343,8 +356,41 @@
 							</ul>
 						</div>
 					</div>
-					<div class="lbt">
-						<a href="content.html"><img src="images/u187.jpg"></a>
+					<div class="ck-slide" id="ck-slide">
+						<div class="ck-slide-dir">
+							<ul class="ck-slide-wrapper">
+								<li>
+				                <a href="content.html"><img src="images/lb1.jpg" id="ck-slide1" alt=""></a>
+								</li>
+								<li>
+									<a href="content.html"><img src="images/lb2.jpg"  id="ck-slide2" alt=""></a>
+								</li>
+								<li>
+									<a href="content.html"><img src="images/lb3.jpg" id="ck-slide3"  alt=""></a>
+								</li>
+								<li>
+									<a href="content.html"><img src="images/lb4.jpg"  id="ck-slide4" alt=""></a>
+								</li>
+								<li>
+									<a href="content.html"><img src="images/lb5.jpg"  id="ck-slide5" alt=""></a>
+								</li>
+							</ul>
+						</div>
+			
+						<a href="javascript:;" class="ctrl-slide ck-prev">上一张</a>
+						<a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+
+						<div class="ck-slidebox">
+							<div class="slideWrap">
+								<ul class="dot-wrap">
+									<li class="current"><em>1</em></li>
+									<li class=""><em>2</em></li>
+									<li class=""><em>3</em></li>
+									<li class=""><em>4</em></li>
+									<li class=""><em>5</em></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<div class="xndq">
 						<a href="content.html"><img src="images/u45.jpg"></a>
@@ -569,7 +615,14 @@
 				</div>
 			</div>
 		</div>
-		
 	    <div id="fade" class="black_overlay"></div>
+	    <script>
+			$('.ck-slide').ckSlide({
+				autoPlay: true,//默认为不自动播放，需要时请以此设置
+				dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+				interval:1080//默认间隔2000毫秒
+				
+			});
+		</script>
 	</body>
 </html>

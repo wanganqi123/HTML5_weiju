@@ -4,62 +4,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>邦迪海滩</title>
-		<!--头部导航轮播图-->
-		<link href="__PUBLIC__/home/css/nav.css" rel="stylesheet" type="text/css">
 		<link type="image/x-icon" rel="icon" href="__PUBLIC__/home/images/bitbug_favicon.ico" media="screen" />
-		<script type="text/javascript" src="__PUBLIC__/home/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/home/js/index.js"></script>
+		<!--头部导航轮播图-->
+		<link rel="stylesheet" href="__PUBLIC__/home/css/main.css">
+    	<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/style4.css">
+		<link href="__PUBLIC__/home/css/footer.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.mousewheel.min.js"></script>
+   		<script type="text/javascript" src="__PUBLIC__/home/js/index.js"></script>
+	    <script type="text/javascript" src="__PUBLIC__/home/js/main.js"></script> 
 		<!--界面和面包屑-->
 		<link rel="stylesheet" href="__PUBLIC__/home/css/style.css">
-		<link href="__PUBLIC__/home/css/footer.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/home/js/style.js"></script>
-		<!--竖版菜单导航-->
-		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/home/js/juheweb.js"></script>
-    	<script type="text/javascript">
-		window.onload = function (){
-			document.getElementById("body").style.zoom = window.screen.width/1366;
-		}
-		</script>
+		<link href="__PUBLIC__/home/css/lightbox.css" rel="stylesheet"/>
+		<script src="__PUBLIC__/home/js/jquery-1.10.2.min.js"></script>
+        <script src="__PUBLIC__/home/js/lightbox-2.6.min.js"></script>
+		<style>
+			h1{
+				font-size: 30px;
+				font-family: "微软雅黑";
+			}
+			p{
+				font-family: "微软雅黑";
+			}
+			#hi{
+				width: 620px;
+			}
+		</style>
 	</head>
-	<body id="body">
+	<body>
 		<!--头部导航与轮播图-->
-		<div id="header">
-			<div class="banner" id="slide">
-    			<ul id="picList">
-					<li class="slide_li first">
-						<div class="imgBg_home"></div>
-						<img class="slide_img" src="__PUBLIC__/home/images/first1.jpg" width="100%" height="480px"/> 
-					</li>
-					<li class="slide_li">
-						<div class="imgBg_air"></div>
-						<img class="slide_img" src="__PUBLIC__/home/images/first2.jpg" width="100%" height="480px"/>
-					</li>
-					<li class="slide_li">
-						<div class="imgBg_work"></div>
-						<img class="slide_img" src="__PUBLIC__/home/images/first3.jpg" width="100%" height="480px"/> 
-					</li>
-				</ul>
-    			<div id="slideThumb"></div>
-			</div>
-			<div class="lheader">
-				<div class="hl">
-					<div class="logo">
-		                <h1>
-							<a href="{:U('Home/index/index')}" title="微距">
-								<img src="__PUBLIC__/home/images/u146.gif" width="98px" height="85px">
-							</a>
-		                </h1>
-		            </div>
-	                <div class="menu">
-	                    <ul>
-	                        <li>
-	                        	<a href="{:U('Home/index/index')}" title="首页" class="index">首页</a>
+		 <section class="banner" role="banner">
+      <header id="header">
+        <div class="header-content clearfix"> 
+          <a class="logo" href="{:U('Home/index/index')}"><img src="__PUBLIC__/home/images/u146.gif" width="98px" height="70px" id="logowj"></a>
+          <nav class="navigation" role="navigation">
+          	<div class="headernav">
+	            <ul class="primary-nav">
+	    		  <li>
+	                        	<a href="{:U('Home/index/index')}" title="首页" class="index" >首页</a>
 	                       	</li>
 	                        <li id="ejdh1">
-	                        	<a href="{:U('Home/yaoqu/yaoqudedifang')}" title="要去的地方" class="ejdh1" style="background-color:rgba(0,0,0,0.2)!important; filter:Alpha(opacity=30);">要去的地方</a>
-	                        	<ul>
+	                        	<a href="{:U('Home/yaoqu/yaoqudedifang')}" title="要去的地方" class="ejdh1">要去的地方</a>
+	                        	<ul id="ejdhlist1">
 	                        		<li><a href="{:U('Home/yaoqu/content')}">新南威尔士州</a></li>
 									<li><a href="{:U('Home/yaoqu/content')}">昆士兰</a></li>
 									<li><a href="{:U('Home/yaoqu/content')}">维多利亚州</a></li>
@@ -70,7 +56,7 @@
 	                        </li>
 	                        <li id="ejdh2">
 	                        	<a href="{:U('Home/siji/sijituijian')}" title="四季推荐" class="ejdh2">四季推荐</a>
-	                        	<ul>
+	                        	<ul id="ejdhlist2">
 	                        		<li><a href="{:U('Home/siji/sijituijian')}">春</a></li>
 	                        		<li><a href="{:U('Home/siji/sijituijian')}">夏</a></li>
 	                        		<li><a href="{:U('Home/siji/sijituijian')}">秋</a></li>
@@ -81,26 +67,23 @@
 	                        	<a href="{:U('Home/xingcheng/xingcheng')}" title="行程推荐">行程推荐</a>
 	                        </li>
 	                        <li id="ejdh3">
-	                        	<a href="{:U('Home/zhuyi/zhuyishixiang')}" title="注意事项" class="ejdh3">注意事项</a>
-	                        	<ul>
-	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">货币</a></li>
-	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">时区</a></li>
-	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">交通</a></li>
-	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">签证</a></li>
-	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">道路安全</a></li>
-	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">健康安全</a></li>
-	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang')}">实用信息</a></li>
+	                        	<a href="{:U('Home/zhuyi/zhuyishixiang_hb')}" title="注意事项" class="ejdh3">注意事项</a>
+	                        	<ul id="ejdhlist3">
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_hb')}">货币</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_sq')}">时区</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_jt')}">交通</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_qz')}">签证</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_lyts')}">旅游贴士</a></li>
+	                        		<li><a href="{:U('Home/zhuyi/zhuyishixiang_jkaq')}">健康安全</a></li>
 	                        	</ul>
 	                        </li>
 	                        <li>
 	                        	<a href="{:U('Home/zhuna/zhunali')}" title="住哪里">住哪里</a>
 	                        </li>
 	                        <li><a href="{:U('Home/liuxue/student')}" title="留学生导游">留学生导游</a></li>
-	                    </ul>
-	                </div>
-	            </div>
-			</div>
-	        <div class="rheader">
+	            </ul>
+	        </div>
+            <div class="rheader">
 		        <div class="dlzc">
 			        <ul>	
 			            <li><a href="javascript:void(0)" title="登录" onclick="login()">登录</a></li>
@@ -109,14 +92,105 @@
 			        </ul>
 			    </div>
 			    <div class="search">
-			        <a href="#"><img src="__PUBLIC__/home/images/u127.jpg" width="20px" height="20px" /></a>
+			        <a href="javascript:void(0)" onclick="search1()"><img src="__PUBLIC__/home/images/u127.jpg" width="20px" height="20px" /></a>
 			    </div>
 			</div>
-			<div class="hr1">
-				<hr color="#E4E4E4" width=91.5% size=1 align=center noshade>
-			</div>
         </div>
-		<div id="light1" class="white_content1">
+          </nav>
+          <a href="#" class="nav-toggle">Menu<span></span></a>
+        </div>
+        </header>
+        <div class="search1">
+				<div id="searchform">
+					<input type="text-align" name="" style="display: none;">
+				</div>
+			</div>
+			<div class="search2" id="search2" style="display: none;">
+				<div class="searchz">
+					<h6 class="searchztb">
+						<a href="javascript:void(0)" onmouseover="searchqh1()" style="font-weight: bold;" id="searchztb1">新南威尔士州</a>
+						<a href="#" onmouseover="searchqh2()" id="searchztb2">昆士兰</a>
+						<a href="#">维多利亚州</a>
+						<a href="#">北领地</a>
+						<a href="#">南澳大利亚</a>
+						<a href="#">西澳大利亚</a>
+					</h6>
+				</div>
+				<a href="javascript:void(0);" class="searchgb" id="search2_2"></a>
+				<div class="searchcs" id="searchcslist">
+					<table class="searchcs1" id="searchcs1">
+						<tr>
+							<td><a href="#">悉尼</a></td>
+							<td><a href="#">卧龙岗</a></td>
+							<td><a href="#">蓝山</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">纽卡斯尔</a></td>
+							<td><a href="#">斯蒂芬斯港</a></td>
+							<td><a href="#">卢拉镇</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">布罗肯希尔</a></td>
+							<td><a href="#">默威伦巴</a></td>
+							<td><a href="#">利斯莫尔</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">库马</a></td>
+							<td><a href="#">巴利纳</a></td>
+							<td><a href="#">卡通巴</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">古尔本</a></td>
+							<td><a href="#">楠巴卡黑兹</a></td>
+							<td><a href="#">德尼利昆</a></td>
+						</tr>
+					</table>
+					<table class="searchcs2" id="searchcs2">
+						<tr>
+							<td><a href="#">大堡礁</a></td>
+							<td><a href="#">南岸公园</a></td>
+							<td><a href="#">洛岛</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">海洋世界</a></td>
+							<td><a href="#">袋鼠角</a></td>
+							<td><a href="#">其瓦拉海滩</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">天堂农庄</a></td>
+							<td><a href="#">库克敦</a></td>
+							<td><a href="#">莫斯曼</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">萨瓦纳湾</a></td>
+							<td><a href="#">奈利湾</a></td>
+							<td><a href="#">惠森迪岛</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">昆士兰绿岛</a></td>
+							<td><a href="#">水晶洞穴</a></td>
+							<td><a href="#">云戈布拉</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+      
+
+      <!-- banner text --> 
+        <div class="banner" id="banner">
+        	<label>
+    	  <ul class="cb-slideshow">
+                <li><span><img src="__PUBLIC__/home/images/1.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/2.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/3.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/4.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/5.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+                <li><span><img src="__PUBLIC__/home/images/6.jpg" width="100%" height="668px"></span><div><h3>邦迪海滩</h3></div></li>
+            </ul>
+            </label> 
+        </div> 
+    </section>
+    <div id="light1" class="white_content1">
 			<a href="javascript:void(0)" onclick="close1()">
 				<img src="__PUBLIC__/home/images/03q58PICtSW_1024.png" width="18" height="24" id="imgclose">
 			</a>
@@ -236,7 +310,6 @@
 
 			</form>
 		</div>
-		<div id="fade" class="black_overlay">123</div>
 		<!--面包屑分割线与竖版菜单导航与内容-->
 		<div class="content">
 
@@ -262,57 +335,72 @@
             				<h1>邦迪海滩&nbsp;&nbsp;&nbsp;Bondi Beach</h1>
             			</div>
             			<div class="zwnr1">
-            				<img src="__PUBLIC__/home/images/3.jpg" width="95%" height="380px" >
+            				<img src="__PUBLIC__/home/images/3.jpg" width="95%" height="430px" >
             			</div>
 	            	</div>
 	            	<div class="zwy">
 	            		<div class="zwbt">
 	            			<h1>景点介绍</h1>
 	            		</div>
-	            		<div class="zwnr2" style="margin-top: 0px;">
+	            		<div class="zwnr2" style="margin-top:-1%;"> 
 	            			<p>
 邦迪海滩（Bondi Beach）位于澳大利亚悉尼。邦迪海滩（Bondi Beach）的名字来自于原居民的语言bondi，意思是海水拍岸的声浪。邦迪海滩（读音："BOND-eye" with a long i 听起来象“邦待”）长达1公里，虽然只是个沙滩滨海小镇，却是澳洲具历史的冲浪运动中心，是澳洲传统冲浪救生训练基地。
 在夏季的周末，这里有各类冲浪活动，运动员们轮番上阵表演；有非正式的乐队在岸上声嘶力竭地演唱；有民俗活动、艺术展览活动等。沿着邦迪到库吉的悬崖观景路而行，一路上可以慢慢闲逛、游游泳，还可以到咖啡馆里喝上一杯咖啡。 邦迪海滩还是澳大利亚人休闲娱乐的地方，海水很蓝，甚是美丽。 邦迪海滩 邦迪海滩 在建于20世纪20年代的精致优雅的邦迪凉亭（Bondi Pavilion）里品尝一客鲜奶冰淇淋。 观看邦迪海滩救生员开展救生演示活动，甚至还可以亲身参与。 在悉尼的标志性场所之一邦迪冰山（Bondi Icebergs）游泳池戏水。 日落时一面领略壮观的大海美景，一面享受邦迪海滩上众多餐馆的诱人美食。 如果要了解当地人是如何享受生活的话，最好的方法就是到邦迪海滩，它的原名意为“翻动潮水的噪音”，非常恰当地描述了这个海滩上下，这里无论在夏季或冬季，都是悉尼的精华所在，海滩的生活非常舒适，每当夏季，这里也是日光浴和冲浪的绝佳地点，游客也可在这里观看一场嘉年华会。			</p>
 	            		</div>
 	            	</div>
             	</div>
-            	<div class="content-text2">
-            		<div class="txtp">
-	            		<img src="__PUBLIC__/home/images/4.jpg" width="185px" height="120px"/>
-						<img src="__PUBLIC__/home/images/5.jpg" width="185px" height="120px"/>
-						<img src="__PUBLIC__/home/images/7.jpg" width="185px" height="120px"/>
-					</div>
-					<div class="txwz">	
-						<h2>特别提醒</h2>
-						<p>1. 在北部海滩的悬崖上还有一些Eora人的土著岩石雕刻，但是非常模糊。 </p>
-						<p>2. 来这里之前最好做好防晒准备，否则有可能会被晒伤。 </p>
-					</div>
-            	</div>
+           <div class="content-text2">
+				<div class="image-set">
+					<a class="example-image-link" href="__PUBLIC__/home/images/demopage/image-3.jpg" data-lightbox="example-set" ><img class="example-image" src="__PUBLIC__/home/images/demopage/thumb-3.jpg"  width="200" height="170"/></a>
+					<a class="example-image-link" href="__PUBLIC__/home/images/demopage/image-4.jpg" data-lightbox="example-set" ><img class="example-image" src="__PUBLIC__/home/images/demopage/thumb-4.jpg"  width="200" height="170"/></a>
+					<a class="example-image-link" href="__PUBLIC__/home/images/demopage/image-5.jpg" data-lightbox="example-set" ><img class="example-image" src="__PUBLIC__/home/images/demopage/thumb-5.jpg" width="200" height="170"/></a>
+				</div>
+
+				<div class="txwz">	
+					<h1 style="margin-top:2%">特别提醒</h1>
+					<p style="margin-top:2%">1. 在北部海滩的悬崖上还有一些Eora人的土著岩石雕刻，但是非常模糊。 </p>
+					<p>2. 来这里之前最好做好防晒准备，否则有可能会被晒伤。 </p>
+				</div>	
+		   </div>
             	<div class="content-text3">
+            	    <div class="qbwz">
+	            		<div class="zz" >
+	            			<h1>这样到这里：）</h1>
+	            			<p>邦迪海滩位于悉尼西南部，距离悉尼市中心约7公里，有多种交通方式可以到达这里。从悉尼市中心出发，先坐火车再搭乘公交是最便捷的到达方式，相比自驾与出租车更有优势。澳大利亚拥有保养良好的巨大公路网络，选择长途巴士也是比较方便的旅行方式。贯穿在主要城市之间的州际巴士，服务水平高且班次频繁，线路清楚而且巴士内还有空调、洗手间等设施，也非常舒适。
+灰狗巴士是澳洲唯一的一家国家巴士公司，购买他的澳洲灰狗先锋旅游车票（Greyhound Pioneer Travel Passes）旅行十分方便。另外如果是在东部海岸沿线的话，Premier巴士也是不错的选择，价格比灰狗要便宜，而且人会比较少。
+</p>
+	            		</div>
+	            		<div class="ybtp">
+	            			<img src="__PUBLIC__/home/images/3.jpg" width="100%" height="220px">
+	            		</div>
+	            	</div>
+	            		
             		<div class="qbwz">
-            			<h1>这样到这里：）</h1>
-            			<p>邦迪海滩位于悉尼西南部，距离悉尼市中心约7公里，有多种交通方式可以到达这里。从悉尼市中心出发，先坐火车再搭乘公交是最便捷的到达方式，相比自驾与出租车更有优势。</p>
-            		</div>
-            		<div class="qbwz">
-            			<div class="zbwz">
+            			<div class="zbwz" >
 	            			<h1>游泳与水上运动</h1>
 	            			<p>邦迪在澳洲土著语里意为“碎石浪”，非常恰当地描述了这个海滩的情致。每逢阳光明媚的日子，悉尼人就会聚集在邦迪海滩上享受阳光的沐浴。邦迪海滩与悉尼的其他海滩一样，海浪很大，不太适合游泳。 多数的游人或趴在海滩上晒太阳或冲浪。不过如果想要与大自然来个亲密接触，也不用太过紧张，这里有救护员365天巡逻，只要在红色和黄色的旗帜标识的范围内游泳，就基本能保证安全。 当然，除了游泳，还有许多水上运动可以开展，比如冲浪，而这里被称为“冲浪者的天堂”，澳洲人对水上运动的热爱可见一斑。如果对冲浪运动很感兴趣，可以选择在这里报读一个初学者冲浪课程，享受午后美好的阳光，感受这个“热情的海滩”的魅力。寻求宁静，不喜折腾的话，也可以带一本好书，一把遮阳伞，听着音乐，吹着海风，感受南半球的休闲与惬意。</p>
+            		    </div>
+	            		<div class="ybtp">
+	            			<img src="__PUBLIC__/home/images/5.jpg" width="100%" height="220px">
+	            		</div>
+	            	</div>
+
+	            	<div class="qbwz">	
+	            		<div class="zbwz" >
+		            		<h1 >休闲娱乐</h1>
+		            		<p>这里有着壮美的海岸线，沿着邦迪到库吉的悬崖观景路而行，一路上可以慢慢闲逛，在精致优雅的邦迪凉亭里品尝一客鲜奶冰淇淋；可以观看邦迪海滩救生员开展救生演示活动，甚至还可以亲身参与；也可以在悉尼的标志性场所之一邦迪冰山游泳池戏水，更可以在日落时一边领略壮观的大海美景，一边享受邦迪海滩上众多餐馆的诱人美食。 如果不巧遇到下雨天，也不用太过失望，雨天的邦迪海滩也别有一番风情，你还是可以在此地放松身心，感受大自然的神奇造化，也可以去附近的娱乐设施消磨时光。在Hall Street有许多咖啡馆，提供Wi-Fi，这条街上还有一些书店和报刊亭，都能满足你的需求。实在无聊，也可以去Westfield看一场电影。</p>
+	            		</div>
+	            		<div class="ybtp">
+	            			<img src="__PUBLIC__/home/images/7.jpg" width="100%" height="220px">
+	            		</div>
             		</div>
-            		<div class="ybtp">
-            			<img src="__PUBLIC__/home/images/5.jpg" width="420px" height="220px">
-            		</div>
-            		<div class="zbwz">
-	            		<h1>休闲娱乐</h1>
-	            		<p>这里有着壮美的海岸线，沿着邦迪到库吉的悬崖观景路而行，一路上可以慢慢闲逛，在精致优雅的邦迪凉亭里品尝一客鲜奶冰淇淋；可以观看邦迪海滩救生员开展救生演示活动，甚至还可以亲身参与；也可以在悉尼的标志性场所之一邦迪冰山游泳池戏水，更可以在日落时一边领略壮观的大海美景，一边享受邦迪海滩上众多餐馆的诱人美食。 如果不巧遇到下雨天，也不用太过失望，雨天的邦迪海滩也别有一番风情，你还是可以在此地放松身心，感受大自然的神奇造化，也可以去附近的娱乐设施消磨时光。在Hall Street有许多咖啡馆，提供Wi-Fi，这条街上还有一些书店和报刊亭，都能满足你的需求。实在无聊，也可以去Westfield看一场电影。</p>
-            		</div>
-            		<div class="ybtp">
-            			<img src="__PUBLIC__/home/images/7.jpg" width="420px" height="220px">
-            		</div>
-            		</div>
-            		<div class="qbwzts">
+
+            		<div class="qbwzts" id="hi" >
             			<h1>邦迪集市</h1>
             			<p>  周日这里会举行热闹的邦迪集市，如果碰巧遇上，千万不要错过。邦迪集市始于1993年，每周日10:00-16:00在Bondi Beach Public School靠近海滩的广场上举行。 来这里逛一逛，你会看到琳琅满目的摆设，独立设计师的服饰、手工珠宝饰品、艺术绘画、手工艺制品、古着等。当然，如果有其他重要活动，比如马拉松，周日集市会暂停，不过一般情况下都会如期举行。</p>
+
             		</div>
+                      
 				</div>
 				<div class="content-text4">
 					<div class="qbmsbt">
@@ -320,9 +408,9 @@
 					</div>
 					<div class="qbms">
 						<div class="qbmstp" style="clear: left;">
-							<img  src="__PUBLIC__/home/images/200.jpg" width="450px" height="280px" />
+							<img class="pic1" src="__PUBLIC__/home/images/200.jpg" width="450px" height="300px" />
 						</div>
-						<div class="qbmswz" style="margin-top: 0px">
+						<div class="qbmswz">
 							<p>悉尼鱼市场创建于1945年，是南半球最大的同类市场，每天多达100种海鲜上市。除了海鲜，这里还供应各类蔬菜、水果、面包和寿司，酒吧、餐馆和美味的熟食店比比皆是，是旅游者的悉尼必来之地，同时也为其提供了真正体验当地在营鱼市的机会。</br>这里是悉尼品尝海鲜的聚集之地，买的和卖的70%都是华人，备好的套餐拼盘价格不贵，活海鲜挑选加工并不便宜。买一些海鲜回公寓酒店做大餐是个不错的选择，也可在露天的渔人码头吃饭。当你坐在室外品尝海鲜时，忽然听到一群女生的尖叫，不用问，一定是海鸥抢了她们的美食。
 悉尼海鲜烹饪学校（Sydney Seafood School）就在鱼市场的旁边，开设多种海鲜烹饪课程，其中包括一些澳州知名厨师的授课。鱼市场还有一个内部参观的旅游项目，在周一、周三、周四和周五的06:40—08:30之间，需预定。</br>地址：
 Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New South Wales，2009(查看地图)
@@ -331,90 +419,80 @@ Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New Sout
 营业时间：
 周一至周四：07:00—16:00；周五至周日07:00—17:00。</p>
 						</div>
-						<div class="qbmstp" style="clear: left;">
-							<img  src="__PUBLIC__/home/images/200.jpg" width="450px" height="280px" />
-						</div>
-						<div class="qbmswz"  style="margin-top: 0px">
-							<p>悉尼鱼市场创建于1945年，是南半球最大的同类市场，每天多达100种海鲜上市。除了海鲜，这里还供应各类蔬菜、水果、面包和寿司，酒吧、餐馆和美味的熟食店比比皆是，是旅游者的悉尼必来之地，同时也为其提供了真正体验当地在营鱼市的机会。</br>这里是悉尼品尝海鲜的聚集之地，买的和卖的70%都是华人，备好的套餐拼盘价格不贵，活海鲜挑选加工并不便宜。买一些海鲜回公寓酒店做大餐是个不错的选择，也可在露天的渔人码头吃饭。当你坐在室外品尝海鲜时，忽然听到一群女生的尖叫，不用问，一定是海鸥抢了她们的美食。
-悉尼海鲜烹饪学校（Sydney Seafood School）就在鱼市场的旁边，开设多种海鲜烹饪课程，其中包括一些澳州知名厨师的授课。鱼市场还有一个内部参观的旅游项目，在周一、周三、周四和周五的06:40—08:30之间，需预定。</br>地址：
-Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New South Wales，2009(查看地图)
-到达方式：
-轻轨（Light rail）：悉尼鱼市场（Fish Market）站下车，出站过马路步行3分钟即到。
-营业时间：
-周一至周四：07:00—16:00；周五至周日07:00—17:00。</p>
-						</div>
-						<div class="qbmstp" style="clear: left;">
-							<img  src="__PUBLIC__/home/images/200.jpg" width="450px" height="280px" />
-						</div>
-						<div class="qbmswz" style="margin-top: 0px">
-							<p>悉尼鱼市场创建于1945年，是南半球最大的同类市场，每天多达100种海鲜上市。除了海鲜，这里还供应各类蔬菜、水果、面包和寿司，酒吧、餐馆和美味的熟食店比比皆是，是旅游者的悉尼必来之地，同时也为其提供了真正体验当地在营鱼市的机会。</br>这里是悉尼品尝海鲜的聚集之地，买的和卖的70%都是华人，备好的套餐拼盘价格不贵，活海鲜挑选加工并不便宜。买一些海鲜回公寓酒店做大餐是个不错的选择，也可在露天的渔人码头吃饭。当你坐在室外品尝海鲜时，忽然听到一群女生的尖叫，不用问，一定是海鸥抢了她们的美食。
-悉尼海鲜烹饪学校（Sydney Seafood School）就在鱼市场的旁边，开设多种海鲜烹饪课程，其中包括一些澳州知名厨师的授课。鱼市场还有一个内部参观的旅游项目，在周一、周三、周四和周五的06:40—08:30之间，需预定。</br>地址：
-Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New South Wales，2009(查看地图)
-到达方式：
-轻轨（Light rail）：悉尼鱼市场（Fish Market）站下车，出站过马路步行3分钟即到。
-营业时间：
-周一至周四：07:00—16:00；周五至周日07:00—17:00。</p>
-						</div>
+						
 					</div>
 				</div>
 				<div class="content-text5">
+				  <div>
 					<div class="qbmsbt">
 						<h1>附近酒店</h1>
 					</div>
 					<div class="qbfjjd">
-						<a href="#"><img src="__PUBLIC__/home/images/z2.jpg" width="360px" height="250px"></a>
-						<a href="#"><h2>windsor hotel</h2></a>
+						<a href="{:U('Home/zhuna/zhunali_content')}"><img src="__PUBLIC__/home/images/z2.jpg" width="100%" height="250px"></a>
+						<a href="{:U('Home/zhuna/zhunali_content')}"><h2>windsor hotel</h2></a>
+						<div class="texet1">
 						<p>这是一家澳洲著名的五星级酒店，以英国女王伊丽莎白曾入住而得名。酒店位于墨尔本中心地带，
 走路十分钟可到名品街、唐人街。</p>
+                        </div>
 					</div>
 					<div class="qbfjjd">
-						<a href="#"><img src="__PUBLIC__/home/images/z2.jpg" width="360px" height="250px"></a>
-						<a href="#"><h2>windsor hotel</h2></a>
+					    <div class="ppp1">
+						<a href="{:U('Home/zhuna/zhunali_content')}"><img src="__PUBLIC__/home/images/z2.jpg" width="100%" height="250px"></a>
+						</div>
+						<a href="{:U('Home/zhuna/zhunali_content')}"><h2>windsor hotel</h2></a>
+						<div class="texet1">
 						<p>这是一家澳洲著名的五星级酒店，以英国女王伊丽莎白曾入住而得名。酒店位于墨尔本中心地带，
 走路十分钟可到名品街、唐人街。</p>
+                        </div>
 					</div>
 					<div class="qbfjjd">
-						<a href="#"><img src="__PUBLIC__/home/images/z2.jpg" width="360px" height="250px"></a>
-						<a href="#"><h2>windsor hotel</h2></a>
+						<a href="{:U('Home/zhuna/zhunali_content')}"><img src="__PUBLIC__/home/images/z2.jpg" width="100%" height="250px"></a>
+						<a href="{:U('Home/zhuna/zhunali_content')}"><h2>windsor hotel</h2></a>
+						<div class="texet1">
+						<p>这是一家澳洲著名的五星级酒店，以英国女王伊丽莎白曾入住而得名。酒店位于墨尔本中心地带，
+走路十分钟可到名品街、唐人街。</p>
+                        </div>
+					</div>
+                  </div>
+
+                  <div>
+					<div class="qbfjjd" style="margin-top:2%">
+						<a href="{:U('Home/zhuna/zhunali_content')}"><img src="__PUBLIC__/home/images/z2.jpg" width="100%" height="250px"></a>
+						<a href="{:U('Home/zhuna/zhunali_content')}"><h2>windsor hotel</h2></a>
 						<p>这是一家澳洲著名的五星级酒店，以英国女王伊丽莎白曾入住而得名。酒店位于墨尔本中心地带，
 走路十分钟可到名品街、唐人街。</p>
 					</div>
-					<div id="qbfjjd">
-						<a href="#"><img src="__PUBLIC__/home/images/z2.jpg" width="360px" height="250px"></a>
-						<a href="#"><h2>windsor hotel</h2></a>
+					<div class="qbfjjd" style="margin-top:2%">
+						<a href="{:U('Home/zhuna/zhunali_content')}"><img src="__PUBLIC__/home/images/z2.jpg" width="100%" height="250px"></a>
+						<a href="{:U('Home/zhuna/zhunali_content')}"><h2>windsor hotel</h2></a>
+						<p style="font-size:1rem">这是一家澳洲著名的五星级酒店，以英国女王伊丽莎白曾入住而得名。酒店位于墨尔本中心地带，
+走路十分钟可到名品街、唐人街。</p>
+					</div>
+					<div class="qbfjjd" style="margin-bottom: 50px;margin-top:2%">
+						<a href="{:U('Home/zhuna/zhunali_content')}"><img src="__PUBLIC__/home/images/z2.jpg" width="100%" height="250px"></a>
+						<a href="{:U('Home/zhuna/zhunali_content')}"><h2>windsor hotel</h2></a>
 						<p>这是一家澳洲著名的五星级酒店，以英国女王伊丽莎白曾入住而得名。酒店位于墨尔本中心地带，
 走路十分钟可到名品街、唐人街。</p>
 					</div>
-					<div class="qbfjjd">
-						<a href="#"><img src="__PUBLIC__/home/images/z2.jpg" width="360px" height="250px"></a>
-						<a href="#"><h2>windsor hotel</h2></a>
-						<p>这是一家澳洲著名的五星级酒店，以英国女王伊丽莎白曾入住而得名。酒店位于墨尔本中心地带，
-走路十分钟可到名品街、唐人街。</p>
-					</div>
-					<div class="qbfjjd" style="margin-bottom: 50px;">
-						<a href="#"><img src="__PUBLIC__/home/images/z2.jpg" width="360px" height="250px"></a>
-						<a href="#"><h2>windsor hotel</h2></a>
-						<p>这是一家澳洲著名的五星级酒店，以英国女王伊丽莎白曾入住而得名。酒店位于墨尔本中心地带，
-走路十分钟可到名品街、唐人街。</p>
-					</div>
+				  </div>	
 				</div>
             </div>
         </div>
 		<!--尾部信息-->
-			<div class="footer">
+		<div class="footer">
 			<div class="footerjkgz">
 				<div class="footer1">
 					<div><label>即刻关注：</label></div>
 					<div><a href="#"><img src="__PUBLIC__/home/images/14515034.png" width="50px" height="45px"></a></div>
-					<div><a href="#" class="footera">官方微博</a></div>
+					<div class="footera"><a href="#">官方微博</a></div>
 					<div><a href="#"><img src="__PUBLIC__/home/images/20161123213710.png" width="50px" height="45px"></a></div>
-					<div><a href="#" class="footera">官方微信</a></div>
+					<div class="footera"><a href="#">官方微信</a></div>
 				</div>
 				<div class="footer2">
 					<div><label class="yqlj_">友情链接：</label></div>
-					<div><a href="http://www.cnta.com/" class="yqlj" target="_blank">国家旅游局</a></div>
-					<div><a href="http://travel.people.com.cn/" class="yqlj" target="_blank">人民网旅游</a></div>
-					<div><a href="http://travel.gmw.cn/index.htm" class="yqlj" target="_blank">光明网旅游</a></div>
+					<div class="yqlj"><a href="http://www.cnta.com/" target="_blank">国家旅游局</a></div>
+					<div class="yqlj"><a href="http://travel.people.com.cn/" target="_blank">人民网旅游</a></div>
+					<div class="yqlj"><a href="http://travel.gmw.cn/index.htm" target="_blank">光明网旅游</a></div>
 				</div>
 			</div>
 			<div class="hr2">
@@ -428,12 +506,12 @@ Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New Sout
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">新南威尔士州</a></li>
-							<li><a href="#">昆士兰</a></li>
-							<li><a href="#">维多利亚州</a></li>
-							<li><a href="#">北领地</a></li>
-							<li><a href="#">南澳大利亚</a></li>
-							<li><a href="#">西澳大利亚</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">新南威尔士州</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">昆士兰</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">维多利亚州</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">北领地</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">南澳大利亚</a></li>
+							<li><a href="{:U('Home/yaoqu/content')}">西澳大利亚</a></li>
 						</ul>
 					</div>
 				</div>
@@ -444,10 +522,10 @@ Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New Sout
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">春</a></li>
-							<li><a href="#">夏</a></li>
-							<li><a href="#">秋</a></li>
-							<li><a href="#">冬</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">春</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">夏</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">秋</a></li>
+							<li><a href="{:U('Home/siji/sijituijian')}">冬</a></li>
 						</ul>
 					</div>
 				</div>
@@ -458,27 +536,26 @@ Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New Sout
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">自驾之旅</a></li>
-							<li><a href="#">探险之旅</a></li>
-							<li><a href="#">自然野生动物</a></li>
-							<li><a href="#">美食美酒</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
+							<li><a href="{:U('Home/xingcheng/xingcheng_content')}">太平洋海岸自驾游</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footerliebiao1">
 					<div>
-						<a href="{:U('Home/zhuyi/zhuyishixiang')}">注意事项</a>
+						<a href="{:U('Home/zhuyi/zhuyishixiang_hb')}">注意事项</a>
 					</div>
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">货币</a></li>
-							<li><a href="#">时区</a></li>
-							<li><a href="#">交通</a></li>
-							<li><a href="#">签证</a></li>
-							<li><a href="#">道路安全</a></li>
-							<li><a href="#">健康安全</a></li>
-							<li><a href="#">实用信息</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_hb')}">货币</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_sq')}">时区</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_jt')}">交通</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_qz')}">签证</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_lyts')}">旅游贴士</a></li>
+							<li><a href="{:U('Home/zhuyi/zhuyishixiang_jkaq')}">健康安全</a></li>
 						</ul>
 					</div>
 				</div>
@@ -489,9 +566,9 @@ Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New Sout
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">按地区筛选</a></li>
-							<li><a href="#">按主题筛选</a></li>
-							<li><a href="#">按景观筛选</a></li>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">windsor hotel</a></li>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">Port O Call Motel</a></li>
+							<li><a href="{:U('Home/zhuna/zhunali_content')}">Port 1 Call Motel</a></li>
 						</ul>
 					</div>
 				</div>
@@ -502,7 +579,7 @@ Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New Sout
 					<hr color="#E4E4E4" size=1 align=center noshade class="hr3">
 					<div>
 						<ul>
-							<li><a href="#">留学生导游信息</a></li>
+							<li><a href="{:U('Home/liuxue/student1')}">留学生导游信息</a></li>
 						</ul>
 					</div>
 				</div>
@@ -520,6 +597,7 @@ Blackwattle Bay，Corner Pyrmont Bridge Road and Bank Street，Sydney，New Sout
 				</div>
 			</div>
 		</div>
+	    <div id="fade" class="black_overlay"></div>
 	</body>
 </html>
 
